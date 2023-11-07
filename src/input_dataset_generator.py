@@ -45,15 +45,15 @@ if __name__ == "__main__":
     create random standard routes
     '''
 
-    std_routes_num = 10 #number of routes to be generated
+    std_routes_num = 30 #number of routes to be generated
     min_trips = 1
     max_trips = 10 #bounds on the number of trips per route. Ensure that this value does not exceed hte number of cities minus one
                    #(otherwise the same city will appear more times in a route. This could make sense in certain cases)
     min_items = 1
-    max_items = 5 #maximum number of types of items per trip
+    max_items = 20 #maximum number of types of items per trip
 
     min_card=1
-    max_card=50 #cardinality of a specified item in a trip
+    max_card=100 #cardinality of a specified item in a trip
 
     route_list =[]
     for rt in range(std_routes_num):
@@ -70,13 +70,14 @@ if __name__ == "__main__":
         route_list.append(StandardRoute(f"s{rt}", trip_list))
 
 
-    # Serialize to JSON with the original encoder
+    # Serialize to JSON with the enhanced encoder
     json_data = json.loads(json.dumps(route_list, cls=EnhancedJSONEncoder))
 
     for route in json_data:
         for trip in route['route']:
             trip['from'] = trip.pop('departure')
             trip['to'] = trip.pop('destination')
+            trip['merchandise'] = trip.pop('merchandise')
 
 
     # Dump the modified data to a JSON file with indentation
