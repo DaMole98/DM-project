@@ -1,0 +1,1502 @@
+[
+  {
+    "dr_id": "A",
+    "length": 8,
+    "route": [
+      {
+        "departure": "Modena",
+        "destination": "Venice",
+        "merchandise": {
+          "Olive Oil": 34
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Parma",
+        "merchandise": {
+          "Cheese": 3,
+          "Salt": 37,
+          "Mayonnaise": 32,
+          "Olive Oil": 31,
+          "Sugar": 48
+        }
+      },
+      {
+        "departure": "Parma",
+        "destination": "Rimini",
+        "merchandise": {
+          "Salt": 44,
+          "Potatoes": 22
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Bari",
+        "merchandise": {
+          "Pickles": 10,
+          "Honey": 9,
+          "Potatoes": 11
+        }
+      },
+      {
+        "departure": "Bari",
+        "destination": "Rome",
+        "merchandise": {
+          "Cereal": 5
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Verona",
+        "merchandise": {
+          "Oranges": 4,
+          "Pickles": 13,
+          "Beer": 33
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Catania",
+        "merchandise": {
+          "Bread": 1,
+          "Salt": 32,
+          "Beer": 46
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Foggia",
+        "merchandise": {
+          "Spinach": 27,
+          "Soap": 10
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "B",
+    "length": 9,
+    "route": [
+      {
+        "departure": "Foggia",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Ketchup": 49
+        }
+      },
+      {
+        "departure": "Reggio Emilia",
+        "destination": "Rome",
+        "merchandise": {
+          "Beef": 32,
+          "Chicken": 4,
+          "Paper Towels": 3,
+          "Oranges": 4,
+          "Toothpaste": 36
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Turin",
+        "merchandise": {
+          "Lettuce": 19,
+          "Coffee": 2,
+          "Detergent": 14
+        }
+      },
+      {
+        "departure": "Turin",
+        "destination": "Florence",
+        "merchandise": {
+          "Lotion": 6,
+          "Avocado": 44,
+          "Toilet Paper": 16
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Bananas": 9,
+          "Ketchup": 19,
+          "Napkins": 44,
+          "Mayonnaise": 20
+        }
+      },
+      {
+        "departure": "Vicenza",
+        "destination": "Milan",
+        "merchandise": {
+          "Olive Oil": 35,
+          "Soap": 7,
+          "Soda": 41
+        }
+      },
+      {
+        "departure": "Milan",
+        "destination": "Padua",
+        "merchandise": {
+          "Chicken": 8,
+          "Candles": 41,
+          "Lemons": 10,
+          "Toilet Paper": 9
+        }
+      },
+      {
+        "departure": "Padua",
+        "destination": "Palermo",
+        "merchandise": {
+          "Chocolate": 28,
+          "Sugar": 4,
+          "Carrots": 38,
+          "Oranges": 20,
+          "Garlic": 40
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Genoa",
+        "merchandise": {
+          "Pens": 5,
+          "Sugar": 24,
+          "Toothbrush": 47,
+          "Garlic": 20
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "C",
+    "length": 4,
+    "route": [
+      {
+        "departure": "Bologna",
+        "destination": "Turin",
+        "merchandise": {
+          "Pasta": 8,
+          "Chicken": 12,
+          "Lotion": 6,
+          "Coffee": 15,
+          "Bread": 7
+        }
+      },
+      {
+        "departure": "Turin",
+        "destination": "Salerno",
+        "merchandise": {
+          "Carrots": 7
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Rice": 41
+        }
+      },
+      {
+        "departure": "Cagliari",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Strudel": 18
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "D",
+    "length": 6,
+    "route": [
+      {
+        "departure": "Naples",
+        "destination": "Florence",
+        "merchandise": {
+          "Apples": 35,
+          "Candles": 31,
+          "Pens": 2,
+          "Olive Oil": 27
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Genoa",
+        "merchandise": {
+          "Onions": 7,
+          "Pasta": 6,
+          "Garlic": 22
+        }
+      },
+      {
+        "departure": "Genoa",
+        "destination": "Livorno",
+        "merchandise": {
+          "Shampoo": 47,
+          "Mustard": 23
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Verona",
+        "merchandise": {
+          "Spinach": 6,
+          "Cereal": 3,
+          "Ketchup": 28,
+          "Chips": 20
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Naples",
+        "merchandise": {
+          "Olive Oil": 49,
+          "Cheese": 27
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Bari",
+        "merchandise": {
+          "Rice": 14
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "E",
+    "length": 1,
+    "route": [
+      {
+        "departure": "Palermo",
+        "destination": "Foggia",
+        "merchandise": {
+          "Toothbrush": 32
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "F",
+    "length": 7,
+    "route": [
+      {
+        "departure": "Mestre",
+        "destination": "Foggia",
+        "merchandise": {
+          "Detergent": 33,
+          "Tea": 35
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Prato",
+        "merchandise": {
+          "Lotion": 11,
+          "Apples": 43,
+          "Detergent": 5,
+          "Soda": 9
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Padua",
+        "merchandise": {
+          "Garlic": 5
+        }
+      },
+      {
+        "departure": "Padua",
+        "destination": "Parma",
+        "merchandise": {
+          "Bottled Water": 42,
+          "Paper Towels": 39,
+          "Ketchup": 42,
+          "Chocolate": 45
+        }
+      },
+      {
+        "departure": "Parma",
+        "destination": "Naples",
+        "merchandise": {
+          "Bread": 25,
+          "Candles": 30,
+          "Pickles": 34,
+          "Pepper": 27,
+          "Potatoes": 48
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Venice",
+        "merchandise": {
+          "Lettuce": 44,
+          "Bottled Water": 48,
+          "Apples": 19
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Bread": 38
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "G",
+    "length": 9,
+    "route": [
+      {
+        "departure": "Catania",
+        "destination": "Milan",
+        "merchandise": {
+          "Lettuce": 17,
+          "Sugar": 14,
+          "Salt": 37,
+          "Candles": 33,
+          "Ketchup": 45
+        }
+      },
+      {
+        "departure": "Milan",
+        "destination": "Naples",
+        "merchandise": {
+          "Soda": 49,
+          "Shampoo": 13,
+          "Pens": 21,
+          "Detergent": 50
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Florence",
+        "merchandise": {
+          "Lotion": 35
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Perugia",
+        "merchandise": {
+          "Soap": 19,
+          "Rice": 29,
+          "Spinach": 40
+        }
+      },
+      {
+        "departure": "Perugia",
+        "destination": "Turin",
+        "merchandise": {
+          "Mustard": 7,
+          "Bottled Water": 41,
+          "Apples": 3
+        }
+      },
+      {
+        "departure": "Turin",
+        "destination": "Salerno",
+        "merchandise": {
+          "Chocolate": 38,
+          "Chips": 2
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Naples",
+        "merchandise": {
+          "Mayonnaise": 14,
+          "Lettuce": 4,
+          "Soap": 4,
+          "Garlic": 19,
+          "Tomatoes": 21
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Tea": 33,
+          "Cheese": 19,
+          "Beef": 27,
+          "Carrots": 22
+        }
+      },
+      {
+        "departure": "Reggio Emilia",
+        "destination": "Verona",
+        "merchandise": {
+          "Soda": 25,
+          "Candles": 34,
+          "Lemons": 21
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "H",
+    "length": 8,
+    "route": [
+      {
+        "departure": "Turin",
+        "destination": "Modena",
+        "merchandise": {
+          "Toothpaste": 43,
+          "Coffee": 29,
+          "Lotion": 38
+        }
+      },
+      {
+        "departure": "Modena",
+        "destination": "Verona",
+        "merchandise": {
+          "Bottled Water": 19,
+          "Milk": 24
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Genoa",
+        "merchandise": {
+          "Cereal": 48,
+          "Mayonnaise": 9,
+          "Lotion": 7,
+          "Honey": 26
+        }
+      },
+      {
+        "departure": "Genoa",
+        "destination": "Naples",
+        "merchandise": {
+          "Cheese": 38,
+          "Soap": 24,
+          "Bread": 37,
+          "Beef": 24
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Rome",
+        "merchandise": {
+          "Apples": 9,
+          "Tea": 43
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Parma",
+        "merchandise": {
+          "Olive Oil": 6,
+          "Lemons": 28,
+          "Pasta": 20
+        }
+      },
+      {
+        "departure": "Parma",
+        "destination": "Bologna",
+        "merchandise": {
+          "Cheese": 12
+        }
+      },
+      {
+        "departure": "Bologna",
+        "destination": "Naples",
+        "merchandise": {
+          "Honey": 18
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "I",
+    "length": 9,
+    "route": [
+      {
+        "departure": "Genoa",
+        "destination": "Parma",
+        "merchandise": {
+          "Pepper": 19,
+          "Carrots": 25
+        }
+      },
+      {
+        "departure": "Parma",
+        "destination": "Verona",
+        "merchandise": {
+          "Chicken": 49,
+          "Milk": 8,
+          "Soda": 44
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Florence",
+        "merchandise": {
+          "Ketchup": 12
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Shampoo": 49,
+          "Rice": 44
+        }
+      },
+      {
+        "departure": "Cagliari",
+        "destination": "Catania",
+        "merchandise": {
+          "Carrots": 27,
+          "Olive Oil": 11
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Rome",
+        "merchandise": {
+          "Coffee": 8,
+          "Chicken": 26,
+          "Paper Towels": 15,
+          "Pickles": 33,
+          "Eggs": 47
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Naples",
+        "merchandise": {
+          "Coffee": 11
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Mestre",
+        "merchandise": {
+          "Toothpaste": 43,
+          "Pens": 9,
+          "Apples": 40
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Taranto",
+        "merchandise": {
+          "Toothbrush": 28,
+          "Shampoo": 10,
+          "Chips": 11,
+          "Mayonnaise": 21,
+          "Beer": 3
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "J",
+    "length": 3,
+    "route": [
+      {
+        "departure": "Livorno",
+        "destination": "Foggia",
+        "merchandise": {
+          "Napkins": 44
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Rimini",
+        "merchandise": {
+          "Olive Oil": 4
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Napkins": 6,
+          "Sugar": 20
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "K",
+    "length": 8,
+    "route": [
+      {
+        "departure": "Rimini",
+        "destination": "Salerno",
+        "merchandise": {
+          "Strudel": 41
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Palermo",
+        "merchandise": {
+          "Bread": 46,
+          "Bananas": 38,
+          "Mayonnaise": 12
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Toothbrush": 20,
+          "Olive Oil": 40,
+          "Tea": 42,
+          "Tomatoes": 48,
+          "Onions": 2
+        }
+      },
+      {
+        "departure": "Vicenza",
+        "destination": "Rome",
+        "merchandise": {
+          "Eggs": 37
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Turin",
+        "merchandise": {
+          "Sugar": 15,
+          "Coffee": 16,
+          "Shampoo": 34,
+          "Chicken": 14
+        }
+      },
+      {
+        "departure": "Turin",
+        "destination": "Bologna",
+        "merchandise": {
+          "Honey": 14,
+          "Salt": 46,
+          "Soda": 47
+        }
+      },
+      {
+        "departure": "Bologna",
+        "destination": "Catania",
+        "merchandise": {
+          "Cereal": 48,
+          "Beer": 31,
+          "Ketchup": 19,
+          "Olive Oil": 31,
+          "Detergent": 13
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Prato",
+        "merchandise": {
+          "Paper Towels": 28,
+          "Toothpaste": 41,
+          "Lettuce": 38
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "L",
+    "length": 1,
+    "route": [
+      {
+        "departure": "Naples",
+        "destination": "Salerno",
+        "merchandise": {
+          "Napkins": 16
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "M",
+    "length": 10,
+    "route": [
+      {
+        "departure": "Foggia",
+        "destination": "Livorno",
+        "merchandise": {
+          "Chicken": 22,
+          "Apples": 4,
+          "Cereal": 35,
+          "Lotion": 34
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Prato",
+        "merchandise": {
+          "Mustard": 31,
+          "Carrots": 25
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Florence",
+        "merchandise": {
+          "Olive Oil": 15,
+          "Tea": 19,
+          "Candles": 10,
+          "Shampoo": 36,
+          "Spinach": 5
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Rome",
+        "merchandise": {
+          "Avocado": 18,
+          "Honey": 12
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Genoa",
+        "merchandise": {
+          "Avocado": 46,
+          "Oranges": 48
+        }
+      },
+      {
+        "departure": "Genoa",
+        "destination": "Modena",
+        "merchandise": {
+          "Bananas": 39,
+          "Sugar": 2,
+          "Paper Towels": 49
+        }
+      },
+      {
+        "departure": "Modena",
+        "destination": "Reggio Calabria",
+        "merchandise": {
+          "Cereal": 48,
+          "Pasta": 41
+        }
+      },
+      {
+        "departure": "Reggio Calabria",
+        "destination": "Catania",
+        "merchandise": {
+          "Apples": 46,
+          "Onions": 26,
+          "Shampoo": 25
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Mestre",
+        "merchandise": {
+          "Cereal": 38,
+          "Carrots": 28,
+          "Lettuce": 17,
+          "Pepper": 49,
+          "Tomatoes": 45
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Salerno",
+        "merchandise": {
+          "Cereal": 30,
+          "Apples": 49
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "N",
+    "length": 6,
+    "route": [
+      {
+        "departure": "Bologna",
+        "destination": "Venice",
+        "merchandise": {
+          "Ketchup": 22,
+          "Salt": 10,
+          "Candles": 20,
+          "Oranges": 20,
+          "Toilet Paper": 6
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Oranges": 9,
+          "Chocolate": 48,
+          "Pepper": 7,
+          "Honey": 23
+        }
+      },
+      {
+        "departure": "Reggio Emilia",
+        "destination": "Catania",
+        "merchandise": {
+          "Garlic": 49,
+          "Toothbrush": 33,
+          "Potatoes": 39,
+          "Apples": 30
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Bari",
+        "merchandise": {
+          "Cereal": 33,
+          "Apples": 27,
+          "Ketchup": 42,
+          "Oranges": 19
+        }
+      },
+      {
+        "departure": "Bari",
+        "destination": "Florence",
+        "merchandise": {
+          "Olive Oil": 13,
+          "Bread": 6,
+          "Lettuce": 1,
+          "Tissues": 3,
+          "Pens": 7
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Modena",
+        "merchandise": {
+          "Lettuce": 23,
+          "Shampoo": 4,
+          "Oranges": 44
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "O",
+    "length": 8,
+    "route": [
+      {
+        "departure": "Rimini",
+        "destination": "Mestre",
+        "merchandise": {
+          "Avocado": 20,
+          "Chocolate": 21,
+          "Bottled Water": 4,
+          "Sugar": 17,
+          "Pens": 29
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Milan",
+        "merchandise": {
+          "Beef": 16,
+          "Avocado": 2,
+          "Toothpaste": 33,
+          "Soda": 24
+        }
+      },
+      {
+        "departure": "Milan",
+        "destination": "Perugia",
+        "merchandise": {
+          "Paper Towels": 33
+        }
+      },
+      {
+        "departure": "Perugia",
+        "destination": "Palermo",
+        "merchandise": {
+          "Napkins": 5,
+          "Mayonnaise": 37
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Genoa",
+        "merchandise": {
+          "Milk": 14,
+          "Onions": 42
+        }
+      },
+      {
+        "departure": "Genoa",
+        "destination": "Rome",
+        "merchandise": {
+          "Candles": 47,
+          "Eggs": 18,
+          "Bananas": 18,
+          "Carrots": 46
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Foggia",
+        "merchandise": {
+          "Pasta": 35,
+          "Salt": 37,
+          "Eggs": 13,
+          "Strudel": 31,
+          "Lettuce": 38
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Catania",
+        "merchandise": {
+          "Mayonnaise": 28,
+          "Apples": 49,
+          "Olive Oil": 27,
+          "Lettuce": 4,
+          "Bottled Water": 45
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "P",
+    "length": 1,
+    "route": [
+      {
+        "departure": "Parma",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Milk": 15,
+          "Chicken": 33
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "Q",
+    "length": 7,
+    "route": [
+      {
+        "departure": "Livorno",
+        "destination": "Rimini",
+        "merchandise": {
+          "Chocolate": 10,
+          "Eggs": 37
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Parma",
+        "merchandise": {
+          "Garlic": 40,
+          "Milk": 33
+        }
+      },
+      {
+        "departure": "Parma",
+        "destination": "Padua",
+        "merchandise": {
+          "Spinach": 3,
+          "Pens": 45,
+          "Cheese": 33,
+          "Strudel": 14
+        }
+      },
+      {
+        "departure": "Padua",
+        "destination": "Verona",
+        "merchandise": {
+          "Lotion": 36,
+          "Lemons": 34,
+          "Chocolate": 47
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Mestre",
+        "merchandise": {
+          "Sugar": 34,
+          "Cereal": 44,
+          "Tissues": 38
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Chips": 23,
+          "Bottled Water": 31,
+          "Soda": 23
+        }
+      },
+      {
+        "departure": "Cagliari",
+        "destination": "Palermo",
+        "merchandise": {
+          "Honey": 30,
+          "Garlic": 1,
+          "Mayonnaise": 12,
+          "Oranges": 14,
+          "Tomatoes": 21
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "R",
+    "length": 3,
+    "route": [
+      {
+        "departure": "Salerno",
+        "destination": "Padua",
+        "merchandise": {
+          "Salt": 32,
+          "Napkins": 36,
+          "Chicken": 32,
+          "Lemons": 13,
+          "Apples": 5
+        }
+      },
+      {
+        "departure": "Padua",
+        "destination": "Rome",
+        "merchandise": {
+          "Bottled Water": 6,
+          "Detergent": 40,
+          "Cheese": 29
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Genoa",
+        "merchandise": {
+          "Oranges": 18,
+          "Pasta": 5,
+          "Cheese": 28,
+          "Beef": 46,
+          "Eggs": 7
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "S",
+    "length": 6,
+    "route": [
+      {
+        "departure": "Florence",
+        "destination": "Rimini",
+        "merchandise": {
+          "Olive Oil": 42,
+          "Potatoes": 45
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Perugia",
+        "merchandise": {
+          "Pens": 11,
+          "Soap": 3,
+          "Olive Oil": 47,
+          "Beer": 47
+        }
+      },
+      {
+        "departure": "Perugia",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Milk": 7
+        }
+      },
+      {
+        "departure": "Reggio Emilia",
+        "destination": "Salerno",
+        "merchandise": {
+          "Toilet Paper": 31,
+          "Oranges": 37,
+          "Olive Oil": 1
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Verona",
+        "merchandise": {
+          "Onions": 2,
+          "Cereal": 35,
+          "Bananas": 32,
+          "Milk": 15
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Naples",
+        "merchandise": {
+          "Mustard": 17,
+          "Bananas": 24,
+          "Milk": 3,
+          "Napkins": 27,
+          "Toilet Paper": 16
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "T",
+    "length": 5,
+    "route": [
+      {
+        "departure": "Cagliari",
+        "destination": "Verona",
+        "merchandise": {
+          "Candles": 7,
+          "Pepper": 37,
+          "Pasta": 8,
+          "Lotion": 27,
+          "Pickles": 30
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Salerno",
+        "merchandise": {
+          "Mustard": 27,
+          "Soap": 30
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Livorno",
+        "merchandise": {
+          "Apples": 34,
+          "Napkins": 1,
+          "Sugar": 13,
+          "Olive Oil": 38
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Foggia",
+        "merchandise": {
+          "Shampoo": 43,
+          "Toothbrush": 8,
+          "Lotion": 29,
+          "Paper Towels": 47
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Palermo",
+        "merchandise": {
+          "Oranges": 28,
+          "Candles": 18,
+          "Milk": 44,
+          "Tea": 3
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "U",
+    "length": 7,
+    "route": [
+      {
+        "departure": "Mestre",
+        "destination": "Genoa",
+        "merchandise": {
+          "Cheese": 50,
+          "Rice": 3
+        }
+      },
+      {
+        "departure": "Genoa",
+        "destination": "Bologna",
+        "merchandise": {
+          "Tomatoes": 34,
+          "Lemons": 29
+        }
+      },
+      {
+        "departure": "Bologna",
+        "destination": "Prato",
+        "merchandise": {
+          "Avocado": 38,
+          "Chips": 31,
+          "Sugar": 4,
+          "Beef": 20,
+          "Onions": 24
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Foggia",
+        "merchandise": {
+          "Tissues": 15,
+          "Napkins": 5,
+          "Carrots": 25
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Venice",
+        "merchandise": {
+          "Toothpaste": 29,
+          "Candles": 36,
+          "Cereal": 16,
+          "Pickles": 9,
+          "Pens": 9
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Naples",
+        "merchandise": {
+          "Beer": 50,
+          "Honey": 18,
+          "Tomatoes": 18
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Milan",
+        "merchandise": {
+          "Detergent": 29,
+          "Coffee": 46,
+          "Napkins": 35,
+          "Eggs": 32
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "V",
+    "length": 4,
+    "route": [
+      {
+        "departure": "Verona",
+        "destination": "Catania",
+        "merchandise": {
+          "Avocado": 25,
+          "Garlic": 40,
+          "Toothpaste": 36,
+          "Mayonnaise": 14
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Livorno",
+        "merchandise": {
+          "Pens": 16
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Rome",
+        "merchandise": {
+          "Eggs": 15,
+          "Napkins": 16,
+          "Bread": 46,
+          "Soap": 11,
+          "Strudel": 3
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Turin",
+        "merchandise": {
+          "Bottled Water": 3,
+          "Avocado": 40,
+          "Toothbrush": 23
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "W",
+    "length": 8,
+    "route": [
+      {
+        "departure": "Modena",
+        "destination": "Prato",
+        "merchandise": {
+          "Apples": 10,
+          "Rice": 14,
+          "Mustard": 33,
+          "Tissues": 36
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Milan",
+        "merchandise": {
+          "Tomatoes": 33,
+          "Pasta": 21
+        }
+      },
+      {
+        "departure": "Milan",
+        "destination": "Perugia",
+        "merchandise": {
+          "Chocolate": 3,
+          "Detergent": 48,
+          "Soda": 7,
+          "Shampoo": 13,
+          "Toilet Paper": 39
+        }
+      },
+      {
+        "departure": "Perugia",
+        "destination": "Verona",
+        "merchandise": {
+          "Cheese": 22,
+          "Pepper": 28,
+          "Detergent": 2,
+          "Cereal": 16,
+          "Potatoes": 47
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Salerno",
+        "merchandise": {
+          "Beer": 16,
+          "Pepper": 21
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Rimini",
+        "merchandise": {
+          "Mustard": 32,
+          "Detergent": 23,
+          "Spinach": 22
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Rice": 2,
+          "Cereal": 40
+        }
+      },
+      {
+        "departure": "Vicenza",
+        "destination": "Parma",
+        "merchandise": {
+          "Candles": 8,
+          "Lotion": 31,
+          "Potatoes": 39,
+          "Garlic": 24
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "X",
+    "length": 5,
+    "route": [
+      {
+        "departure": "Venice",
+        "destination": "Naples",
+        "merchandise": {
+          "Napkins": 8
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Catania",
+        "merchandise": {
+          "Strudel": 46,
+          "Ketchup": 10,
+          "Bananas": 6
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Palermo",
+        "merchandise": {
+          "Olive Oil": 31,
+          "Milk": 33,
+          "Lettuce": 46,
+          "Toothpaste": 32
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Florence",
+        "merchandise": {
+          "Carrots": 10,
+          "Detergent": 34,
+          "Honey": 28
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Modena",
+        "merchandise": {
+          "Apples": 35
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "Y",
+    "length": 4,
+    "route": [
+      {
+        "departure": "Reggio Calabria",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Lettuce": 14
+        }
+      },
+      {
+        "departure": "Cagliari",
+        "destination": "Venice",
+        "merchandise": {
+          "Coffee": 31,
+          "Salt": 23,
+          "Toothbrush": 33,
+          "Milk": 18
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Prato",
+        "merchandise": {
+          "Pens": 26,
+          "Honey": 40,
+          "Carrots": 35,
+          "Sugar": 20,
+          "Apples": 39
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Catania",
+        "merchandise": {
+          "Spinach": 29,
+          "Mustard": 47,
+          "Honey": 45
+        }
+      }
+    ]
+  },
+  {
+    "dr_id": "Z",
+    "length": 2,
+    "route": [
+      {
+        "departure": "Brescia",
+        "destination": "Trieste",
+        "merchandise": {
+          "Napkins": 32
+        }
+      },
+      {
+        "departure": "Trieste",
+        "destination": "Modena",
+        "merchandise": {
+          "Napkins": 2
+        }
+      }
+    ]
+  }
+]
