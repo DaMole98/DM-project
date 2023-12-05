@@ -16,6 +16,7 @@ def generate_preferences(drivers, cities, items):
     return driver_objects
 
 
+
 def generate_hidden_routes(drivers, cities, items, limit_trips, limit_items, limit_card):
     """
     **Generate hidden routes for the drivers.**

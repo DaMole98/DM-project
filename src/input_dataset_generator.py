@@ -4,6 +4,7 @@ from random import randint, seed, sample
 
 from src.Class_Structures.ClassesDefinition import *
 from src.Parameters.parameters import *
+from src.actual_route_generator import generate_actual_route
 from src.hidden_route_generator import generate_hidden_routes
 
 
@@ -81,7 +82,7 @@ if __name__ == "__main__":
 
 
     # Dump the modified data to a JSON file with indentation
-    with open(f"{data_path}standard.json", "w") as file:
+    with open(f"{data_path}StandardRoute.json", "w") as file:
         json.dump(json_data, file, indent=2)
 
     '''
@@ -134,6 +135,38 @@ if __name__ == "__main__":
 
     try:
         with open(f"{data_path}HiddenRoutes.json", "w") as file:
+            json.dump(json_data, file, indent=2)
+    except FileNotFoundError:
+        print("File not found")
+        exit(1)
+
+    ID = 0
+    actual_routes = []
+    # take the list of standard routes and for each of them generate a list of actual routes, from route_list
+    for i, route in enumerate(route_list):
+        num_of_driver = randint(1, MAX_DRIVERS_PER_SROUTE)
+        list_of_drivers = sample(drivers, num_of_driver)
+
+        for driver in list_of_drivers:
+            num_of_implementations = randint(1, MAX_IMPLEMENTATIONS_PER_DRIVER)
+            for _ in range(num_of_implementations):
+                # create a new actual route
+                act_route = generate_actual_route(driver.hidden_route, route, items, cities, f"a{ID}")
+                actual_routes.append(act_route)
+                ID += 1
+
+    # Serialize to JSON with the enhanced encoder
+    json_data = json.loads(json.dumps(actual_routes, cls=EnhancedJSONEncoder))
+
+    # create new file with the Driver objects and the hidden routes
+    try:
+        create_file = open(f"{data_path}ActualRoutes.json", "x")
+        create_file.close()
+    except FileExistsError:
+        print("File already exists")
+
+    try:
+        with open(f"{data_path}ActualRoutes.json", "w") as file:
             json.dump(json_data, file, indent=2)
     except FileNotFoundError:
         print("File not found")

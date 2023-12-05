@@ -40,5 +40,8 @@ max_items = 10 #maximum number of types of items per trip
 min_card=1
 max_card=50 #cardinality of a specified item in a trip
 
+MAX_DRIVERS_PER_SROUTE = 10 #maximum number of drivers per route
+MAX_IMPLEMENTATIONS_PER_DRIVER = 10 #maximum number of implementations per driver
+
 data_path = "../data/"
 dev_data_path = f"{data_path}/dev_data/"

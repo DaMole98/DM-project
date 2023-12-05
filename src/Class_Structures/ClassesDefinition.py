@@ -5,7 +5,8 @@ from dataclasses import dataclass
 class Trip:
     departure: str
     destination: str
-    merchandise: dict[str, int] #JUST FOR TYPE HINTING!! PYTHON IS DINAMICALLY TYPED. DONT MESS WITH TYPES PLS :)
+    merchandise: dict[str, int] #JUST FOR TYPE HINTING!! PYTHON IS DINAMICALLY TYPED. DONT MESS WITH TYPES PLS :) TODO: change from int to float
+
 
 @dataclass
 class StandardRoute:
