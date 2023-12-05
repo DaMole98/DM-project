@@ -19,13 +19,55 @@ epsilon = 0.05
 # definition of the function that generates the actual routes
 def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items, ID):
     """
-    **Generate an actual route from a hidden route and a standard route.**
-    :param hidden_route: 
-    :param std_route: 
-    :param list_of_cities: 
-    :param list_of_items: 
-    :param ID: 
-    :return: an actual route
+    Generate an actual route by combining information from a hidden route and a standard route.
+
+    :param hidden_route: A hidden route containing information about the expected route.
+    :type hidden_route: Route object
+
+    :param std_route: A standard route representing the baseline for the actual route.
+    :type std_route: Route object
+
+    :param list_of_cities: A list of cities that can be used for generating the route.
+    :type list_of_cities: List of strings
+
+    :param list_of_items: A list of items that may be transported in the route.
+    :type list_of_items: List of strings
+
+    :param ID: An identifier for the actual route.
+    :type ID: int or str
+
+    :return: An actual route based on modifications of the standard route and hidden route.
+    :rtype: ActualRoute object
+
+
+        **Algorithm Overview:**
+
+    1. **Initialization:**
+        - Initialize the lengths of the hidden and standard routes.\n
+
+    2. **ActualRoute Creation:**
+        - Create an `ActualRoute` object with the given ID and related IDs.\n
+
+    3. **Trip Modification Loop:**
+        - Iterate through each trip in the standard route up to the minimum of the hidden and standard route lengths:\n
+            a. **Departure City Determination:**
+                - Determine the new departure city based on random conditions.\n
+            b. **Destination City Determination:**
+                - Determine the new destination city based on random conditions.\n
+            c. **Merchandise Modification:**
+                - Modify the merchandise of the trip based on random conditions and the difference between hidden and standard route cardinalities.\n
+            d. **New Trip Creation:**
+                - Create a new trip with the determined parameters and append it to the actual route.\n
+
+    4. **Handling Unequal Route Lengths:**
+        - Handle cases where the hidden route is longer or shorter than the standard route:\n
+            a. **Hidden Route Longer:**
+                - If the hidden route is longer, create additional trips with modified parameters.\n
+            b. **Standard Route Longer:**
+                - If the standard route is longer, create additional trips with modified parameters based on hidden route items.\n
+
+    The algorithm incorporates randomness (coin tosses) and adjustable parameters (lambda_0, lambda_1, theta_0, theta_1, mu_0, epsilon)\n
+    to introduce variability in the generated actual route while considering information from both hidden and standard routes.\n
     """
     len_hr = hidden_route.length
     len_sr = len(std_route.route)
