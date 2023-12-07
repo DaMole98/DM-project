@@ -1,0 +1,680 @@
+[
+  {
+    "dr_id": "A",
+    "length": 0,
+    "route": []
+  },
+  {
+    "dr_id": "B",
+    "length": 4,
+    "route": [
+      {
+        "from": "Genoa",
+        "to": "Foggia",
+        "merchandise": {}
+      },
+      {
+        "from": "Padua",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Prato",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Taranto",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "C",
+    "length": 4,
+    "route": [
+      {
+        "from": "Naples",
+        "to": "Taranto",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Reggio Calabria",
+        "merchandise": {}
+      },
+      {
+        "from": "Florence",
+        "to": "Reggio Calabria",
+        "merchandise": {}
+      },
+      {
+        "from": "Reggio Calabria",
+        "to": "Reggio Calabria",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "D",
+    "length": 6,
+    "route": [
+      {
+        "from": "Reggio Emilia",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Salerno",
+        "to": "Rimini",
+        "merchandise": {}
+      },
+      {
+        "from": "Rimini",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Naples",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Trieste",
+        "to": "Cagliari",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "E",
+    "length": 5,
+    "route": [
+      {
+        "from": "Bari",
+        "to": "Mestre",
+        "merchandise": {}
+      },
+      {
+        "from": "Prato",
+        "to": "Verona",
+        "merchandise": {}
+      },
+      {
+        "from": "Salerno",
+        "to": "Cagliari",
+        "merchandise": {}
+      },
+      {
+        "from": "Verona",
+        "to": "Verona",
+        "merchandise": {}
+      },
+      {
+        "from": "Cagliari",
+        "to": "Perugia",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "F",
+    "length": 0,
+    "route": []
+  },
+  {
+    "dr_id": "G",
+    "length": 9,
+    "route": [
+      {
+        "from": "Salerno",
+        "to": "Trieste",
+        "merchandise": {}
+      },
+      {
+        "from": "Trieste",
+        "to": "Bari",
+        "merchandise": {}
+      },
+      {
+        "from": "Bari",
+        "to": "Livorno",
+        "merchandise": {}
+      },
+      {
+        "from": "Palermo",
+        "to": "Bologna",
+        "merchandise": {}
+      },
+      {
+        "from": "Bologna",
+        "to": "Modena",
+        "merchandise": {}
+      },
+      {
+        "from": "Livorno",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Bari",
+        "to": "Modena",
+        "merchandise": {}
+      },
+      {
+        "from": "Livorno",
+        "to": "Prato",
+        "merchandise": {}
+      },
+      {
+        "from": "Palermo",
+        "to": "Modena",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "H",
+    "length": 1,
+    "route": [
+      {
+        "from": "Reggio Emilia",
+        "to": "Catania",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "I",
+    "length": 5,
+    "route": [
+      {
+        "from": "Salerno",
+        "to": "Perugia",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Cagliari",
+        "merchandise": {}
+      },
+      {
+        "from": "Cagliari",
+        "to": "Rimini",
+        "merchandise": {}
+      },
+      {
+        "from": "Milan",
+        "to": "Milan",
+        "merchandise": {}
+      },
+      {
+        "from": "Rimini",
+        "to": "Salerno",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "J",
+    "length": 6,
+    "route": [
+      {
+        "from": "Milan",
+        "to": "Brescia",
+        "merchandise": {}
+      },
+      {
+        "from": "Bologna",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Modena",
+        "to": "Verona",
+        "merchandise": {}
+      },
+      {
+        "from": "Livorno",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Verona",
+        "to": "Verona",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "K",
+    "length": 6,
+    "route": [
+      {
+        "from": "Trieste",
+        "to": "Perugia",
+        "merchandise": {}
+      },
+      {
+        "from": "Milan",
+        "to": "Mestre",
+        "merchandise": {}
+      },
+      {
+        "from": "Naples",
+        "to": "Brescia",
+        "merchandise": {}
+      },
+      {
+        "from": "Rome",
+        "to": "Brescia",
+        "merchandise": {}
+      },
+      {
+        "from": "Verona",
+        "to": "Verona",
+        "merchandise": {}
+      },
+      {
+        "from": "Mestre",
+        "to": "Cagliari",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "L",
+    "length": 4,
+    "route": [
+      {
+        "from": "Brescia",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Reggio Calabria",
+        "to": "Catania",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Bologna",
+        "merchandise": {}
+      },
+      {
+        "from": "Parma",
+        "to": "Parma",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "M",
+    "length": 5,
+    "route": [
+      {
+        "from": "Catania",
+        "to": "Perugia",
+        "merchandise": {}
+      },
+      {
+        "from": "Bari",
+        "to": "Reggio Emilia",
+        "merchandise": {}
+      },
+      {
+        "from": "Turin",
+        "to": "Reggio Calabria",
+        "merchandise": {}
+      },
+      {
+        "from": "Reggio Emilia",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Livorno",
+        "to": "Reggio Emilia",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "N",
+    "length": 5,
+    "route": [
+      {
+        "from": "Naples",
+        "to": "Foggia",
+        "merchandise": {}
+      },
+      {
+        "from": "Verona",
+        "to": "Foggia",
+        "merchandise": {}
+      },
+      {
+        "from": "Palermo",
+        "to": "Foggia",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Salerno",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Foggia",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "O",
+    "length": 4,
+    "route": [
+      {
+        "from": "Padua",
+        "to": "Taranto",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Naples",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Palermo",
+        "to": "Mestre",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "P",
+    "length": 1,
+    "route": [
+      {
+        "from": "Mestre",
+        "to": "Rimini",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "Q",
+    "length": 4,
+    "route": [
+      {
+        "from": "Milan",
+        "to": "Prato",
+        "merchandise": {}
+      },
+      {
+        "from": "Genoa",
+        "to": "Rome",
+        "merchandise": {}
+      },
+      {
+        "from": "Rome",
+        "to": "Bologna",
+        "merchandise": {}
+      },
+      {
+        "from": "Florence",
+        "to": "Perugia",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "R",
+    "length": 2,
+    "route": [
+      {
+        "from": "Bari",
+        "to": "Salerno",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Florence",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "S",
+    "length": 10,
+    "route": [
+      {
+        "from": "Modena",
+        "to": "Perugia",
+        "merchandise": {}
+      },
+      {
+        "from": "Rimini",
+        "to": "Venice",
+        "merchandise": {}
+      },
+      {
+        "from": "Parma",
+        "to": "Foggia",
+        "merchandise": {}
+      },
+      {
+        "from": "Venice",
+        "to": "Milan",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Rome",
+        "to": "Milan",
+        "merchandise": {}
+      },
+      {
+        "from": "Naples",
+        "to": "Rome",
+        "merchandise": {}
+      },
+      {
+        "from": "Rome",
+        "to": "Milan",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Verona",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Rome",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "T",
+    "length": 2,
+    "route": [
+      {
+        "from": "Reggio Calabria",
+        "to": "Reggio Emilia",
+        "merchandise": {}
+      },
+      {
+        "from": "Trieste",
+        "to": "Trieste",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "U",
+    "length": 2,
+    "route": [
+      {
+        "from": "Trieste",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Modena",
+        "to": "Modena",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "V",
+    "length": 8,
+    "route": [
+      {
+        "from": "Salerno",
+        "to": "Livorno",
+        "merchandise": {}
+      },
+      {
+        "from": "Padua",
+        "to": "Catania",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Livorno",
+        "merchandise": {}
+      },
+      {
+        "from": "Parma",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Reggio Calabria",
+        "merchandise": {}
+      },
+      {
+        "from": "Livorno",
+        "to": "Cagliari",
+        "merchandise": {}
+      },
+      {
+        "from": "Parma",
+        "to": "Vicenza",
+        "merchandise": {}
+      },
+      {
+        "from": "Catania",
+        "to": "Padua",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "W",
+    "length": 6,
+    "route": [
+      {
+        "from": "Modena",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Mestre",
+        "merchandise": {}
+      },
+      {
+        "from": "Venice",
+        "to": "Foggia",
+        "merchandise": {}
+      },
+      {
+        "from": "Mestre",
+        "to": "Reggio Emilia",
+        "merchandise": {}
+      },
+      {
+        "from": "Foggia",
+        "to": "Cagliari",
+        "merchandise": {}
+      },
+      {
+        "from": "Bologna",
+        "to": "Brescia",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "X",
+    "length": 3,
+    "route": [
+      {
+        "from": "Modena",
+        "to": "Milan",
+        "merchandise": {}
+      },
+      {
+        "from": "Trieste",
+        "to": "Salerno",
+        "merchandise": {}
+      },
+      {
+        "from": "Salerno",
+        "to": "Mestre",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "Y",
+    "length": 3,
+    "route": [
+      {
+        "from": "Cagliari",
+        "to": "Genoa",
+        "merchandise": {}
+      },
+      {
+        "from": "Vicenza",
+        "to": "Naples",
+        "merchandise": {}
+      },
+      {
+        "from": "Naples",
+        "to": "Foggia",
+        "merchandise": {}
+      }
+    ]
+  },
+  {
+    "dr_id": "Z",
+    "length": 0,
+    "route": []
+  }
+]
