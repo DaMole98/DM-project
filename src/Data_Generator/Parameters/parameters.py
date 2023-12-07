@@ -28,11 +28,11 @@ def get_parameters():
     }
 
 
-act_routes_num = 100 #number of actual routes to be generated
-std_routes_num = 10 #number of routes to be generated
+act_routes_num = 300 #number of actual routes to be generated
+std_routes_num = 100 #number of routes to be generated
 
 min_trips = 1
-max_trips = 5 #bounds on the number of trips per route. Ensure that this value does not exceed hte number of cities minus one
+max_trips = 6 #bounds on the number of trips per route. Ensure that this value does not exceed hte number of cities minus one
                #(otherwise the same city will appear more times in a route. This could make sense in certain cases)
 min_items = 1
 max_items = 10 #maximum number of types of items per trip
@@ -43,5 +43,5 @@ max_card=50 #cardinality of a specified item in a trip
 MAX_DRIVERS_PER_SROUTE = 10 #maximum number of drivers per route
 MAX_IMPLEMENTATIONS_PER_DRIVER = 10 #maximum number of implementations per driver
 
-data_path = "../data/"
-dev_data_path = f"{data_path}/dev_data/"
+data_path = "../../data/"
+dev_data_path = f"{data_path}dev_data/"

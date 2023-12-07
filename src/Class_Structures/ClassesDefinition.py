@@ -10,11 +10,35 @@ class Trip:
 
 @dataclass
 class StandardRoute:
+    """
+    this class is used to represent the standard routes
+
+    Attributes
+    ----------
+    id : str
+        the id of the route
+    route : list[Trip]
+        the list of trips that compose the route
+    """
     id: str
     route: list[Trip]
 
 @dataclass
 class ActualRoute:
+    """
+    this class is used to represent the actual routes implemented by the drivers
+
+    Attributes
+    ----------
+    id : str
+        the id of the route
+    driver : str
+        the id of the driver
+    sroute : str
+        the id of the standard route
+    route : list[Trip]
+        the list of trips that compose the route
+    """
     id: str
     driver: str
     sroute: str
@@ -22,6 +46,18 @@ class ActualRoute:
 
 @dataclass
 class HiddenRoute:
+    """
+    this class is used to represent the hidden routes
+
+    Attributes
+    ----------
+    dr_id : str
+        the id of the driver
+    length : int
+        the length of the route
+    route : list[Trip]
+        the list of trips that compose the route
+    """
     dr_id: str
     length: int
     route: list[Trip]

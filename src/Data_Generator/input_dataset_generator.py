@@ -3,9 +3,9 @@ import json
 from random import randint, seed, sample
 
 from src.Class_Structures.ClassesDefinition import *
-from src.Parameters.parameters import *
-from src.actual_route_generator import generate_actual_route
-from src.hidden_route_generator import generate_hidden_routes
+from src.Data_Generator.Parameters.parameters import *
+from src.Data_Generator.actual_route_generator import generate_actual_route
+from src.Data_Generator.hidden_route_generator import generate_hidden_routes
 
 
 # overriding of the standard encoder in order to make it accept dataclasses
@@ -151,12 +151,19 @@ if __name__ == "__main__":
             num_of_implementations = randint(1, MAX_IMPLEMENTATIONS_PER_DRIVER)
             for _ in range(num_of_implementations):
                 # create a new actual route
-                act_route = generate_actual_route(driver.hidden_route, route, items, cities, f"a{ID}")
+                act_route = generate_actual_route(driver.hidden_route, route, cities, items, f"a{ID}")
                 actual_routes.append(act_route)
                 ID += 1
 
     # Serialize to JSON with the enhanced encoder
     json_data = json.loads(json.dumps(actual_routes, cls=EnhancedJSONEncoder))
+
+    # renaming the keys (cant do it in dataclass definition because the 'from' word clashes with the python keyword)
+    for route in json_data:
+        for trip in route['route']:
+            trip['from'] = trip.pop('departure')
+            trip['to'] = trip.pop('destination')
+            trip['merchandise'] = trip.pop('merchandise')
 
     # create new file with the Driver objects and the hidden routes
     try:

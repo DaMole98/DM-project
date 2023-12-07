@@ -2,7 +2,7 @@
 file containing the function that generates the actual routes
 '''
 from random import random
-import Class_Structures.ClassesDefinition as cd
+import src.Class_Structures.ClassesDefinition as cd
 
 # definition of some constants parameters
 lambda_0 = 0.5
@@ -73,7 +73,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
     len_sr = len(std_route.route)
 
 
-    actualRoute = cd.ActualRoute(ID, std_route.id, hidden_route.dr_id, [])
+    actualRoute = cd.ActualRoute(ID, hidden_route.dr_id,  std_route.id,[])
 
     # for each trip in the standard route till the minimum between the length of the hidden route and the length of the standard route
     for i in range(min (len_hr, len_sr)):
