@@ -1,15 +1,32 @@
+import dataclasses
+import json
 from dataclasses import dataclass
+from typing import List
+
+
+# overriding of the standard encoder in order to make it accept dataclasses
+class EnhancedJSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if dataclasses.is_dataclass(o):
+            return dataclasses.asdict(o)
+        return super().default(o)
 
 
 @dataclass
 class Trip:
     departure: str
     destination: str
-    merchandise: dict[str, int] #JUST FOR TYPE HINTING!! PYTHON IS DINAMICALLY TYPED. DONT MESS WITH TYPES PLS :) TODO: change from int to float
+    merchandise: dict[str, int]  # JUST FOR TYPE HINTING!! PYTHON IS DINAMICALLY TYPED. DONT MESS WITH TYPES PLS :) TODO: change from int to float
 
 
 @dataclass
-class StandardRoute:
+class Route:
+    id: str
+    route: list[Trip]
+
+
+@dataclass
+class StandardRoute(Route):
     """
     this class is used to represent the standard routes
 
@@ -20,11 +37,11 @@ class StandardRoute:
     route : list[Trip]
         the list of trips that compose the route
     """
-    id: str
-    route: list[Trip]
+
+
 
 @dataclass
-class ActualRoute:
+class ActualRoute(Route):
     """
     this class is used to represent the actual routes implemented by the drivers
 
@@ -39,13 +56,13 @@ class ActualRoute:
     route : list[Trip]
         the list of trips that compose the route
     """
-    id: str
     driver: str
     sroute: str
-    route: list[Trip]
+
+
 
 @dataclass
-class HiddenRoute:
+class HiddenRoute(Route):
     """
     this class is used to represent the hidden routes
 
@@ -54,15 +71,17 @@ class HiddenRoute:
     dr_id : str
         the id of the driver
     length : int
-        the length of the route
+        the g length of the route
     route : list[Trip]
         the list of trips that compose the route
     """
-    dr_id: str
+    driver_id: str
     length: int
-    route: list[Trip]
+
 
 @dataclass
 class Driver:
     id: str
+    standards: List[StandardRoute]
+    actuals: List[ActualRoute]
     hidden_route: HiddenRoute

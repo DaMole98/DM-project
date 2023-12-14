@@ -1,5 +1,3 @@
-import dataclasses
-import json
 from random import randint, seed, sample
 
 from src.Class_Structures.ClassesDefinition import *
@@ -8,13 +6,6 @@ from src.Data_Generator.actual_route_generator import generate_actual_route
 from src.Data_Generator.hidden_route_generator import generate_hidden_routes
 
 
-# overriding of the standard encoder in order to make it accept dataclasses
-class EnhancedJSONEncoder(json.JSONEncoder):
-        def default(self, o):
-            if dataclasses.is_dataclass(o):
-                return dataclasses.asdict(o)
-            return super().default(o)
-        
 
 '''
 generates driver preferences
@@ -82,7 +73,7 @@ if __name__ == "__main__":
 
 
     # Dump the modified data to a JSON file with indentation
-    with open(f"{data_path}StandardRoute.json", "w") as file:
+    with open(f"{data_path}standard.json", "w") as file:
         json.dump(json_data, file, indent=2)
 
     '''
@@ -115,7 +106,7 @@ if __name__ == "__main__":
 
     # transform the json data drivers to a list of Driver objects, so id: str, hidden_route: None4
 
-    drivers = [Driver(driver_id, None) for driver_id in drivers_json]
+    drivers = [Driver(driver_id, [], [], None) for driver_id in drivers_json]
 
     limit_trip =[min_trips, max_trips]
     limit_items = [min_items, max_items]
@@ -167,13 +158,13 @@ if __name__ == "__main__":
 
     # create new file with the Driver objects and the hidden routes
     try:
-        create_file = open(f"{data_path}ActualRoutes.json", "x")
+        create_file = open(f"{data_path}actual.json", "x")
         create_file.close()
     except FileExistsError:
         print("File already exists")
 
     try:
-        with open(f"{data_path}ActualRoutes.json", "w") as file:
+        with open(f"{data_path}actual.json", "w") as file:
             json.dump(json_data, file, indent=2)
     except FileNotFoundError:
         print("File not found")
