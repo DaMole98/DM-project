@@ -10,11 +10,19 @@ from random import randint, seed, sample
 
 DEBUG = False
 
+MIN_INCREMENT = 3
+MAX_INCREMENT = 10
+PERCENTAGE_INCREMENT = 0.0005
+
 from src.Class_Structures.ClassesDefinition import *
 from src.Data_Generator.Parameters.parameters import *
 
 # function that found the hidden route for a driver, given the actual routes and the standard routes he implemented
-def hidden_route_finder(std_routes, actual_routes, driver):
+class Threshold:
+    value: 50
+
+
+def hidden_route_finder(std_routes, actual_routes, driver, FACTORIAL_LIMIT=3):
     """
     This function finds the hidden route for a driver, given the actual routes and the standard routes he implemented.
 
@@ -49,10 +57,14 @@ def hidden_route_finder(std_routes, actual_routes, driver):
         - Create a probable trip (probable_trip) with the most frequent departure and destination cities.\n
 
     8. Determine Merchandise:
-        - Determine the merchandise associated with the probable trip (empty dictionary in this case).\n
+        - For each item in the first trip of each actual route:
+            - Create a dict (pr_merch) associating each item with the overall quantity of that item and the number of times it appears.\n
+            - Calculate the average quantity of each item.\n
+            - Round the average quantity to the nearest integer for practicality.\n
+            - Fill probable_trip with the merchandise.\n
 
     9. Build Hidden Route:
-        - Append the probable trip to the probable_hidden_route for each position in the route.\n
+        - Append the probable trip to the probable_hidden_route\n
 
     10. Return Result:
         - Return the probable_hidden_route as the output of the function.\n
@@ -135,27 +147,19 @@ def hidden_route_finder(std_routes, actual_routes, driver):
                 if route["route"][i]["to"] == dest_std:
                     flag_dest = True
 
-                if route["route"][i]["from"] in probable_from:
-                    if flag_dep:
-                        probable_from[route["route"][i]["from"]] += 0.3
-                    else:
-                        probable_from[route["route"][i]["from"]] += 1
+                    # Process "from" part
+                from_location = route["route"][i]["from"]
+                if from_location in probable_from:
+                    probable_from[from_location] += MIN_INCREMENT if flag_dep else ( MAX_INCREMENT + PERCENTAGE_INCREMENT * probable_from[from_location] )
                 else:
-                    if flag_dep:
-                        probable_from[route["route"][i]["from"]] = 0.3
-                    else:
-                        probable_from[route["route"][i]["from"]] = 1
+                    probable_from[from_location] = MIN_INCREMENT if flag_dep else MAX_INCREMENT
 
-                if route["route"][i]["to"] in probable_to:
-                    if flag_dest:
-                        probable_to[route["route"][i]["to"]] += 0.3
-                    else:
-                        probable_to[route["route"][i]["to"]] += 1
+                # Process "to" part
+                to_location = route["route"][i]["to"]
+                if to_location in probable_to:
+                    probable_to[to_location] += MIN_INCREMENT if flag_dest else (MAX_INCREMENT + PERCENTAGE_INCREMENT * probable_to[to_location])
                 else:
-                    if flag_dest:
-                        probable_to[route["route"][i]["to"]] = 0.3
-                    else:
-                        probable_to[route["route"][i]["to"]] = 1
+                    probable_to[to_location] = MIN_INCREMENT if flag_dest else MAX_INCREMENT
 
         pr_dep = {"city": "", "count": 0}
         pr_dest = {"city": "", "count": 0}
@@ -167,10 +171,43 @@ def hidden_route_finder(std_routes, actual_routes, driver):
             if probable_to[city] > pr_dest["count"] or pr_dest == "":
                 pr_dest = {"city": city, "count": probable_to[city]}
 
-        # create a trip object
+        # fill trip object with the most frequent departure and destination cities
         probable_trip.departure = pr_dep["city"]
         probable_trip.destination = pr_dest["city"]
-        probable_trip.merchandise = {}
+
+        pr_merch = {}
+
+        # create a dict associating each item with the overall quantity of that item and the number of times it appears
+        # a dict like "items": {"item1": {"avg": 2, "count": 3}, "item2": {"avg": 1, "count": 1}}
+        count = 0
+        for route in actual_routes:
+            if len(route["route"]) > i:
+                count += 1
+                for item in route["route"][i]["merchandise"]:
+                    pr_qty = 0
+                    if item in pr_merch:
+                        pr_merch[item]["avg"] += route["route"][i]["merchandise"][item]
+                        pr_merch[item]["count"] += 1
+                    else:
+                        pr_merch[item] = {"avg": route["route"][i]["merchandise"][item], "count": 1}
+
+        # calculate the average quantity of each item
+        for item in pr_merch:
+            pr_merch[item]["avg"] = pr_merch[item]["avg"] / pr_merch[item]["count"]
+            # round the average quantity to the nearest integer
+            if pr_merch[item]["avg"] - floor(pr_merch[item]["avg"]) >= 0.5:
+                pr_merch[item]["avg"] = floor(pr_merch[item]["avg"]) + 1
+            else:
+                pr_merch[item]["avg"] = floor(pr_merch[item]["avg"])
+
+        # fill trip object with the merchandise
+        fact = FACTORIAL_LIMIT
+
+        while len(probable_trip.merchandise) < 2 and fact > 1:
+            for item in pr_merch:
+                if pr_merch[item]["avg"] > 0 and pr_merch[item]["count"] > count / fact:
+                    probable_trip.merchandise[item] = pr_merch[item]["avg"]
+            fact += 1.3
 
         probable_hidden_route.route.append(probable_trip)
 

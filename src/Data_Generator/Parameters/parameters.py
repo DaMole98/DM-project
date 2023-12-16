@@ -29,7 +29,7 @@ def get_parameters():
 
 
 act_routes_num = 300 #number of actual routes to be generated
-std_routes_num = 100 #number of routes to be generated
+std_routes_num = 300 #number of routes to be generated
 
 min_trips = 1
 max_trips = 6 #bounds on the number of trips per route. Ensure that this value does not exceed hte number of cities minus one

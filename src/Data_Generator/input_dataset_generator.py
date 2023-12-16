@@ -151,7 +151,7 @@ if __name__ == "__main__":
             num_of_implementations = randint(1, MAX_IMPLEMENTATIONS_PER_DRIVER)
             for _ in range(num_of_implementations):
                 # create a new actual route
-                act_route = generate_actual_route(driver.hidden_route, route, cities, items, f"a{ID}")
+                act_route = generate_actual_route(driver.hidden_route, route, cities, items   , f"a{ID}")
                 actual_routes.append(act_route)
                 ID += 1
 
