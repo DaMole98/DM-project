@@ -49,19 +49,19 @@ def hidden_route_finder(std_routes, actual_routes, driver, FACTORIAL_LIMIT=3):
         - Create an instance of the HiddenRoute class (probable_hidden_route) with the driver's identifier and the probable length.\n
 
     6. Analyze Actual Routes:
-        - For each position (i) in the route:
-            - Analyze the first trip of each actual route.\n
+        - For each trip (i) in the route:
+            - Analyze the (i) trip of each actual route.\n
             - Find the most frequent departure (probable_from) and destination (probable_to) cities.\n
 
     7. Create Probable Trip:
         - Create a probable trip (probable_trip) with the most frequent departure and destination cities.\n
 
     8. Determine Merchandise:
-        - For each item in the first trip of each actual route:
+        - For each item in actual route:
             - Create a dict (pr_merch) associating each item with the overall quantity of that item and the number of times it appears.\n
             - Calculate the average quantity of each item.\n
             - Round the average quantity to the nearest integer for practicality.\n
-            - Fill probable_trip with the merchandise.\n
+            - If an item appears in more than some percentage of the actual routes, add it to the probable trip, in the average quantity.\n
 
     9. Build Hidden Route:
         - Append the probable trip to the probable_hidden_route\n
@@ -205,6 +205,8 @@ def hidden_route_finder(std_routes, actual_routes, driver, FACTORIAL_LIMIT=3):
 
         while len(probable_trip.merchandise) < 2 and fact > 1:
             for item in pr_merch:
+                # if an item appears in more than some percentage of the actual routes, add it to the probable trip, in the average quantity
+                # the percentage is determined by the fact variable that is decremented at each iteration till merchandise has cardinality at least 2
                 if pr_merch[item]["avg"] > 0 and pr_merch[item]["count"] > count / fact:
                     probable_trip.merchandise[item] = pr_merch[item]["avg"]
             fact += 1.3

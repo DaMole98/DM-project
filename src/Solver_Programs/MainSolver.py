@@ -11,10 +11,11 @@ from src.Class_Structures.ClassesDefinition import *
 from src.Data_Generator.Parameters.parameters import *
 from src.Data_Generator.input_dataset_generator import EnhancedJSONEncoder
 from src.Solver_Programs.HiddenRouteFinder import hidden_route_finder
+from src.Solver_Programs.recomendationUnit import find_best
 
 output_path = "./Output/"
 
-
+# TODO: check the name and the format of all file before handing in the project
 class EnhancedJSONEncoder(json.JSONEncoder):
     def default(self, o):
         if dataclasses.is_dataclass(o):
@@ -22,7 +23,7 @@ class EnhancedJSONEncoder(json.JSONEncoder):
         return super().default(o)
 
 
-if __name__ == "__main__":
+def perfectRoutesFinder():
     # set entropy to a number as desired to make the results reproducible
     entropy = os.urandom(128)
     seed(entropy)
@@ -81,8 +82,6 @@ if __name__ == "__main__":
         if hidden_route is not None:
             hidden_routes.append(hidden_route)
 
-
-
     # create a JSON file for the hidden routes called ProbableHiddenRoutes.json
     try:
         file = open(f"{output_path}ProbableHiddenRoutes.json", 'x')
@@ -101,7 +100,7 @@ if __name__ == "__main__":
             trip['merchandise'] = trip.pop('merchandise')
 
     # write the hidden routes to a json file
-    try :
+    try:
         with open(f"{output_path}ProbableHiddenRoutes.json", 'w') as file:
             json.dump(json_data, file, indent=2)
     except FileNotFoundError:
@@ -109,5 +108,10 @@ if __name__ == "__main__":
         sys.exit()
 
 
+DEBUG = False
 
-
+if __name__ == "__main__":
+    # perfectRoutesFinder()
+    if (DEBUG):
+        print("DEBUG is true, so we will find the best rist five routes from the original routes")
+    find_best(True)

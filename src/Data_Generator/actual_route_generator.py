@@ -5,12 +5,16 @@ from random import random
 import src.Class_Structures.ClassesDefinition as cd
 
 # definition of some constants parameters
+
+# parameters for the actual route generation in the first loop, index std == index hidden route
 lambda_0 = 0.5
 lambda_1 = 0.95
 
+# parameters for the actual route generation in the items loop
 theta_0 = 0.5
 theta_1 = 0.01
 
+# parameters for the actual route generation in the second loop, index std > index hidden route or index std < index hidden route
 mu_0 = 0.5
 mu_1 = 0.95
 
@@ -168,7 +172,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
                     new_merchandise = []
                     for item in hidden_route.route[i].merchandise:
                         new_item = hidden_route.route[i].merchandise[item]
-                        neighborhood_limit = random() * 2 * epsilon * new_item
+                        neighborhood_limit = random() * 2 * (epsilon+10) * new_item
                         # take a random number in range [ new_item - neighborhood_limit, new_item + neighborhood_limit ]
                         act_new_item = int(new_item - neighborhood_limit + random() * 2 * neighborhood_limit)
                         act_new_item = max(0, act_new_item)
