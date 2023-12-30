@@ -11,6 +11,7 @@ from src.Class_Structures.ClassesDefinition import *
 from src.Data_Generator.Parameters.parameters import *
 from src.Data_Generator.input_dataset_generator import EnhancedJSONEncoder
 from src.Solver_Programs.HiddenRouteFinder import hidden_route_finder
+from src.Solver_Programs.NewStdsGen import generate_new_std
 from src.Solver_Programs.recomendationUnit import find_best
 
 output_path = "./Output/"
@@ -114,4 +115,8 @@ if __name__ == "__main__":
     # perfectRoutesFinder()
     if (DEBUG):
         print("DEBUG is true, so we will find the best rist five routes from the original routes")
-    find_best(True)
+    find_best(False)
+    # take K and DEBUG as input
+    # K = int(input("K: "))
+    # DEBUG = bool(int(input("DEBUG: ")))
+    # generate_new_std(K, 0, DEBUG)

@@ -7,6 +7,22 @@ class Trip:
     destination: str
     merchandise: dict[str, int] #JUST FOR TYPE HINTING!! PYTHON IS DINAMICALLY TYPED. DONT MESS WITH TYPES PLS :) TODO: change from int to float
 
+    def __init__(self, departure, destination, merchandise):
+        self.departure = departure
+        self.destination = destination
+        try:
+            self.merchandise = {item: int(merchandise[item]) for item in merchandise}
+        except ValueError:
+            print("Error: merchandise quantities must be integers"
+                  f"({merchandise} is not a valid merchandise dictionary)")
+            exit(1)
+
+    def __str__(self):
+        return f"Trip({self.departure}, {self.destination}, {self.merchandise})"
+
+    def __getstate__(self):
+        return [self.departure, self.destination, self.merchandise]
+
 
 @dataclass
 class StandardRoute:
@@ -22,6 +38,10 @@ class StandardRoute:
     """
     id: str
     route: list[Trip]
+
+    def __init__(self, id, route):
+        self.id = id
+        self.route = route
 
 @dataclass
 class ActualRoute:

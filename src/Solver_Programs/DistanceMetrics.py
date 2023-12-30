@@ -57,24 +57,34 @@ def trip_distance(trip1, trip2):
     # create two Trip objects with the same departure and destination cities
     # the first trip has the items of trip1
     # the second trip has the items of trip2
+    # BASE CASES
+    # if a trip is none return MAX_MINIMAL_DISTANCE
+    if trip1 is None or trip2 is None:
+        return MAX_MINIMAL_DISTANCE
+
     Trips = []
+
 
     for trip in trip1, trip2:
         try:
-            Trips.append(Trip(trip["departure"], trip["destination"], trip["merchandise"]))
-        except KeyError:
-            Trips.append(Trip(trip["from"], trip["to"], trip["merchandise"]))
+            new_trip = Trip(trip.departure, trip.destination, trip.merchandise)
+        except AttributeError:
+            new_trip = Trip(trip["departure"], trip["destination"], trip["merchandise"])
+        Trips.append(new_trip)
 
 
     trip1 = Trips[0]
     trip2 = Trips[1]
 
-    # Create sets for the (departure, destination) pairs
-    set1 = set((trip1.departure, trip1.destination))
-    set2 = set((trip2.departure, trip2.destination))
+    # Create sets for the (departure, destination) pairs as single elements
+    set1 = set([(trip1.departure, trip1.destination)])
+    set2 = set([(trip2.departure, trip2.destination)])
 
-    # Calculate Jaccard distance
-    jaccard_distance = 1 - len(set1.intersection(set2)) / len(set1.union(set2))
+    # Calculate Jaccard similarity
+    jaccard_similarity = len(set1.intersection(set2)) / len(set1.union(set2))
+
+    jaccard_distance = 1 - jaccard_similarity
+
     if DEBUG:
         print(f"Jaccard distance: {jaccard_distance}")
 
@@ -102,9 +112,9 @@ def trip_distance(trip1, trip2):
 
     cosine_sim = similarity_matrix[0, 0]
 
-    if cosine_sim < 0:
+    if cosine_sim < 0.001:
         cosine_sim = 0.0
-    if cosine_sim > 1:
+    if cosine_sim > 0.999:
         cosine_sim = 1.0
 
     if DEBUG:
@@ -112,6 +122,9 @@ def trip_distance(trip1, trip2):
 
     # Since you want distance, subtract from 1 (cosine distance is 1 - cosine similarity)
     cosine_distance = 1 - cosine_sim
+    #
+    # print(f"Cosine distance: {cosine_distance}")
+    # print(f"Jaccard distance: {jaccard_distance}")
 
     # the distance between the two trips is calculated as a linear combination in range [0,10]
     # the linear combination is calculated as follows:
@@ -155,19 +168,36 @@ def route_distance(route1, route2):
     - https://en.wikipedia.org/wiki/Cosine_similarity\n
     """
 
+    # initialize the total distance to 0
     tot_dist = 0
 
-    # for each trip in route1 confront it with the corresponding neighboorhood in route2
-    # take the minimum distance between the two trips and add it to the total distance
-    for index in range(0,len(route1)-1):
-        neig_list = floor(len(route2)/FACTORIAL_NEIGHBORHOOD)
-        if neig_list == 0:
-            neig_list = 1
+    if DEBUG:
+        print(f"Route1: {route1}")
+        print(f"Route2: {route2}")
+
+    # BASE CASES
+    # if both routes are empty return 0
+    # if one of the two routes is empty return MAX_MINIMAL_DISTANCE
+    if len(route1) == 0 and len(route2) == 0:
+        return 0
+    if (len(route1) == 0 and len(route2) != 0) or (len(route1) != 0 and len(route2) == 0):
+       # print(len(route1), len(route2))
+        return MAX_MINIMAL_DISTANCE
+
+    # calculate the neighborhood of each trip in route1
+    # the neighborhood of a trip is a list of trips in route2 that are at most FACTORIAL_NEIGHBORHOOD positions away from the trip
+    neig_list = floor(len(route2) / FACTORIAL_NEIGHBORHOOD)  # the neighboorhood is a fraction of the route2 that contains the trips to confront with the trip in route1 at each index
+    if neig_list == 0:
+        neig_list = 1
+
+    # for each trip in route1 confront it with the corresponding neighborhoods in route2
+    # take the distance between trip in route1 and  a trip in route2 that is in the neighborhood of the trip in route1 and minimize it
+    for index in range(0, len(route1)):
         min_dist = MAX_MINIMAL_DISTANCE
         if DEBUG:
             print(f"Trip {index} of route1")
         if index - neig_list < len(route2):
-            for i in range(max(0, index-neig_list), min(len(route2)-1, index+neig_list)):
+            for i in range(max(0, index-neig_list), min(len(route2), index+neig_list)):
                 try:
                     local_dist = trip_distance(route1[index], route2[i])
                 except IndexError:
@@ -185,9 +215,16 @@ def route_distance(route1, route2):
 
     # return the average distance between the two routes
     try:
-        return tot_dist / len(route1)
+        ret = tot_dist / len(route1)
+        # if ret == 0:
+        #     print(f"Route1: {route1}")
+        #     print(f"Route2: {route2}\n\n")
+        return ret
     except ZeroDivisionError:
         return MAX_MINIMAL_DISTANCE
+
+def getRouteDistance(route1, route2):
+    return max(route_distance(route1, route2), route_distance(route2, route1))
 
 def CheatDistance():
     # calculate the distance between the route in hidden route and the route in probable_hidden_route in average
