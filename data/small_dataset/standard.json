@@ -1,0 +1,242 @@
+[
+  {
+    "id": "s0",
+    "route": [
+      {
+        "from": "Catania",
+        "to": "Trieste",
+        "merchandise": {
+          "Toilet Paper": 1,
+          "Potatoes": 13,
+          "Lemons": 12,
+          "Avocado": 15,
+          "Shampoo": 8
+        }
+      },
+      {
+        "from": "Trieste",
+        "to": "Cagliari",
+        "merchandise": {
+          "Tissues": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1",
+    "route": [
+      {
+        "from": "Reggio Calabria",
+        "to": "Reggio Emilia",
+        "merchandise": {
+          "Apples": 10,
+          "Toothpaste": 14
+        }
+      },
+      {
+        "from": "Reggio Emilia",
+        "to": "Brescia",
+        "merchandise": {
+          "Oranges": 11
+        }
+      },
+      {
+        "from": "Brescia",
+        "to": "Taranto",
+        "merchandise": {
+          "Mayonnaise": 3,
+          "Soda": 11,
+          "Rice": 15
+        }
+      },
+      {
+        "from": "Taranto",
+        "to": "Modena",
+        "merchandise": {
+          "Ketchup": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "s2",
+    "route": [
+      {
+        "from": "Florence",
+        "to": "Bologna",
+        "merchandise": {
+          "Apples": 10,
+          "Sugar": 13,
+          "Tomatoes": 11,
+          "Mustard": 1,
+          "Tissues": 8
+        }
+      },
+      {
+        "from": "Bologna",
+        "to": "Vicenza",
+        "merchandise": {
+          "Potatoes": 3
+        }
+      },
+      {
+        "from": "Vicenza",
+        "to": "Catania",
+        "merchandise": {
+          "Potatoes": 11,
+          "Onions": 11
+        }
+      },
+      {
+        "from": "Catania",
+        "to": "Palermo",
+        "merchandise": {
+          "Paper Towels": 15
+        }
+      }
+    ]
+  },
+  {
+    "id": "s3",
+    "route": [
+      {
+        "from": "Vicenza",
+        "to": "Prato",
+        "merchandise": {
+          "Oranges": 3
+        }
+      },
+      {
+        "from": "Prato",
+        "to": "Cagliari",
+        "merchandise": {
+          "Lemons": 14,
+          "Toothpaste": 1,
+          "Pickles": 12,
+          "Soda": 13
+        }
+      },
+      {
+        "from": "Cagliari",
+        "to": "Bologna",
+        "merchandise": {
+          "Pens": 13
+        }
+      }
+    ]
+  },
+  {
+    "id": "s4",
+    "route": [
+      {
+        "from": "Modena",
+        "to": "Verona",
+        "merchandise": {
+          "Milk": 14,
+          "Mayonnaise": 13
+        }
+      },
+      {
+        "from": "Verona",
+        "to": "Mestre",
+        "merchandise": {
+          "Beer": 15
+        }
+      }
+    ]
+  },
+  {
+    "id": "s5",
+    "route": [
+      {
+        "from": "Reggio Emilia",
+        "to": "Vicenza",
+        "merchandise": {
+          "Olive Oil": 7,
+          "Shampoo": 13,
+          "Onions": 8,
+          "Potatoes": 6
+        }
+      },
+      {
+        "from": "Vicenza",
+        "to": "Rome",
+        "merchandise": {
+          "Beef": 15,
+          "Soda": 7,
+          "Bread": 3,
+          "Milk": 13,
+          "Bananas": 15
+        }
+      }
+    ]
+  },
+  {
+    "id": "s6",
+    "route": [
+      {
+        "from": "Catania",
+        "to": "Perugia",
+        "merchandise": {
+          "Bananas": 14,
+          "Potatoes": 13,
+          "Rice": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "s7",
+    "route": [
+      {
+        "from": "Salerno",
+        "to": "Bologna",
+        "merchandise": {
+          "Soap": 14,
+          "Ketchup": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "s8",
+    "route": [
+      {
+        "from": "Genoa",
+        "to": "Bari",
+        "merchandise": {
+          "Salt": 9,
+          "Napkins": 5,
+          "Garlic": 10
+        }
+      },
+      {
+        "from": "Bari",
+        "to": "Prato",
+        "merchandise": {
+          "Coffee": 1,
+          "Mayonnaise": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": "s9",
+    "route": [
+      {
+        "from": "Prato",
+        "to": "Naples",
+        "merchandise": {
+          "Coffee": 13
+        }
+      },
+      {
+        "from": "Naples",
+        "to": "Bari",
+        "merchandise": {
+          "Spinach": 10
+        }
+      }
+    ]
+  }
+]

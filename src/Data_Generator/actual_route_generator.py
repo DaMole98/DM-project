@@ -22,11 +22,11 @@ def get_probability_parameters():
         "lambda_1": lambda_1,
         "theta_0": theta_0,
         "theta_1": theta_1,
-        "mu_0": mu_0,
-        "mu_1": mu_1,
+        "mu_00": mu_00,
+        "mu_01": mu_01,
         "epsilon": epsilon
     }
-
+DEBUG = True
 
 # definition of some constants parameters
 
@@ -74,19 +74,6 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
     :type hidden_route: Route object
 
     :param std_route: A standard route representing the baseline for the actual route.
-    :type std_route: Route object
-
-    :param list_of_cities: A list of cities that can be used for generating the route.
-    :type list_of_cities: List of strings
-
-    :param list_of_items: A list of items that may be transported in the route.
-    :type list_of_items: List of strings
-
-    :param ID: An identifier for the actual route.
-    :type ID: int or str
-
-    :return: An actual route based on modifications of the standard route and hidden route.
-    :rtype: ActualRoute object
 
 
         **Algorithm Overview:**
@@ -121,21 +108,29 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
     len_hr = hidden_route.length
     len_sr = len(std_route.route)
 
+    # catch exception if the hidden route is empty or the standard route is empty
+    if len_hr == 0 or len_sr == 0:
+        return None
+
 
     actualRoute = cd.ActualRoute(ID, hidden_route.dr_id,  std_route.id,[])
 
     # for each trip in the standard route till the minimum between the length of the hidden route and the length of the standard route
     for i in range(min (len_hr, len_sr)):
-        new_departure = std_route.route[i].departure
-        # toss a coin in range [0,1] and check if it is less than lambda_0
-        if random() < lambda_0:
-            # toss a coin in range [0,1] and check if it is less than lambda_1
-            if random() < lambda_1:
-                # if yes, then the departure city is the same as the one in the hidden route
-                new_departure = hidden_route.route[i].departure
-            else:
-                # if no, then the departure city is a random city in the list of cities
-                new_departure = list_of_cities[int(random() * len(list_of_cities))]
+        if i == 0:
+            new_departure = std_route.route[i].departure
+            # toss a coin in range [0,1] and check if it is less than lambda_0
+            if random() < lambda_0:
+                # toss a coin in range [0,1] and check if it is less than lambda_1
+                if random() < lambda_1:
+                    # if yes, then the departure city is the same as the one in the hidden route
+                    new_departure = hidden_route.route[i].departure
+                else:
+                    # if no, then the departure city is a random city in the list of cities
+                    new_departure = list_of_cities[int(random() * len(list_of_cities))]
+        else:
+            # the departure city is the same as the destination city of the previous trip
+            new_departure = actualRoute.route[i-1].destination
 
         new_destination = std_route.route[i].destination
         # toss a coin in range [0,1] and check if it is less than theta_0
@@ -201,19 +196,37 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
         actualRoute.route.append(new_trip)
 
     if len_hr > len_sr:
-        for i in range(len_sr, len_hr - len_sr):
-            # if the hidden route is longer than the standard route, toss a coin in range [0,1] and check if it is less than mu_0
+        index = len_sr - 1
+        for i in range(len_sr - 1, len_hr - len_sr):
+            # print (i, len_sr)
+            # if the hidden route is longer than the standard route, toss a coin in range [0,1] and check if it is less than mu_00 to add a trip
             if random() < mu_00:
-                new_departure = hidden_route.route[i].departure
-                # toss a coin in range [0,1] and check if it is less than mu_0
-                if random() < mu_01:
-                    new_departure = list_of_cities[int(random() * len(list_of_cities))]
+                if i == 0:
+                    new_departure = hidden_route.route[i].departure
+                    # toss a coin in range [0,1] and check if it is less than mu_0
+                    if random() < mu_01:
+                        new_departure = list_of_cities[int(random() * len(list_of_cities))]
+                else:
+                    # the departure city is the same as the destination city of the previous trip
+                    try:
+                        new_departure = actualRoute.route[len(actualRoute.route) - 1].destination
+                    except IndexError:
+                        print("Index error")
+                        print(actualRoute.route)
+                        print(hidden_route.route)
+                        print(std_route.route)
+                        print("i = ", i)
+                        print("len_sr = ", len_sr)
+                        print("len_hr = ", len_hr)
+                        print("len(actualRoute.route) = ", len(actualRoute.route))
+                        exit(1)
 
                 new_destination = hidden_route.route[i].destination
                 # toss a coin in range [0,1] and check if it is less than mu_0
                 if random() < mu_01:
                     new_destination = list_of_cities[int(random() * len(list_of_cities))]
 
+                index += 1
                 # take all the items in the hidden route and modify their cardinality in neighborhood of the hidden route items cardinality
 
                 new_merchandise = []
@@ -223,7 +236,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
                     # take a random number in range [ new_item - neighborhood_limit, new_item + neighborhood_limit ]
                     act_new_item = int(new_item - neighborhood_limit + random() * 2 * neighborhood_limit)
                     act_new_item = max(0, act_new_item)
-                    if  new_item > 0:
+                    if new_item > 0:
                         new_merchandise.append((item, act_new_item))
 
                 for item in list_of_items:
@@ -239,23 +252,29 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
 
                 # append the new trip to the actual route
                 actualRoute.route.append(new_trip)
+
     elif len_hr < len_sr:
-        for i in range(len_hr, len_sr - len_hr):
-            if random() < mu_0:
-                new_departure = std_route.route[i].departure
-
+        index = len_hr - 1
+        for i in range(len_hr - 1 , len_sr - len_hr):
+            if random() < mu_00:
                 index = i % len_hr
+                if i == 0:
+                    new_departure = std_route.route[i].departure
 
-                # toss a coin in range [0,1] and check if it is less than lambda_0
-                if random() < lambda_0:
-                    # toss a coin in range [0,1] and check if it is less than lambda_1
-                    if random() < lambda_1:
-                        # if yes, then the departure city is the same as the one in the hidden route
-                        # take i module len_hr to avoid index out of range
-                        new_departure = hidden_route.route[index].departure
-                    else:
-                        # if no, then the departure city is a random city in the list of cities
-                        new_departure = list_of_cities[int(random() * len(list_of_cities))]
+
+                    # toss a coin in range [0,1] and check if it is less than lambda_0
+                    if random() < lambda_0:
+                        # toss a coin in range [0,1] and check if it is less than lambda_1
+                        if random() < lambda_1:
+                            # if yes, then the departure city is the same as the one in the hidden route
+                            # take i module len_hr to avoid index out of range
+                            new_departure = hidden_route.route[index].departure
+                        else:
+                            # if no, then the departure city is a random city in the list of cities
+                            new_departure = list_of_cities[int(random() * len(list_of_cities))]
+                else:
+                    # the departure city is the same as the destination city of the previous trip
+                    new_departure = actualRoute.route[len(actualRoute.route) - 1].destination
 
                 new_destination = std_route.route[i].destination
                 # toss a coin in range [0,1] and check if it is less than lambda_0
