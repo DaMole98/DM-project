@@ -14,7 +14,9 @@ class EnhancedJSONEncoder(json.JSONEncoder):
             if dataclasses.is_dataclass(o):
                 return dataclasses.asdict(o)
             return super().default(o)
-        
+
+
+DEBUG = True
 
 '''
 generates driver preferences
@@ -55,6 +57,8 @@ if __name__ == "__main__":
     create random standard routes (generate standard.json)
     '''
 
+    size_dataset += "_dataset"
+
     route_list =[]
     for rt in range(std_routes_num):
         trip_number = randint(min_trips, max_trips)
@@ -63,7 +67,7 @@ if __name__ == "__main__":
         trip_list = []
         for trp in range(trip_number):
             item_types = sample(items, randint(min_items, max_items))
-            merch = {item : randint(min_card, max_card) for item in item_types} #generation of the merchandise of a trip
+            merch = {item: randint(min_card, max_card) for item in item_types} #generation of the merchandise of a trip
             trip_list.append(Trip(route_cities[trp], route_cities[trp+1], merch))
 
         
@@ -81,16 +85,20 @@ if __name__ == "__main__":
             trip['merchandise'] = trip.pop('merchandise')
 
 
-    # Dump the modified data to a JSON file with indentation
-    with open(f"{data_path}StandardRoute.json", "w") as file:
-        json.dump(json_data, file, indent=2)
+    try:
+        # Dump the modified data to a JSON file with indentation
+        with open(f"{data_path}/{size_dataset}/standard.json", "w") as file:
+            json.dump(json_data, file, indent=2)
+    except FileNotFoundError:
+        print("File not found")
+        exit(1)
+
+    if DEBUG:
+        print("standard.json generated")
 
     '''
     Generate the actual.json from the standard.json generated above
     '''
-    #load drivers
-    with open(f"{dev_data_path}drivers.json", 'r') as file:
-        drivers_json = json.load(file)
 
     '''
     every route implementation has a (high) probability of being mutated with respect to the original standard route.
@@ -114,10 +122,22 @@ if __name__ == "__main__":
     #     json.dump(drivers_preferences, file, indent=2)
 
     # transform the json data drivers to a list of Driver objects, so id: str, hidden_route: None4
+    drivers= []
+    for i in range(1, num_drivers):
+        # create a new driver object with id = (A + (i%26) ) * (i//26)
+        id = chr(ord('A') + (i % 26))
+        if i // 26 > 0:
+            id = chr(id) * (i // 26)
+        if DEBUG:
+            print(f"driver {id} generated")
+        new_driver = Driver(id, None)
+        drivers.append(new_driver)
 
-    drivers = [Driver(driver_id, None) for driver_id in drivers_json]
+    if DEBUG:
+        print("drivers generated")
+        print(drivers)
 
-    limit_trip =[min_trips, max_trips]
+    limit_trip = [min_trips, max_trips]
     limit_items = [min_items, max_items]
     limit_card = [min_card, max_card]
 
@@ -128,13 +148,13 @@ if __name__ == "__main__":
 
     # create new file with the Driver objects and the hidden routes
     try:
-        create_file = open(f"{data_path}HiddenRoutes.json", "x")
+        create_file = open(f"{data_path}/{size_dataset}/HiddenRoutes.json", "x")
         create_file.close()
     except FileExistsError:
         pass
 
     try:
-        with open(f"{data_path}HiddenRoutes.json", "w") as file:
+        with open(f"{data_path}/{size_dataset}/HiddenRoutes.json", "w") as file:
             json.dump(json_data, file, indent=2)
     except FileNotFoundError:
         print("File not found")
@@ -142,21 +162,26 @@ if __name__ == "__main__":
 
     ID = 0
     actual_routes = []
-    # take the list of standard routes and for each of them generate a list of actual routes, from route_list
-    for i, route in enumerate(route_list):
-        num_of_driver = randint(1, MAX_DRIVERS_PER_SROUTE)
-        list_of_drivers = sample(drivers, num_of_driver)
 
-        for driver in list_of_drivers:
+    for driver in drivers:
+        # take a sample of std_routes_num standard routes
+        num_of_routes = randint(1, MAX_STD_ROUTE_PER_DRIVER)
+        sroutes = sample(route_list, num_of_routes)
+
+        # for each standard route, generate a random number of implementations
+        for sroute in sroutes:
             num_of_implementations = randint(1, MAX_IMPLEMENTATIONS_PER_DRIVER)
             for _ in range(num_of_implementations):
-                # create a new actual route
-                act_route = generate_actual_route(driver.hidden_route, route, cities, items   , f"a{ID}")
-                actual_routes.append(act_route)
+                # generate an actual route from the standard route
+                route = generate_actual_route(driver.hidden_route,sroute, cities, items, driver.id)
+                new_actual_route = ActualRoute(f"a{ID}", driver.id, sroute.id, route.route)
+                actual_routes.append(new_actual_route)
                 ID += 1
+
 
     # Serialize to JSON with the enhanced encoder
     json_data = json.loads(json.dumps(actual_routes, cls=EnhancedJSONEncoder))
+
 
     # renaming the keys (cant do it in dataclass definition because the 'from' word clashes with the python keyword)
     for route in json_data:
@@ -167,14 +192,37 @@ if __name__ == "__main__":
 
     # create new file with the Driver objects and the hidden routes
     try:
-        create_file = open(f"{data_path}ActualRoutes.json", "x")
+        create_file = open(f"{data_path}/{size_dataset}/actual.json", "x")
         create_file.close()
     except FileExistsError:
         print("File already exists")
 
     try:
-        with open(f"{data_path}ActualRoutes.json", "w") as file:
+        with open(f"{data_path}/{size_dataset}/actual.json", "w") as file:
             json.dump(json_data, file, indent=2)
+    except FileNotFoundError:
+        print("File not found")
+        exit(1)
+
+    #get the parameters of the problem
+    params = get_parameters()
+
+
+    # also print the length actual_routes_num and std_routes_num in the same file
+    params["actual_routes_num"] = len(actual_routes)
+    params["std_routes_num"] = len(route_list)
+
+    # print the parameters of the problem in a json file in the data folder
+    try:
+        create_file = open(f"{data_path}/{size_dataset}/parameters.json", "x")
+        create_file.close()
+    except FileExistsError:
+        pass
+
+
+    try:
+        with open(f"{data_path}/{size_dataset}/parameters.json", "w") as file:
+            json.dump(params, file, indent=2)
     except FileNotFoundError:
         print("File not found")
         exit(1)

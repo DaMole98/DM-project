@@ -115,8 +115,8 @@ if __name__ == "__main__":
     # perfectRoutesFinder()
     if (DEBUG):
         print("DEBUG is true, so we will find the best rist five routes from the original routes")
-    find_best(False)
+    #find_best(False)
     # take K and DEBUG as input
-    # K = int(input("K: "))
-    # DEBUG = bool(int(input("DEBUG: ")))
-    # generate_new_std(K, 0, DEBUG)
+    K = int(input("K: "))
+    DEBUG = bool(int(input("DEBUG: ")))
+    generate_new_std(K, 1, DEBUG)

@@ -24,24 +24,33 @@ def get_parameters():
         "min_card": min_card,
         "max_card": max_card,
         "data_path": data_path,
-        "dev_data_path": dev_data_path
+        "dev_data_path": dev_data_path,
+        "num_drivers": num_drivers,
+        "MAX_STD_ROUTE_PER_DRIVER": MAX_STD_ROUTE_PER_DRIVER,
+        "MAX_IMPLEMENTATIONS_PER_DRIVER": MAX_IMPLEMENTATIONS_PER_DRIVER,
+        "size_dataset": size_dataset,
     }
 
 
-act_routes_num = 300 #number of actual routes to be generated
-std_routes_num = 300 #number of routes to be generated
+act_routes_num = 50 #number of actual routes to be generated
+std_routes_num = 10 #number of routes to be generated
 
 min_trips = 1
-max_trips = 6 #bounds on the number of trips per route. Ensure that this value does not exceed hte number of cities minus one
+max_trips = 4 #bounds on the number of trips per route. Ensure that this value does not exceed hte number of cities minus one
                #(otherwise the same city will appear more times in a route. This could make sense in certain cases)
 min_items = 1
-max_items = 10 #maximum number of types of items per trip
+max_items = 5 #maximum number of types of items per trip
 
-min_card=1
-max_card=50 #cardinality of a specified item in a trip
+min_card = 1
+max_card = 15 #cardinality of a specified item in a trip
 
-MAX_DRIVERS_PER_SROUTE = 10 #maximum number of drivers per route
-MAX_IMPLEMENTATIONS_PER_DRIVER = 10 #maximum number of implementations per driver
+MAX_DRIVERS_PER_SROUTE = 5 #maximum number of drivers per route
+MAX_IMPLEMENTATIONS_PER_DRIVER = 5 #maximum number of implementations per driver
+
+MAX_STD_ROUTE_PER_DRIVER = 5 #number of standard routes implemented by a driver
+
+num_drivers = 10 #number of drivers to be generated
+size_dataset = "small" #size of the dataset to be generated. It can be "small", "medium" or "large"
 
 data_path = "../../data/"
 dev_data_path = f"{data_path}dev_data/"

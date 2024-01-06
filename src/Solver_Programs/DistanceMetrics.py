@@ -10,12 +10,12 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 output_path = "./Output/"
 
-MAX_MINIMAL_DISTANCE = 10
+MAX_MINIMAL_DISTANCE = 1.
 FACTORIAL_NEIGHBORHOOD = 5
 DEBUG = False
 DEBUG_2 = False
 
-from math import floor
+from math import floor, exp
 from random import randint, seed, sample
 
 from src.Class_Structures.ClassesDefinition import *
@@ -130,7 +130,11 @@ def trip_distance(trip1, trip2):
     # the linear combination is calculated as follows:
     # 0.5 * Jaccard similarity + 0.5 * cosine distance
     # the result is then multiplied by 10 to obtain a value in range [0,10]
-    distance = (0.5 * jaccard_distance + 0.5 * cosine_distance) * 10
+    LINEAR_COMBINATION = False
+    if LINEAR_COMBINATION:
+        distance = 0.5 * jaccard_distance + 0.5 * cosine_distance
+    else:
+        distance = ( exp(jaccard_distance) + exp(cosine_distance) - 2) / (2*exp(1) - 2 )
 
     # round distance to the 4 decimal digits
     distance = round(distance, 4)
