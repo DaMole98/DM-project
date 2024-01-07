@@ -11,6 +11,6 @@
   "MAX_STD_ROUTE_PER_DRIVER": 5,
   "MAX_IMPLEMENTATIONS_PER_DRIVER": 5,
   "size_dataset": "small",
-  "actual_routes_num": 78,
+  "actual_routes_num": 68,
   "std_routes_num": 10
 }

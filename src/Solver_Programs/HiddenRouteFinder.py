@@ -120,7 +120,7 @@ def hidden_route_finder(std_routes, actual_routes, driver, FACTORIAL_LIMIT=3):
 
 
     # create a hidden route object
-    probable_hidden_route = HiddenRoute(driver, probable_length, [])
+    probable_hidden_route = HiddenRoute(driver,  [])
     for i in range(0, probable_length):
         probable_trip = Trip("", "", {})
 

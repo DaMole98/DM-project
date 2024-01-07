@@ -1,6 +1,6 @@
 import dataclasses
 import json
-from random import randint, seed, sample
+from random import randint, seed, sample, shuffle
 
 from src.Class_Structures.ClassesDefinition import *
 from src.Data_Generator.Parameters.parameters import *
@@ -47,6 +47,10 @@ if __name__ == "__main__":
     entropy = os.urandom(128) # set entropy to a number as desired to make the results reproducible
     seed(entropy)
 
+    # start timer
+    import time
+    start = time.time()
+
     with open(f"{dev_data_path}cities.json", 'r') as file:
         cities = json.load(file)
 
@@ -59,19 +63,32 @@ if __name__ == "__main__":
 
     size_dataset += "_dataset"
 
+    if DEBUG:
+        print(f"Generating {size_dataset}...")
+
     route_list =[]
     for rt in range(std_routes_num):
         trip_number = randint(min_trips, max_trips)
-        route_cities = sample(cities, trip_number + 1) # cities on the route
+        route_cities = sample(cities, min(len(cities),trip_number + 1)) # cities on the route
 
         trip_list = []
         for trp in range(trip_number):
-            item_types = sample(items, randint(min_items, max_items))
+            try:
+                item_types = sample(items, randint(min_items, max_items))
+            except ValueError:
+                print("The number of items is greater than the number of items in the dataset")
+                exit(1)
             merch = {item: randint(min_card, max_card) for item in item_types} #generation of the merchandise of a trip
-            trip_list.append(Trip(route_cities[trp], route_cities[trp+1], merch))
+            trip_list.append(Trip(route_cities[(trp%len(route_cities))], route_cities[(trp+1)%len(cities)], merch))
+            if trp %len(route_cities) == 0:
+                shuffle(route_cities)
 
         
         route_list.append(StandardRoute(f"s{rt}", trip_list))
+
+    if DEBUG:
+        time_flag = time.time()
+        print("standard routes generated in time: ", time_flag - start)
 
 
     # Serialize to JSON with the enhanced encoder
@@ -90,11 +107,13 @@ if __name__ == "__main__":
         with open(f"{data_path}/{size_dataset}/standard.json", "w") as file:
             json.dump(json_data, file, indent=2)
     except FileNotFoundError:
-        print("File not found")
+        print("File not found"+f"{data_path}/{size_dataset}/standard.json")
         exit(1)
 
     if DEBUG:
-        print("standard.json generated")
+        time_flag_tmp = time.time()
+        print("standard.json generated in time: ", time_flag_tmp - time_flag)
+        time_flag = time_flag_tmp
 
     '''
     Generate the actual.json from the standard.json generated above
@@ -127,7 +146,7 @@ if __name__ == "__main__":
         # create a new driver object with id = (A + (i%26) ) * (i//26)
         id = chr(ord('A') + (i % 26))
         if i // 26 > 0:
-            id = chr(id) * (i // 26)
+            id = chr(ord(id)) * (i // 26)
         if DEBUG:
             print(f"driver {id} generated")
         new_driver = Driver(id, None)
@@ -141,7 +160,12 @@ if __name__ == "__main__":
     limit_items = [min_items, max_items]
     limit_card = [min_card, max_card]
 
-    hidden_routes = generate_hidden_routes(drivers, cities, items, limit_items, limit_trip, limit_card)
+    hidden_routes = generate_hidden_routes(drivers, cities, items, limit_trip, limit_items, limit_card)
+
+    if DEBUG:
+        time_flag_tmp = time.time()
+        print("hidden routes generated in time: ", time_flag_tmp - time_flag)
+        time_flag = time.time()
 
     # Serialize to JSON with the enhanced encoder
     json_data = json.loads(json.dumps(hidden_routes, cls=EnhancedJSONEncoder))
@@ -159,6 +183,10 @@ if __name__ == "__main__":
     except FileNotFoundError:
         print("File not found")
         exit(1)
+
+    if DEBUG:
+        print("hidden routes dumped in file in time: ", time.time() - time_flag)
+        time_flag = time.time()
 
     ID = 0
     actual_routes = []
@@ -178,6 +206,9 @@ if __name__ == "__main__":
                 actual_routes.append(new_actual_route)
                 ID += 1
 
+    if DEBUG:
+        print("actual routes generated in time: ", time.time() - time_flag)
+        time_flag = time.time()
 
     # Serialize to JSON with the enhanced encoder
     json_data = json.loads(json.dumps(actual_routes, cls=EnhancedJSONEncoder))
@@ -204,6 +235,10 @@ if __name__ == "__main__":
         print("File not found")
         exit(1)
 
+    if DEBUG:
+        print("actual routes dumped in file in time: ", time.time() - time_flag)
+        time_flag = time.time()
+
     #get the parameters of the problem
     params = get_parameters()
 
@@ -226,6 +261,10 @@ if __name__ == "__main__":
     except FileNotFoundError:
         print("File not found")
         exit(1)
+
+    # stop timer
+    end = time.time()
+    print(f"Time elapsed: {end - start} seconds")
 
 
 #    p = 0.9

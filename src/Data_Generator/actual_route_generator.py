@@ -196,6 +196,11 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
         actualRoute.route.append(new_trip)
 
     if len_hr > len_sr:
+        """
+        if the hidden route is longer than the standard route, toss a coin in range [0,1] and check if it is less than mu_00 to add a trip
+        the trip is modified with noise
+        the trip is appended to the actual route
+        """
         index = len_sr - 1
         for i in range(len_sr - 1, len_hr - len_sr):
             # print (i, len_sr)
@@ -254,14 +259,17 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
                 actualRoute.route.append(new_trip)
 
     elif len_hr < len_sr:
+        """
+        if the hidden route is shorter than the standard route, toss a coin in range [0,1] and check if it is less than mu_00 to add a trip
+        the trip is modified with noise
+        the trip is appended to the actual route
+        """
         index = len_hr - 1
         for i in range(len_hr - 1 , len_sr - len_hr):
             if random() < mu_00:
                 index = i % len_hr
                 if i == 0:
                     new_departure = std_route.route[i].departure
-
-
                     # toss a coin in range [0,1] and check if it is less than lambda_0
                     if random() < lambda_0:
                         # toss a coin in range [0,1] and check if it is less than lambda_1
@@ -328,7 +336,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
                 for item in list_of_items:
                     if item not in std_route.route[i].merchandise and item not in hidden_route.route[index].merchandise:
                         # toss a coin in range [0,1] and check if it is less than lambda_1
-                        if random() < lambda_1:
+                        if random() < theta_1:
                             size = int(random() * random() * random() * 50)
                             if size > 0:
                                 new_merchandise.append((item, size))

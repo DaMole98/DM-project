@@ -71,15 +71,12 @@ class HiddenRoute:
 
     Attributes
     ----------
-    dr_id : str
+    driver : str
         the id of the driver
-    length : int
-        the length of the route
     route : list[Trip]
         the list of trips that compose the route
     """
-    dr_id: str
-    length: int
+    driver: str
     route: list[Trip]
 
 @dataclass

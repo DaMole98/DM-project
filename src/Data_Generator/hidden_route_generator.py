@@ -1,4 +1,4 @@
-from random import random, randint, sample, seed
+from random import random, randint, sample, seed, shuffle
 from src.Class_Structures.ClassesDefinition import HiddenRoute, Trip, Driver
 
 
@@ -53,7 +53,7 @@ def generate_hidden_routes(drivers, cities, items, limit_trips, limit_items, lim
     hidden_routes = []
     for driver in drivers:
         trip_number = randint(limit_trips[0], limit_trips[1])
-        route_cities = sample(cities, trip_number + 1)
+        route_cities = sample(cities, min(len(cities),trip_number + 1)) # random permutations of the set
         hd_route = HiddenRoute(driver.id, trip_number, [])
 
         for i in range(0, trip_number):
@@ -62,7 +62,9 @@ def generate_hidden_routes(drivers, cities, items, limit_trips, limit_items, lim
             item_types = sample(items, randint(limit_items[0], limit_items[1]))
             merch = {item: randint(limit_card[0], limit_card[1]) for item in
                      item_types}  # generation of the merchandise of a trip
-            hd_route.route.append(Trip(route_cities[i], route_cities[i + 1], merch))
+            hd_route.route.append(Trip(route_cities[(i%len(cities))], route_cities[(i + 1)%len(cities)], merch))
+            if i %len(route_cities) == 0:
+                shuffle(route_cities)
         hidden_routes.append(hd_route)
 
         driver.hidden_route = hd_route
