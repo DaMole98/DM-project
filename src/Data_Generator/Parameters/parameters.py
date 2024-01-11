@@ -50,7 +50,7 @@ MAX_IMPLEMENTATIONS_PER_DRIVER = 30 #maximum number of implementations per drive
 MAX_STD_ROUTE_PER_DRIVER = 15 #number of standard routes implemented by a driver
 
 num_drivers = 50 # number of drivers to be generated
-size_dataset = "small2" #size of the dataset to be generated. It can be "small", "medium" or "large"
+size_dataset = "small" #size of the dataset to be generated. It can be "small", "medium" or "large"
 
 data_path = "../../data/"
 dev_data_path = f"{data_path}dev_data/"

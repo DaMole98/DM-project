@@ -55,6 +55,8 @@ def generate_hidden_routes(drivers, cities, items, limit_trips, limit_items, lim
         trip_number = randint(limit_trips[0], limit_trips[1])
         route_cities = sample(cities, min(len(cities),trip_number + 1)) # random permutations of the set
         hd_route = HiddenRoute(driver.id, trip_number, [])
+        #hd_route = HiddenRoute(driver.id, [])
+
 
         for i in range(0, trip_number):
             trip_items = []
