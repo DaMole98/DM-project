@@ -130,10 +130,12 @@ def trip_distance(trip1, trip2):
     # the linear combination is calculated as follows:
     # 0.5 * Jaccard similarity + 0.5 * cosine distance
     # the result is then multiplied by 10 to obtain a value in range [0,10]
-    LINEAR_COMBINATION = False
+    LINEAR_COMBINATION = True
     if LINEAR_COMBINATION:
+        # Linear combination of Jaccard similarity and cosine distance
         distance = 0.5 * jaccard_distance + 0.5 * cosine_distance
     else:
+        # Exponential combination of Jaccard similarity and cosine distance
         distance = ( exp(jaccard_distance) + exp(cosine_distance) - 2) / (2*exp(1) - 2 )
 
     # round distance to the 4 decimal digits
@@ -230,16 +232,17 @@ def route_distance(route1, route2):
 def getRouteDistance(route1, route2):
     return max(route_distance(route1, route2), route_distance(route2, route1))
 
-def CheatDistance():
+def Evaluation(size_dataset):
     # calculate the distance between the route in hidden route and the route in probable_hidden_route in average
+    size_dataset = size_dataset.lower()+"_dataset"
 
     # load the hidden routes
     try:
-        with open(f"{data_path}HiddenRoutes.json", 'r') as file:
+        with open(f"{data_path}/{size_dataset}/HiddenRoutes.json", 'r') as file:
             hidden_routes = json.load(file)
 
         # make hidden_routes a list of HiddenRoute objects
-        hidden_routes = [HiddenRoute(route["dr_id"], route["length"], route["route"]) for route in hidden_routes]
+        hidden_routes = [HiddenRoute(route["driver"], route["route"]) for route in hidden_routes]
     except FileNotFoundError:
         print("HiddenRoutes.json not found. Please run input_dataset_generator.py first")
         sys.exit()
@@ -247,14 +250,22 @@ def CheatDistance():
 
     # load the probable hidden routes
     try:
-        with open(f"{output_path}ProbableHiddenRoutes.json", 'r') as file:
+        with open(f"{output_path}perfectRoute.json", 'r') as file:
             probable_hidden_routes = json.load(file)
 
         # make probable_hidden_routes a list of HiddenRoute objects
-        probable_hidden_routes = [HiddenRoute(route["dr_id"], route["length"], route["route"]) for route in probable_hidden_routes]
+        probable_hidden_routes = [HiddenRoute(route["driver"],  route["route"]) for route in probable_hidden_routes]
     except FileNotFoundError:
         print("ProbableHiddenRoute.json not found. Please run HiddenRouteFinder.py first")
         sys.exit()
+
+    # change route in list of Trip objects
+    for route in hidden_routes:
+        route.route = [Trip(trip["departure"], trip["destination"], trip["merchandise"]) for trip in route.route]
+    if DEBUG:
+        print("Hidden Routes generated")
+    for route in probable_hidden_routes:
+        route.route = [Trip(trip["from"], trip["to"], trip["merchandise"]) for trip in route.route]
 
     # calculate the distance between the route in hidden route and the route in probable_hidden_route in average
     avg_dist = 0
@@ -262,9 +273,9 @@ def CheatDistance():
     for route in hidden_routes:
         # find the corresponding probable_hidden_route keys ar ids
         for hd_route in probable_hidden_routes:
-            if route.dr_id == hd_route.dr_id:
+            if route.driver == hd_route.driver:
                 if DEBUG:
-                    print(f"Rider {route.dr_id}")
+                    print(f"Rider {route.driver}")
                 avg_dist += min(route_distance(route.route, hd_route.route), route_distance(route.route, hd_route.route))
                 # avg_dist += route_distance(route.route, route.route)
 
@@ -279,3 +290,15 @@ def CheatDistance():
 
     # return the average distance
     return avg_dist
+
+if __name__ == "__main__":
+    # calculate the distance between the route in hidden route and the route in probable_hidden_route in average
+
+    # take the size dataset from input
+    print("Please insert the size of the dataset you want to generate")
+    print("It can be 'small', 'medium' or 'large'")
+    size_dataset = input()
+    if size_dataset not in ["small", "medium", "large", "small1", "medium1", "small2"]:
+        print("Invalid input")
+        sys.exit()
+    avg_dist = Evaluation(size_dataset)

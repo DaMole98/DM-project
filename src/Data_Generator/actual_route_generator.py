@@ -105,7 +105,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
     The algorithm incorporates randomness (coin tosses) and adjustable parameters (lambda_0, lambda_1, theta_0, theta_1, mu_0, epsilon)\n
     to introduce variability in the generated actual route while considering information from both hidden and standard routes.\n
     """
-    len_hr = hidden_route.length
+    len_hr = len(hidden_route.route)
     len_sr = len(std_route.route)
 
     # catch exception if the hidden route is empty or the standard route is empty
@@ -113,7 +113,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
         return None
 
 
-    actualRoute = cd.ActualRoute(ID, hidden_route.dr_id,  std_route.id,[])
+    actualRoute = cd.ActualRoute(ID, hidden_route.driver,  std_route.id,[])
 
     # for each trip in the standard route till the minimum between the length of the hidden route and the length of the standard route
     for i in range(min (len_hr, len_sr)):

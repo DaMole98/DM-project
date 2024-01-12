@@ -1,0 +1,16 @@
+{
+  "min_trips": 10,
+  "max_trips": 20,
+  "min_items": 10,
+  "max_items": 30,
+  "min_card": 10,
+  "max_card": 150,
+  "data_path": "../../data/",
+  "dev_data_path": "../../data/dev_data/",
+  "num_drivers": 100,
+  "MAX_STD_ROUTE_PER_DRIVER": 10,
+  "MAX_IMPLEMENTATIONS_PER_DRIVER": 10,
+  "size_dataset": "medium1",
+  "actual_routes_num": 3387,
+  "std_routes_num": 100
+}

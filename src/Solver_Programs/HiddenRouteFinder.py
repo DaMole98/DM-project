@@ -8,8 +8,6 @@ import sys
 from math import floor
 from random import randint, seed, sample
 
-DEBUG = False
-
 MIN_INCREMENT = 3
 MAX_INCREMENT = 10
 PERCENTAGE_INCREMENT = 0.0005
@@ -21,8 +19,55 @@ from src.Data_Generator.Parameters.parameters import *
 class Threshold:
     value: 50
 
+# def perfectRoutesFinder(std_routes, actual_routes, driver, DEBUG):
+#     """
+#     This function finds the perfect route for a driver, given the actual routes and the standard routes he implemented.
+#     :param std_routes: A list of StandardRoute objects representing the standard routes implemented by the driver.\n
+#     :param actual_routes: A list of ActualRoute objects representing the actual routes implemented by the driver.\n
+#     :param driver: A string representing the identifier of the driver.\n
+#     :return: A PerfectRoute object representing the perfect route for the driver.\n
+#     """
+#
+#     # set entropy to a number as desired to make the results reproducible
+#     entropy = os.urandom(128)
+#     seed(entropy)
+#
+#     if DEBUG:
+#         print("Loading the routes")
+#         print(data_path)
+#
+#
+#     perfect_route = HiddenRoute(driver, [])
+#     avg_length = 0
+#
+#     for act in actual_routes:
+#         avg_length += len(actual_routes["route"])
+#
+#     avg_length = avg_length / len(std_routes)
+#
+#     probable_cities = []
+#
+#     for std_routes in std_routes:
+#         actual_routes_for_std = []
+#         for actual_route in actual_routes:
+#             if actual_route["sroute"] == std_routes["id"]:
+#                 actual_routes_for_std.append(actual_route)
+#                 actual_routes.remove(actual_route)
+#
+#         for trip in range(0, min(len(std_routes["route"]), avg_length)):
+#             probable_cities.append({"from": std_routes["route"][trip]["from"], "to": std_routes["route"][trip]["to"]})
+#
+#             for actual_route in actual_routes_for_std:
+#                 if len(actual_route["route"]) > trip:
+#                     probable_cities[trip]["from"] = actual_route["route"][trip]["from"]
+#                     probable_cities[trip]["to"] = actual_route["route"][trip]["to"]
 
-def hidden_route_finder(std_routes, actual_routes, driver, FACTORIAL_LIMIT=3):
+
+
+
+
+
+def hidden_route_finder(std_routes, actual_routes, driver, DEBUG, FACTORIAL_LIMIT = 3):
     """
     This function finds the hidden route for a driver, given the actual routes and the standard routes he implemented.
 
@@ -175,6 +220,11 @@ def hidden_route_finder(std_routes, actual_routes, driver, FACTORIAL_LIMIT=3):
         # fill trip object with the most frequent departure and destination cities
         probable_trip.departure = pr_dep["city"]
         probable_trip.destination = pr_dest["city"]
+
+        # catch an exception if the probable trip is empty
+        if probable_trip.departure == "" or probable_trip.destination == "":
+            print (f"Probable trip {i} is empty for driver {driver}")
+            break
 
         pr_merch = {}
 

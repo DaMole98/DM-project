@@ -193,7 +193,7 @@ if __name__ == "__main__":
 
     for driver in drivers:
         # take a sample of std_routes_num standard routes
-        num_of_routes = randint(1, MAX_STD_ROUTE_PER_DRIVER)
+        num_of_routes = randint(1, MAX_STD_ROUTE_PER_DRIVER + 1)
         sroutes = sample(route_list, num_of_routes)
 
         # for each standard route, generate a random number of implementations

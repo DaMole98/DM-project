@@ -1,0 +1,4320 @@
+[
+  {
+    "driver": "B",
+    "route": [
+      {
+        "departure": "Piacenza",
+        "destination": "Torre del Greco",
+        "merchandise": {
+          "Shampoo": 6,
+          "Bananas": 11,
+          "Toilet Paper": 9,
+          "Chicken": 2,
+          "Ketchup": 4,
+          "Carrots": 4,
+          "Detergent": 4,
+          "Mustard": 2,
+          "Lettuce": 11,
+          "Salt": 9,
+          "Mayonnaise": 4,
+          "Ice Cream": 7,
+          "Coffee": 4,
+          "Lemons": 7,
+          "Tomatoes": 12,
+          "Pepper": 1,
+          "Soap": 12,
+          "Frozen Vegetables": 7,
+          "Beef": 15,
+          "Bread": 12
+        }
+      },
+      {
+        "departure": "Torre del Greco",
+        "destination": "Barletta",
+        "merchandise": {
+          "Lettuce": 14,
+          "Pasta": 13,
+          "Potatoes": 6,
+          "Beer": 15,
+          "Sugar": 4,
+          "Tea": 8,
+          "Olive Oil": 6,
+          "Chips": 6,
+          "Soap": 9,
+          "Frozen Fruits": 9,
+          "Toilet Paper": 4,
+          "Onions": 12,
+          "Garlic": 12,
+          "Tissues": 13,
+          "Strudel": 1
+        }
+      },
+      {
+        "departure": "Barletta",
+        "destination": "Pistoia",
+        "merchandise": {
+          "Frozen Fruits": 4,
+          "Frozen Vegetables": 15,
+          "Tissues": 2,
+          "Chips": 7,
+          "Eggs": 12,
+          "Pickles": 12,
+          "Cereal": 13,
+          "Honey": 12,
+          "Pepper": 14,
+          "Cheese": 6,
+          "Carrots": 13,
+          "Coffee": 7,
+          "Apples": 9,
+          "Beer": 1
+        }
+      },
+      {
+        "departure": "Pistoia",
+        "destination": "Sesto San Giovanni",
+        "merchandise": {
+          "Paper Towels": 13,
+          "Sugar": 14,
+          "Pickles": 15,
+          "Mustard": 9,
+          "Avocado": 4,
+          "Frozen Chicken": 6,
+          "Spinach": 6,
+          "Toothpaste": 5,
+          "Pasta": 5,
+          "Bottled Water": 14
+        }
+      },
+      {
+        "departure": "Sesto San Giovanni",
+        "destination": "Ferrara",
+        "merchandise": {
+          "Potatoes": 9,
+          "Ketchup": 15,
+          "Shampoo": 13,
+          "Bread": 8,
+          "Pepper": 15,
+          "Frozen Chicken": 12,
+          "Frozen Pizza": 3,
+          "Frozen Fruits": 10,
+          "Oranges": 15,
+          "Lotion": 1,
+          "Mustard": 7,
+          "Lemons": 12,
+          "Coffee": 14,
+          "Salt": 12,
+          "Bottled Water": 8,
+          "Mayonnaise": 3,
+          "Beer": 4
+        }
+      },
+      {
+        "departure": "Ferrara",
+        "destination": "La Spezia",
+        "merchandise": {
+          "Apples": 4,
+          "Oranges": 1,
+          "Pasta": 4,
+          "Honey": 14,
+          "Pepper": 8,
+          "Carrots": 12,
+          "Olive Oil": 9,
+          "Bread": 1,
+          "Spinach": 8,
+          "Strudel": 15,
+          "Mustard": 2,
+          "Chips": 2,
+          "Coffee": 5,
+          "Rice": 14,
+          "Tea": 7,
+          "Ice Cream": 4,
+          "Lotion": 14
+        }
+      },
+      {
+        "departure": "La Spezia",
+        "destination": "Sassari",
+        "merchandise": {
+          "Onions": 11,
+          "Bottled Water": 1,
+          "Lemons": 10,
+          "Toothpaste": 15,
+          "Coffee": 9,
+          "Bananas": 15,
+          "Soda": 15,
+          "Olive Oil": 9,
+          "Pickles": 5,
+          "Toothbrush": 8,
+          "Soap": 4,
+          "Detergent": 6,
+          "Lettuce": 12,
+          "Oranges": 10,
+          "Frozen Chicken": 14,
+          "Lotion": 3,
+          "Milk": 2,
+          "Pepper": 2
+        }
+      },
+      {
+        "departure": "Sassari",
+        "destination": "Guidonia Montecelio",
+        "merchandise": {
+          "Ice Cream": 7,
+          "Mustard": 9,
+          "Pickles": 10,
+          "Garlic": 2,
+          "Rice": 7,
+          "Strudel": 15,
+          "Frozen Chicken": 14,
+          "Chips": 5,
+          "Beef": 5,
+          "Honey": 13,
+          "Soap": 10,
+          "Frozen Vegetables": 2,
+          "Bread": 15,
+          "Oranges": 11,
+          "Chocolate": 12,
+          "Toothbrush": 15,
+          "Soda": 9,
+          "Salt": 10,
+          "Olive Oil": 5
+        }
+      }
+    ]
+  },
+  {
+    "driver": "C",
+    "route": [
+      {
+        "departure": "Turin",
+        "destination": "Brescia",
+        "merchandise": {
+          "Tissues": 10,
+          "Chicken": 11,
+          "Mayonnaise": 2,
+          "Salt": 11,
+          "Honey": 9,
+          "Eggs": 9,
+          "Mustard": 12,
+          "Olive Oil": 5,
+          "Frozen Vegetables": 7,
+          "Coffee": 6,
+          "Carrots": 14,
+          "Frozen Fruits": 6,
+          "Potatoes": 8,
+          "Bread": 8,
+          "Sugar": 13,
+          "Beef": 1,
+          "Spinach": 3,
+          "Lotion": 1,
+          "Toothpaste": 1,
+          "Paper Towels": 1
+        }
+      },
+      {
+        "departure": "Brescia",
+        "destination": "Andria",
+        "merchandise": {
+          "Coffee": 8,
+          "Rice": 5,
+          "Lotion": 15,
+          "Chips": 10,
+          "Mayonnaise": 8,
+          "Ketchup": 14,
+          "Tissues": 12,
+          "Salt": 7,
+          "Toothpaste": 9,
+          "Lettuce": 8,
+          "Frozen Fruits": 14,
+          "Beer": 13,
+          "Candles": 2,
+          "Carrots": 9,
+          "Mustard": 3,
+          "Bananas": 2
+        }
+      },
+      {
+        "departure": "Andria",
+        "destination": "Trieste",
+        "merchandise": {
+          "Tea": 12,
+          "Olive Oil": 3,
+          "Frozen Fruits": 4,
+          "Cheese": 7,
+          "Napkins": 2,
+          "Detergent": 1,
+          "Toothbrush": 14,
+          "Eggs": 8,
+          "Cereal": 7,
+          "Frozen Chicken": 6,
+          "Honey": 7,
+          "Chicken": 6,
+          "Pens": 15,
+          "Bread": 11,
+          "Ice Cream": 8,
+          "Pickles": 2,
+          "Sugar": 4,
+          "Soap": 2
+        }
+      },
+      {
+        "departure": "Trieste",
+        "destination": "Brindisi",
+        "merchandise": {
+          "Honey": 13,
+          "Salt": 11,
+          "Coffee": 4,
+          "Milk": 5,
+          "Carrots": 8,
+          "Strudel": 13,
+          "Pickles": 9,
+          "Detergent": 10,
+          "Frozen Chicken": 5,
+          "Napkins": 13,
+          "Frozen Fruits": 7,
+          "Soda": 6,
+          "Potatoes": 12,
+          "Tissues": 13,
+          "Beef": 13,
+          "Olive Oil": 4,
+          "Mustard": 5
+        }
+      },
+      {
+        "departure": "Brindisi",
+        "destination": "Verona",
+        "merchandise": {
+          "Pens": 13,
+          "Oranges": 7,
+          "Spinach": 6,
+          "Toothbrush": 1,
+          "Coffee": 4,
+          "Beer": 6,
+          "Frozen Pizza": 13,
+          "Lemons": 3,
+          "Paper Towels": 9,
+          "Lotion": 13,
+          "Cereal": 10,
+          "Bananas": 12,
+          "Mayonnaise": 10,
+          "Cheese": 8,
+          "Bread": 4
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Alessandria",
+        "merchandise": {
+          "Toothpaste": 9,
+          "Pasta": 14,
+          "Coffee": 8,
+          "Chips": 10,
+          "Pickles": 9,
+          "Chicken": 3,
+          "Apples": 8,
+          "Soap": 3,
+          "Onions": 3,
+          "Potatoes": 14,
+          "Avocado": 13,
+          "Beef": 8,
+          "Lotion": 6,
+          "Paper Towels": 4,
+          "Frozen Chicken": 15,
+          "Spinach": 10,
+          "Lettuce": 4,
+          "Toilet Paper": 15,
+          "Bread": 8
+        }
+      },
+      {
+        "departure": "Alessandria",
+        "destination": "Padua",
+        "merchandise": {
+          "Coffee": 15,
+          "Toothbrush": 4,
+          "Oranges": 5,
+          "Mayonnaise": 9,
+          "Honey": 9,
+          "Tissues": 10,
+          "Frozen Pizza": 13,
+          "Frozen Vegetables": 14,
+          "Toilet Paper": 11,
+          "Toothpaste": 6,
+          "Carrots": 14,
+          "Lotion": 5,
+          "Rice": 2
+        }
+      },
+      {
+        "departure": "Padua",
+        "destination": "Bari",
+        "merchandise": {
+          "Lettuce": 14,
+          "Olive Oil": 1,
+          "Honey": 2,
+          "Detergent": 7,
+          "Lotion": 7,
+          "Candles": 8,
+          "Tissues": 12,
+          "Salt": 11,
+          "Tea": 3,
+          "Bananas": 2,
+          "Garlic": 5,
+          "Strudel": 10,
+          "Frozen Vegetables": 11,
+          "Cheese": 10,
+          "Pickles": 5,
+          "Spinach": 10,
+          "Toothbrush": 4,
+          "Frozen Chicken": 1,
+          "Chips": 15,
+          "Rice": 4
+        }
+      },
+      {
+        "departure": "Bari",
+        "destination": "Palermo",
+        "merchandise": {
+          "Chips": 10,
+          "Strudel": 4,
+          "Toothpaste": 14,
+          "Tomatoes": 15,
+          "Honey": 7,
+          "Mayonnaise": 2,
+          "Soap": 5,
+          "Pepper": 10,
+          "Candles": 5,
+          "Mustard": 15,
+          "Frozen Vegetables": 1,
+          "Salt": 15,
+          "Chicken": 7,
+          "Eggs": 6,
+          "Chocolate": 15,
+          "Potatoes": 4,
+          "Lemons": 15,
+          "Coffee": 3
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Foggia",
+        "merchandise": {
+          "Strudel": 5,
+          "Pickles": 10,
+          "Oranges": 14,
+          "Tissues": 6,
+          "Paper Towels": 5,
+          "Carrots": 15,
+          "Pens": 9,
+          "Olive Oil": 12,
+          "Frozen Chicken": 14,
+          "Coffee": 10,
+          "Tea": 7,
+          "Toothpaste": 10,
+          "Cereal": 11
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Cesena",
+        "merchandise": {
+          "Tea": 6,
+          "Napkins": 8,
+          "Ketchup": 1,
+          "Chips": 15,
+          "Soap": 9,
+          "Sugar": 5,
+          "Coffee": 12,
+          "Pickles": 9,
+          "Mustard": 8,
+          "Bananas": 14,
+          "Beer": 11,
+          "Toothpaste": 4,
+          "Detergent": 4,
+          "Tomatoes": 14,
+          "Chocolate": 10,
+          "Oranges": 6,
+          "Pepper": 15,
+          "Chicken": 1,
+          "Strudel": 14,
+          "Garlic": 6
+        }
+      },
+      {
+        "departure": "Cesena",
+        "destination": "Asti",
+        "merchandise": {
+          "Chicken": 11,
+          "Ice Cream": 11,
+          "Tissues": 3,
+          "Carrots": 12,
+          "Bananas": 6,
+          "Chips": 8,
+          "Cheese": 2,
+          "Potatoes": 9,
+          "Pens": 14,
+          "Spinach": 14,
+          "Candles": 1,
+          "Frozen Chicken": 15,
+          "Sugar": 3,
+          "Onions": 11,
+          "Mayonnaise": 3,
+          "Pasta": 5,
+          "Tea": 15
+        }
+      },
+      {
+        "departure": "Asti",
+        "destination": "Sassari",
+        "merchandise": {
+          "Chocolate": 9,
+          "Onions": 1,
+          "Cereal": 2,
+          "Spinach": 12,
+          "Bananas": 3,
+          "Soda": 3,
+          "Cheese": 1,
+          "Chips": 2,
+          "Ice Cream": 11,
+          "Carrots": 4,
+          "Napkins": 12,
+          "Rice": 8,
+          "Soap": 8,
+          "Salt": 12,
+          "Shampoo": 10,
+          "Paper Towels": 7,
+          "Garlic": 5
+        }
+      },
+      {
+        "departure": "Sassari",
+        "destination": "Giugliano in Campania",
+        "merchandise": {
+          "Bread": 14,
+          "Toilet Paper": 6,
+          "Toothbrush": 3,
+          "Lotion": 10,
+          "Chocolate": 10,
+          "Frozen Fruits": 15,
+          "Mustard": 14,
+          "Bottled Water": 15,
+          "Frozen Pizza": 3,
+          "Pepper": 8,
+          "Ketchup": 7,
+          "Lettuce": 14,
+          "Bananas": 2,
+          "Onions": 10,
+          "Tissues": 5
+        }
+      }
+    ]
+  },
+  {
+    "driver": "D",
+    "route": [
+      {
+        "departure": "Pistoia",
+        "destination": "Cagliari",
+        "merchandise": {
+          "Spinach": 10,
+          "Eggs": 4,
+          "Pickles": 13,
+          "Toilet Paper": 12,
+          "Oranges": 2,
+          "Ice Cream": 6,
+          "Beer": 2,
+          "Strudel": 11,
+          "Candles": 12,
+          "Toothbrush": 4,
+          "Milk": 7,
+          "Chips": 12,
+          "Bananas": 7
+        }
+      },
+      {
+        "departure": "Cagliari",
+        "destination": "Palermo",
+        "merchandise": {
+          "Bottled Water": 2,
+          "Beef": 12,
+          "Pasta": 6,
+          "Potatoes": 1,
+          "Chicken": 9,
+          "Toothbrush": 10,
+          "Apples": 10,
+          "Toilet Paper": 7,
+          "Eggs": 4,
+          "Ice Cream": 4
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Grosseto",
+        "merchandise": {
+          "Chocolate": 4,
+          "Ice Cream": 15,
+          "Frozen Fruits": 10,
+          "Mayonnaise": 8,
+          "Cheese": 9,
+          "Shampoo": 7,
+          "Salt": 10,
+          "Bottled Water": 15,
+          "Cereal": 2,
+          "Onions": 2,
+          "Oranges": 7,
+          "Napkins": 10,
+          "Carrots": 5,
+          "Pens": 9,
+          "Candles": 10,
+          "Avocado": 14
+        }
+      },
+      {
+        "departure": "Grosseto",
+        "destination": "Giugliano in Campania",
+        "merchandise": {
+          "Salt": 15,
+          "Beer": 1,
+          "Tomatoes": 14,
+          "Lemons": 10,
+          "Bread": 1,
+          "Toothpaste": 1,
+          "Ice Cream": 13,
+          "Frozen Pizza": 8,
+          "Candles": 1,
+          "Chocolate": 11,
+          "Pepper": 12,
+          "Tissues": 10,
+          "Cereal": 3,
+          "Chips": 5,
+          "Carrots": 5
+        }
+      },
+      {
+        "departure": "Giugliano in Campania",
+        "destination": "Bolzano",
+        "merchandise": {
+          "Lettuce": 1,
+          "Rice": 14,
+          "Beer": 7,
+          "Lemons": 7,
+          "Toothpaste": 14,
+          "Pepper": 13,
+          "Pickles": 12,
+          "Bananas": 14,
+          "Mayonnaise": 12,
+          "Toilet Paper": 14,
+          "Frozen Pizza": 2
+        }
+      },
+      {
+        "departure": "Bolzano",
+        "destination": "Piacenza",
+        "merchandise": {
+          "Salt": 1,
+          "Pepper": 14,
+          "Rice": 1,
+          "Toothbrush": 14,
+          "Mayonnaise": 10,
+          "Pasta": 12,
+          "Bananas": 14,
+          "Lettuce": 10,
+          "Carrots": 14,
+          "Ketchup": 12
+        }
+      },
+      {
+        "departure": "Piacenza",
+        "destination": "Andria",
+        "merchandise": {
+          "Eggs": 12,
+          "Shampoo": 8,
+          "Sugar": 12,
+          "Tomatoes": 15,
+          "Honey": 5,
+          "Spinach": 13,
+          "Chocolate": 2,
+          "Cereal": 12,
+          "Frozen Fruits": 13,
+          "Bread": 14,
+          "Onions": 10,
+          "Tissues": 4
+        }
+      },
+      {
+        "departure": "Andria",
+        "destination": "Alessandria",
+        "merchandise": {
+          "Lotion": 7,
+          "Pasta": 11,
+          "Spinach": 15,
+          "Avocado": 10,
+          "Tomatoes": 4,
+          "Rice": 11,
+          "Sugar": 15,
+          "Shampoo": 12,
+          "Mustard": 10,
+          "Eggs": 1
+        }
+      },
+      {
+        "departure": "Alessandria",
+        "destination": "Verona",
+        "merchandise": {
+          "Tea": 5,
+          "Detergent": 10,
+          "Garlic": 12,
+          "Bottled Water": 10,
+          "Pens": 13,
+          "Tomatoes": 6,
+          "Frozen Chicken": 4,
+          "Rice": 9,
+          "Napkins": 1,
+          "Eggs": 3,
+          "Apples": 4,
+          "Ice Cream": 8,
+          "Pepper": 12,
+          "Cereal": 10,
+          "Strudel": 15,
+          "Lemons": 13,
+          "Lettuce": 2,
+          "Avocado": 1,
+          "Cheese": 14,
+          "Frozen Fruits": 15
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Brescia",
+        "merchandise": {
+          "Napkins": 7,
+          "Ice Cream": 8,
+          "Mayonnaise": 15,
+          "Frozen Chicken": 14,
+          "Detergent": 15,
+          "Frozen Vegetables": 14,
+          "Chips": 10,
+          "Lettuce": 3,
+          "Garlic": 11,
+          "Mustard": 12,
+          "Frozen Fruits": 9,
+          "Pickles": 11,
+          "Bottled Water": 1,
+          "Chocolate": 1
+        }
+      },
+      {
+        "departure": "Brescia",
+        "destination": "Rimini",
+        "merchandise": {
+          "Napkins": 7,
+          "Lemons": 2,
+          "Carrots": 1,
+          "Pasta": 13,
+          "Tissues": 2,
+          "Beef": 7,
+          "Pepper": 10,
+          "Bottled Water": 12,
+          "Detergent": 6,
+          "Spinach": 6,
+          "Beer": 4,
+          "Pickles": 5,
+          "Garlic": 9,
+          "Frozen Chicken": 14,
+          "Honey": 14
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Soap": 12,
+          "Olive Oil": 11,
+          "Pens": 13,
+          "Frozen Chicken": 7,
+          "Chicken": 3,
+          "Garlic": 1,
+          "Candles": 12,
+          "Chips": 13,
+          "Pickles": 8,
+          "Soda": 13,
+          "Beef": 6,
+          "Rice": 3,
+          "Milk": 12,
+          "Cheese": 6,
+          "Pasta": 5
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Terni",
+        "merchandise": {
+          "Frozen Vegetables": 14,
+          "Oranges": 10,
+          "Toothbrush": 10,
+          "Toilet Paper": 8,
+          "Chicken": 6,
+          "Soda": 4,
+          "Olive Oil": 12,
+          "Potatoes": 14,
+          "Eggs": 3,
+          "Frozen Fruits": 3,
+          "Napkins": 11,
+          "Frozen Pizza": 5
+        }
+      },
+      {
+        "departure": "Terni",
+        "destination": "Pisa",
+        "merchandise": {
+          "Tea": 9,
+          "Tissues": 14,
+          "Cheese": 2,
+          "Bread": 1,
+          "Coffee": 9,
+          "Bananas": 10,
+          "Ice Cream": 2,
+          "Bottled Water": 4,
+          "Milk": 2,
+          "Frozen Chicken": 13,
+          "Toothbrush": 2,
+          "Potatoes": 9
+        }
+      },
+      {
+        "departure": "Pisa",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Pepper": 10,
+          "Frozen Pizza": 12,
+          "Bottled Water": 9,
+          "Toilet Paper": 7,
+          "Salt": 2,
+          "Cereal": 10,
+          "Oranges": 2,
+          "Paper Towels": 12,
+          "Pens": 14,
+          "Chocolate": 14,
+          "Pasta": 6,
+          "Carrots": 8,
+          "Rice": 14,
+          "Beer": 10,
+          "Toothbrush": 15,
+          "Olive Oil": 2,
+          "Apples": 10,
+          "Sugar": 2,
+          "Honey": 9,
+          "Shampoo": 6
+        }
+      }
+    ]
+  },
+  {
+    "driver": "E",
+    "route": [
+      {
+        "departure": "Latina",
+        "destination": "Terni",
+        "merchandise": {
+          "Cheese": 9,
+          "Detergent": 5,
+          "Oranges": 13,
+          "Pens": 7,
+          "Rice": 1,
+          "Tomatoes": 11,
+          "Soap": 14,
+          "Beef": 1,
+          "Lotion": 11,
+          "Potatoes": 6,
+          "Onions": 11,
+          "Pickles": 8,
+          "Tissues": 9,
+          "Soda": 9,
+          "Olive Oil": 14,
+          "Toilet Paper": 2,
+          "Lettuce": 2,
+          "Pasta": 1,
+          "Bananas": 8,
+          "Spinach": 4
+        }
+      },
+      {
+        "departure": "Terni",
+        "destination": "Sassari",
+        "merchandise": {
+          "Beef": 11,
+          "Frozen Pizza": 9,
+          "Tissues": 9,
+          "Cheese": 14,
+          "Pepper": 6,
+          "Napkins": 6,
+          "Soda": 4,
+          "Beer": 6,
+          "Detergent": 6,
+          "Bread": 12,
+          "Toothpaste": 4,
+          "Chocolate": 10,
+          "Potatoes": 9,
+          "Frozen Vegetables": 5
+        }
+      },
+      {
+        "departure": "Sassari",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Ketchup": 6,
+          "Milk": 3,
+          "Ice Cream": 14,
+          "Pepper": 5,
+          "Candles": 10,
+          "Rice": 7,
+          "Apples": 14,
+          "Beer": 12,
+          "Chips": 5,
+          "Toilet Paper": 13,
+          "Napkins": 11,
+          "Tissues": 10,
+          "Sugar": 6,
+          "Frozen Fruits": 11,
+          "Bread": 10,
+          "Spinach": 1,
+          "Eggs": 13,
+          "Chicken": 11,
+          "Pickles": 11,
+          "Salt": 5
+        }
+      },
+      {
+        "departure": "Reggio Emilia",
+        "destination": "Alessandria",
+        "merchandise": {
+          "Olive Oil": 8,
+          "Sugar": 1,
+          "Beer": 3,
+          "Lotion": 13,
+          "Spinach": 11,
+          "Toilet Paper": 12,
+          "Cereal": 13,
+          "Avocado": 14,
+          "Beef": 6,
+          "Soda": 1,
+          "Cheese": 2,
+          "Strudel": 15,
+          "Candles": 14,
+          "Potatoes": 12,
+          "Chocolate": 11,
+          "Mustard": 4,
+          "Ice Cream": 6,
+          "Bread": 7,
+          "Lettuce": 10
+        }
+      },
+      {
+        "departure": "Alessandria",
+        "destination": "Naples",
+        "merchandise": {
+          "Toothpaste": 7,
+          "Ice Cream": 13,
+          "Chocolate": 6,
+          "Pepper": 8,
+          "Milk": 6,
+          "Candles": 3,
+          "Tomatoes": 11,
+          "Coffee": 6,
+          "Chips": 9,
+          "Cereal": 1,
+          "Shampoo": 12,
+          "Chicken": 11,
+          "Frozen Pizza": 5,
+          "Pasta": 5,
+          "Tea": 14,
+          "Beer": 3,
+          "Beef": 5
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Prato",
+        "merchandise": {
+          "Garlic": 7,
+          "Shampoo": 1,
+          "Cheese": 5,
+          "Cereal": 7,
+          "Eggs": 6,
+          "Avocado": 13,
+          "Honey": 9,
+          "Soap": 3,
+          "Chicken": 8,
+          "Candles": 9,
+          "Beer": 6,
+          "Ice Cream": 7,
+          "Oranges": 4,
+          "Beef": 7,
+          "Paper Towels": 6,
+          "Lettuce": 5
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Verona",
+        "merchandise": {
+          "Rice": 15,
+          "Lettuce": 5,
+          "Pickles": 5,
+          "Milk": 12,
+          "Oranges": 15,
+          "Toothbrush": 9,
+          "Tea": 6,
+          "Ice Cream": 10,
+          "Toilet Paper": 11,
+          "Pens": 4
+        }
+      }
+    ]
+  },
+  {
+    "driver": "F",
+    "route": [
+      {
+        "departure": "Rimini",
+        "destination": "Catanzaro",
+        "merchandise": {
+          "Mayonnaise": 6,
+          "Frozen Vegetables": 4,
+          "Strudel": 15,
+          "Beer": 5,
+          "Garlic": 4,
+          "Eggs": 11,
+          "Lemons": 4,
+          "Pasta": 1,
+          "Toothpaste": 2,
+          "Tissues": 1,
+          "Soda": 7,
+          "Toothbrush": 12,
+          "Salt": 11,
+          "Bananas": 3,
+          "Tea": 10,
+          "Chicken": 8,
+          "Ketchup": 4
+        }
+      },
+      {
+        "departure": "Catanzaro",
+        "destination": "Busto Arsizio",
+        "merchandise": {
+          "Oranges": 4,
+          "Toilet Paper": 10,
+          "Toothbrush": 10,
+          "Pickles": 7,
+          "Frozen Pizza": 15,
+          "Bananas": 14,
+          "Garlic": 12,
+          "Olive Oil": 4,
+          "Lemons": 2,
+          "Frozen Fruits": 8,
+          "Onions": 8,
+          "Coffee": 14,
+          "Ice Cream": 6,
+          "Soap": 1,
+          "Shampoo": 14,
+          "Frozen Chicken": 7,
+          "Potatoes": 1,
+          "Milk": 10,
+          "Beer": 9
+        }
+      },
+      {
+        "departure": "Busto Arsizio",
+        "destination": "Cesena",
+        "merchandise": {
+          "Coffee": 11,
+          "Lemons": 9,
+          "Chocolate": 4,
+          "Sugar": 8,
+          "Soap": 14,
+          "Candles": 14,
+          "Oranges": 15,
+          "Toothbrush": 4,
+          "Frozen Chicken": 8,
+          "Napkins": 13,
+          "Bread": 11,
+          "Lotion": 13,
+          "Toothpaste": 9,
+          "Milk": 8,
+          "Frozen Fruits": 3,
+          "Lettuce": 1,
+          "Tea": 3
+        }
+      },
+      {
+        "departure": "Cesena",
+        "destination": "Forli",
+        "merchandise": {
+          "Frozen Pizza": 3,
+          "Beef": 13,
+          "Bananas": 15,
+          "Mustard": 14,
+          "Toothbrush": 2,
+          "Frozen Chicken": 13,
+          "Salt": 14,
+          "Spinach": 6,
+          "Candles": 14,
+          "Honey": 3,
+          "Avocado": 6,
+          "Lotion": 14,
+          "Lettuce": 10,
+          "Napkins": 6,
+          "Apples": 10,
+          "Strudel": 7,
+          "Ketchup": 11,
+          "Chicken": 10
+        }
+      },
+      {
+        "departure": "Forli",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Pasta": 5,
+          "Ketchup": 11,
+          "Rice": 7,
+          "Ice Cream": 2,
+          "Chips": 14,
+          "Shampoo": 3,
+          "Milk": 7,
+          "Soda": 9,
+          "Lettuce": 8,
+          "Chocolate": 13
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Pescara",
+        "merchandise": {
+          "Potatoes": 11,
+          "Toilet Paper": 14,
+          "Coffee": 8,
+          "Beef": 5,
+          "Salt": 6,
+          "Eggs": 13,
+          "Bananas": 9,
+          "Beer": 6,
+          "Apples": 7,
+          "Mustard": 10,
+          "Frozen Fruits": 1,
+          "Cereal": 4,
+          "Lemons": 5,
+          "Candles": 12,
+          "Frozen Chicken": 2
+        }
+      },
+      {
+        "departure": "Pescara",
+        "destination": "Grosseto",
+        "merchandise": {
+          "Salt": 1,
+          "Honey": 15,
+          "Olive Oil": 14,
+          "Paper Towels": 5,
+          "Pens": 7,
+          "Tomatoes": 14,
+          "Carrots": 13,
+          "Strudel": 10,
+          "Ice Cream": 12,
+          "Beer": 2,
+          "Chocolate": 7,
+          "Frozen Fruits": 5,
+          "Spinach": 13,
+          "Avocado": 11,
+          "Cheese": 7,
+          "Sugar": 9,
+          "Lotion": 3,
+          "Bread": 9,
+          "Milk": 3
+        }
+      }
+    ]
+  },
+  {
+    "driver": "G",
+    "route": [
+      {
+        "departure": "Casoria",
+        "destination": "Venice",
+        "merchandise": {
+          "Mayonnaise": 2,
+          "Chocolate": 1,
+          "Potatoes": 12,
+          "Tissues": 5,
+          "Soda": 4,
+          "Carrots": 8,
+          "Lotion": 5,
+          "Mustard": 11,
+          "Chicken": 11,
+          "Lemons": 10,
+          "Toilet Paper": 11,
+          "Honey": 7
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Lucca",
+        "merchandise": {
+          "Chocolate": 6,
+          "Lotion": 13,
+          "Bananas": 14,
+          "Apples": 8,
+          "Soda": 4,
+          "Ice Cream": 4,
+          "Bottled Water": 10,
+          "Mayonnaise": 14,
+          "Cereal": 13,
+          "Mustard": 2,
+          "Carrots": 3
+        }
+      },
+      {
+        "departure": "Lucca",
+        "destination": "Turin",
+        "merchandise": {
+          "Onions": 10,
+          "Avocado": 12,
+          "Coffee": 1,
+          "Frozen Chicken": 2,
+          "Mustard": 5,
+          "Soda": 8,
+          "Honey": 8,
+          "Pasta": 14,
+          "Shampoo": 8,
+          "Potatoes": 13,
+          "Milk": 10,
+          "Bananas": 4,
+          "Apples": 12,
+          "Beer": 13,
+          "Oranges": 11,
+          "Cereal": 15,
+          "Toilet Paper": 5,
+          "Lotion": 13,
+          "Garlic": 8
+        }
+      },
+      {
+        "departure": "Turin",
+        "destination": "Bolzano",
+        "merchandise": {
+          "Shampoo": 15,
+          "Garlic": 4,
+          "Lemons": 6,
+          "Sugar": 5,
+          "Honey": 10,
+          "Tissues": 2,
+          "Beer": 12,
+          "Chips": 8,
+          "Avocado": 2,
+          "Coffee": 15,
+          "Frozen Fruits": 4,
+          "Cereal": 14,
+          "Pens": 5,
+          "Milk": 7,
+          "Napkins": 11,
+          "Candles": 5,
+          "Tea": 1
+        }
+      },
+      {
+        "departure": "Bolzano",
+        "destination": "Rimini",
+        "merchandise": {
+          "Tea": 4,
+          "Chocolate": 1,
+          "Ketchup": 13,
+          "Frozen Chicken": 11,
+          "Frozen Pizza": 4,
+          "Pasta": 4,
+          "Rice": 4,
+          "Toothbrush": 12,
+          "Coffee": 7,
+          "Milk": 14,
+          "Mayonnaise": 8,
+          "Candles": 9,
+          "Potatoes": 1,
+          "Paper Towels": 14,
+          "Mustard": 8,
+          "Soda": 7,
+          "Strudel": 12
+        }
+      },
+      {
+        "departure": "Rimini",
+        "destination": "Catania",
+        "merchandise": {
+          "Onions": 7,
+          "Chocolate": 7,
+          "Sugar": 6,
+          "Strudel": 10,
+          "Paper Towels": 3,
+          "Beer": 10,
+          "Bread": 15,
+          "Lotion": 9,
+          "Detergent": 9,
+          "Bananas": 8,
+          "Avocado": 5,
+          "Pepper": 5
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Busto Arsizio",
+        "merchandise": {
+          "Bottled Water": 6,
+          "Tomatoes": 11,
+          "Tissues": 13,
+          "Napkins": 12,
+          "Bananas": 11,
+          "Cheese": 11,
+          "Soap": 3,
+          "Bread": 9,
+          "Chocolate": 13,
+          "Soda": 7,
+          "Coffee": 3,
+          "Frozen Vegetables": 1,
+          "Paper Towels": 9,
+          "Candles": 11,
+          "Frozen Pizza": 14,
+          "Oranges": 10,
+          "Frozen Chicken": 12,
+          "Chips": 6,
+          "Chicken": 5,
+          "Spinach": 5
+        }
+      },
+      {
+        "departure": "Busto Arsizio",
+        "destination": "Pisa",
+        "merchandise": {
+          "Pepper": 1,
+          "Toilet Paper": 6,
+          "Salt": 14,
+          "Coffee": 4,
+          "Pickles": 4,
+          "Ketchup": 7,
+          "Lemons": 5,
+          "Sugar": 9,
+          "Frozen Vegetables": 11,
+          "Beer": 3,
+          "Chocolate": 10,
+          "Detergent": 11,
+          "Lettuce": 14
+        }
+      },
+      {
+        "departure": "Pisa",
+        "destination": "Lecce",
+        "merchandise": {
+          "Coffee": 2,
+          "Garlic": 14,
+          "Lettuce": 9,
+          "Tissues": 3,
+          "Cereal": 6,
+          "Potatoes": 14,
+          "Oranges": 6,
+          "Honey": 1,
+          "Chicken": 2,
+          "Frozen Fruits": 12,
+          "Candles": 1,
+          "Toilet Paper": 4,
+          "Bottled Water": 3,
+          "Frozen Chicken": 5,
+          "Spinach": 8
+        }
+      },
+      {
+        "departure": "Lecce",
+        "destination": "Prato",
+        "merchandise": {
+          "Toothpaste": 7,
+          "Tissues": 15,
+          "Cheese": 9,
+          "Avocado": 15,
+          "Tomatoes": 7,
+          "Spinach": 2,
+          "Oranges": 10,
+          "Pepper": 12,
+          "Pens": 5,
+          "Onions": 1,
+          "Toothbrush": 5
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Livorno",
+        "merchandise": {
+          "Beer": 5,
+          "Pepper": 6,
+          "Salt": 2,
+          "Coffee": 3,
+          "Bread": 5,
+          "Sugar": 13,
+          "Bananas": 5,
+          "Tomatoes": 9,
+          "Frozen Pizza": 5,
+          "Chocolate": 14,
+          "Oranges": 4,
+          "Honey": 8,
+          "Frozen Vegetables": 8,
+          "Tissues": 14,
+          "Soda": 1,
+          "Carrots": 3,
+          "Potatoes": 15
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Reggio Calabria",
+        "merchandise": {
+          "Mustard": 15,
+          "Avocado": 3,
+          "Olive Oil": 13,
+          "Sugar": 11,
+          "Frozen Pizza": 13,
+          "Tissues": 6,
+          "Soda": 2,
+          "Toilet Paper": 2,
+          "Chocolate": 9,
+          "Bananas": 5,
+          "Carrots": 7,
+          "Frozen Vegetables": 12,
+          "Beer": 7
+        }
+      },
+      {
+        "departure": "Reggio Calabria",
+        "destination": "Salerno",
+        "merchandise": {
+          "Lotion": 3,
+          "Spinach": 6,
+          "Milk": 14,
+          "Rice": 3,
+          "Frozen Vegetables": 5,
+          "Detergent": 8,
+          "Toothbrush": 14,
+          "Lemons": 14,
+          "Olive Oil": 13,
+          "Beef": 14
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Forli",
+        "merchandise": {
+          "Carrots": 3,
+          "Avocado": 15,
+          "Tea": 7,
+          "Spinach": 1,
+          "Oranges": 15,
+          "Tomatoes": 4,
+          "Tissues": 12,
+          "Pepper": 12,
+          "Pens": 10,
+          "Honey": 15,
+          "Rice": 10,
+          "Lemons": 13,
+          "Milk": 10,
+          "Apples": 12,
+          "Mayonnaise": 9,
+          "Frozen Chicken": 13,
+          "Cereal": 3,
+          "Soap": 12,
+          "Detergent": 12
+        }
+      },
+      {
+        "departure": "Forli",
+        "destination": "Piacenza",
+        "merchandise": {
+          "Pens": 6,
+          "Chocolate": 5,
+          "Pasta": 11,
+          "Strudel": 11,
+          "Shampoo": 3,
+          "Ketchup": 2,
+          "Mayonnaise": 8,
+          "Rice": 7,
+          "Cheese": 6,
+          "Lemons": 3,
+          "Honey": 11,
+          "Toothbrush": 9,
+          "Salt": 2,
+          "Pickles": 4,
+          "Frozen Chicken": 10,
+          "Ice Cream": 13,
+          "Paper Towels": 10,
+          "Milk": 9
+        }
+      }
+    ]
+  },
+  {
+    "driver": "H",
+    "route": [
+      {
+        "departure": "Turin",
+        "destination": "Como",
+        "merchandise": {
+          "Pepper": 11,
+          "Mustard": 5,
+          "Toilet Paper": 14,
+          "Bottled Water": 8,
+          "Coffee": 14,
+          "Tea": 5,
+          "Eggs": 1,
+          "Cereal": 2,
+          "Garlic": 15,
+          "Pasta": 15,
+          "Bananas": 12,
+          "Beef": 11,
+          "Ice Cream": 7
+        }
+      },
+      {
+        "departure": "Como",
+        "destination": "Terni",
+        "merchandise": {
+          "Onions": 3,
+          "Sugar": 14,
+          "Carrots": 8,
+          "Bananas": 14,
+          "Cheese": 5,
+          "Avocado": 14,
+          "Beer": 4,
+          "Bottled Water": 15,
+          "Pickles": 10,
+          "Potatoes": 3,
+          "Strudel": 10
+        }
+      },
+      {
+        "departure": "Terni",
+        "destination": "Catanzaro",
+        "merchandise": {
+          "Milk": 13,
+          "Frozen Fruits": 13,
+          "Chocolate": 2,
+          "Frozen Chicken": 8,
+          "Tissues": 12,
+          "Oranges": 9,
+          "Beef": 6,
+          "Frozen Vegetables": 14,
+          "Mayonnaise": 13,
+          "Lettuce": 14,
+          "Honey": 3,
+          "Pickles": 7,
+          "Cereal": 1,
+          "Avocado": 3,
+          "Napkins": 13,
+          "Mustard": 13
+        }
+      },
+      {
+        "departure": "Catanzaro",
+        "destination": "Bergamo",
+        "merchandise": {
+          "Strudel": 5,
+          "Frozen Vegetables": 14,
+          "Beer": 1,
+          "Shampoo": 5,
+          "Honey": 15,
+          "Milk": 3,
+          "Pickles": 5,
+          "Detergent": 5,
+          "Chicken": 1,
+          "Frozen Chicken": 6,
+          "Mayonnaise": 3,
+          "Cheese": 12,
+          "Toothpaste": 13,
+          "Carrots": 14,
+          "Onions": 10,
+          "Chips": 3,
+          "Ketchup": 5,
+          "Ice Cream": 11,
+          "Mustard": 14,
+          "Chocolate": 15
+        }
+      },
+      {
+        "departure": "Bergamo",
+        "destination": "Asti",
+        "merchandise": {
+          "Ice Cream": 10,
+          "Garlic": 6,
+          "Tea": 7,
+          "Strudel": 12,
+          "Napkins": 3,
+          "Milk": 15,
+          "Rice": 15,
+          "Frozen Pizza": 8,
+          "Beer": 14,
+          "Shampoo": 1,
+          "Cheese": 4,
+          "Frozen Vegetables": 14
+        }
+      },
+      {
+        "departure": "Asti",
+        "destination": "Forli",
+        "merchandise": {
+          "Onions": 2,
+          "Toilet Paper": 12,
+          "Chocolate": 12,
+          "Tomatoes": 2,
+          "Tissues": 3,
+          "Carrots": 15,
+          "Mayonnaise": 7,
+          "Salt": 10,
+          "Sugar": 4,
+          "Oranges": 3,
+          "Rice": 6,
+          "Toothbrush": 7,
+          "Frozen Pizza": 7,
+          "Chicken": 12,
+          "Pens": 7,
+          "Beef": 2,
+          "Frozen Chicken": 4,
+          "Ketchup": 2,
+          "Beer": 5,
+          "Potatoes": 2
+        }
+      },
+      {
+        "departure": "Forli",
+        "destination": "Andria",
+        "merchandise": {
+          "Pens": 14,
+          "Onions": 5,
+          "Frozen Vegetables": 1,
+          "Bread": 7,
+          "Pepper": 10,
+          "Rice": 7,
+          "Spinach": 12,
+          "Detergent": 11,
+          "Chocolate": 1,
+          "Strudel": 11,
+          "Frozen Chicken": 9,
+          "Chips": 10,
+          "Tissues": 4,
+          "Paper Towels": 1,
+          "Tea": 1
+        }
+      },
+      {
+        "departure": "Andria",
+        "destination": "Perugia",
+        "merchandise": {
+          "Toilet Paper": 10,
+          "Rice": 2,
+          "Potatoes": 10,
+          "Mustard": 14,
+          "Mayonnaise": 3,
+          "Pickles": 1,
+          "Strudel": 6,
+          "Garlic": 9,
+          "Coffee": 10,
+          "Lotion": 2,
+          "Beer": 9,
+          "Pepper": 15,
+          "Candles": 9,
+          "Frozen Pizza": 15,
+          "Toothbrush": 1,
+          "Bottled Water": 11,
+          "Milk": 3,
+          "Carrots": 1,
+          "Shampoo": 2,
+          "Soap": 5
+        }
+      },
+      {
+        "departure": "Perugia",
+        "destination": "Trento",
+        "merchandise": {
+          "Lotion": 5,
+          "Frozen Fruits": 1,
+          "Mayonnaise": 4,
+          "Chips": 12,
+          "Sugar": 1,
+          "Salt": 7,
+          "Bananas": 6,
+          "Milk": 9,
+          "Soda": 4,
+          "Pasta": 11,
+          "Beer": 4,
+          "Toilet Paper": 8,
+          "Ice Cream": 2,
+          "Tea": 1,
+          "Pickles": 7,
+          "Eggs": 10
+        }
+      },
+      {
+        "departure": "Trento",
+        "destination": "Naples",
+        "merchandise": {
+          "Frozen Chicken": 11,
+          "Frozen Vegetables": 4,
+          "Pepper": 13,
+          "Sugar": 5,
+          "Mustard": 10,
+          "Candles": 8,
+          "Lettuce": 3,
+          "Honey": 12,
+          "Carrots": 3,
+          "Tomatoes": 14,
+          "Mayonnaise": 10,
+          "Bottled Water": 3,
+          "Cheese": 6,
+          "Frozen Fruits": 11,
+          "Eggs": 15,
+          "Pasta": 5,
+          "Garlic": 1,
+          "Oranges": 15
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Frozen Chicken": 8,
+          "Detergent": 5,
+          "Olive Oil": 5,
+          "Chicken": 1,
+          "Tea": 7,
+          "Potatoes": 8,
+          "Tomatoes": 1,
+          "Pasta": 12,
+          "Salt": 13,
+          "Ice Cream": 3
+        }
+      },
+      {
+        "departure": "Vicenza",
+        "destination": "La Spezia",
+        "merchandise": {
+          "Spinach": 1,
+          "Eggs": 1,
+          "Lettuce": 3,
+          "Lotion": 5,
+          "Toothbrush": 7,
+          "Beer": 8,
+          "Bananas": 8,
+          "Napkins": 14,
+          "Apples": 1,
+          "Paper Towels": 9,
+          "Rice": 15,
+          "Sugar": 5,
+          "Ketchup": 10,
+          "Mustard": 11,
+          "Lemons": 11,
+          "Tissues": 11,
+          "Pepper": 9,
+          "Shampoo": 12,
+          "Soap": 5,
+          "Bottled Water": 8
+        }
+      },
+      {
+        "departure": "La Spezia",
+        "destination": "Novara",
+        "merchandise": {
+          "Frozen Pizza": 3,
+          "Pens": 13,
+          "Olive Oil": 10,
+          "Avocado": 12,
+          "Onions": 13,
+          "Pasta": 6,
+          "Strudel": 1,
+          "Lemons": 10,
+          "Lettuce": 5,
+          "Lotion": 13
+        }
+      },
+      {
+        "departure": "Novara",
+        "destination": "Brindisi",
+        "merchandise": {
+          "Onions": 12,
+          "Ketchup": 3,
+          "Candles": 9,
+          "Milk": 12,
+          "Pepper": 13,
+          "Frozen Fruits": 7,
+          "Shampoo": 5,
+          "Detergent": 9,
+          "Lemons": 5,
+          "Soap": 5,
+          "Pickles": 8,
+          "Toothbrush": 6,
+          "Oranges": 11,
+          "Ice Cream": 11
+        }
+      },
+      {
+        "departure": "Brindisi",
+        "destination": "Latina",
+        "merchandise": {
+          "Chocolate": 4,
+          "Onions": 6,
+          "Mustard": 12,
+          "Pasta": 1,
+          "Soda": 13,
+          "Coffee": 12,
+          "Lotion": 3,
+          "Cereal": 6,
+          "Frozen Vegetables": 12,
+          "Sugar": 4,
+          "Ice Cream": 4,
+          "Shampoo": 4,
+          "Bananas": 2,
+          "Paper Towels": 9,
+          "Rice": 9,
+          "Ketchup": 5,
+          "Bottled Water": 5,
+          "Lettuce": 7,
+          "Garlic": 9
+        }
+      }
+    ]
+  },
+  {
+    "driver": "I",
+    "route": [
+      {
+        "departure": "Sesto San Giovanni",
+        "destination": "Barletta",
+        "merchandise": {
+          "Chips": 4,
+          "Beer": 10,
+          "Mustard": 14,
+          "Honey": 8,
+          "Frozen Chicken": 6,
+          "Eggs": 9,
+          "Coffee": 7,
+          "Pens": 13,
+          "Oranges": 14,
+          "Carrots": 4,
+          "Pasta": 2,
+          "Lotion": 13
+        }
+      },
+      {
+        "departure": "Barletta",
+        "destination": "Pozzuoli",
+        "merchandise": {
+          "Sugar": 5,
+          "Toothpaste": 2,
+          "Ketchup": 8,
+          "Shampoo": 3,
+          "Beef": 15,
+          "Apples": 4,
+          "Mustard": 1,
+          "Spinach": 2,
+          "Chips": 6,
+          "Coffee": 5,
+          "Oranges": 2,
+          "Detergent": 10,
+          "Chocolate": 10,
+          "Rice": 15,
+          "Lettuce": 1,
+          "Frozen Vegetables": 10,
+          "Bottled Water": 6,
+          "Cereal": 3,
+          "Chicken": 10,
+          "Garlic": 15
+        }
+      },
+      {
+        "departure": "Pozzuoli",
+        "destination": "Mestre",
+        "merchandise": {
+          "Tissues": 9,
+          "Frozen Chicken": 11,
+          "Chocolate": 13,
+          "Cheese": 10,
+          "Carrots": 14,
+          "Detergent": 12,
+          "Soda": 15,
+          "Toothpaste": 1,
+          "Ketchup": 14,
+          "Soap": 7,
+          "Toilet Paper": 15,
+          "Avocado": 6
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Guidonia Montecelio",
+        "merchandise": {
+          "Bottled Water": 9,
+          "Apples": 1,
+          "Olive Oil": 13,
+          "Spinach": 1,
+          "Bread": 10,
+          "Napkins": 10,
+          "Rice": 13,
+          "Eggs": 12,
+          "Bananas": 9,
+          "Tissues": 4,
+          "Toilet Paper": 11,
+          "Ice Cream": 11,
+          "Chocolate": 2
+        }
+      },
+      {
+        "departure": "Guidonia Montecelio",
+        "destination": "Torre del Greco",
+        "merchandise": {
+          "Tea": 15,
+          "Cheese": 7,
+          "Bread": 3,
+          "Napkins": 15,
+          "Shampoo": 13,
+          "Toothpaste": 15,
+          "Honey": 9,
+          "Pickles": 2,
+          "Eggs": 13,
+          "Potatoes": 7,
+          "Sugar": 5,
+          "Beef": 10,
+          "Cereal": 5,
+          "Toilet Paper": 2
+        }
+      },
+      {
+        "departure": "Torre del Greco",
+        "destination": "Genoa",
+        "merchandise": {
+          "Candles": 9,
+          "Frozen Chicken": 6,
+          "Pepper": 5,
+          "Olive Oil": 1,
+          "Beef": 2,
+          "Pickles": 6,
+          "Soda": 5,
+          "Cereal": 10,
+          "Napkins": 12,
+          "Toothbrush": 1,
+          "Ketchup": 6,
+          "Spinach": 12,
+          "Lettuce": 14,
+          "Beer": 12,
+          "Lemons": 5,
+          "Sugar": 5,
+          "Bananas": 4,
+          "Bread": 13
+        }
+      },
+      {
+        "departure": "Genoa",
+        "destination": "Reggio Calabria",
+        "merchandise": {
+          "Beef": 1,
+          "Frozen Fruits": 2,
+          "Pens": 12,
+          "Rice": 6,
+          "Frozen Vegetables": 4,
+          "Chicken": 7,
+          "Milk": 14,
+          "Pasta": 10,
+          "Eggs": 13,
+          "Soap": 11,
+          "Frozen Pizza": 10,
+          "Strudel": 11,
+          "Toothbrush": 13,
+          "Spinach": 1,
+          "Bottled Water": 15,
+          "Tea": 2,
+          "Sugar": 11,
+          "Honey": 5,
+          "Paper Towels": 9,
+          "Pickles": 13
+        }
+      },
+      {
+        "departure": "Reggio Calabria",
+        "destination": "Alessandria",
+        "merchandise": {
+          "Chicken": 7,
+          "Shampoo": 3,
+          "Beer": 1,
+          "Frozen Pizza": 2,
+          "Pickles": 8,
+          "Strudel": 11,
+          "Oranges": 4,
+          "Garlic": 4,
+          "Tea": 12,
+          "Salt": 5,
+          "Ketchup": 1
+        }
+      }
+    ]
+  },
+  {
+    "driver": "J",
+    "route": [
+      {
+        "departure": "Parma",
+        "destination": "Sassari",
+        "merchandise": {
+          "Cereal": 5,
+          "Cheese": 14,
+          "Chips": 3,
+          "Chicken": 13,
+          "Bread": 12,
+          "Olive Oil": 9,
+          "Salt": 13,
+          "Mustard": 10,
+          "Tea": 11,
+          "Strudel": 12,
+          "Ketchup": 13,
+          "Frozen Chicken": 1,
+          "Spinach": 15,
+          "Candles": 11,
+          "Apples": 6
+        }
+      },
+      {
+        "departure": "Sassari",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Ketchup": 13,
+          "Milk": 14,
+          "Onions": 1,
+          "Beef": 15,
+          "Pens": 13,
+          "Eggs": 1,
+          "Honey": 3,
+          "Apples": 8,
+          "Shampoo": 5,
+          "Paper Towels": 11,
+          "Lettuce": 11,
+          "Olive Oil": 3,
+          "Salt": 7,
+          "Toothbrush": 14,
+          "Chicken": 6,
+          "Tomatoes": 13,
+          "Chocolate": 5,
+          "Avocado": 6,
+          "Cereal": 10,
+          "Bread": 5
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Taranto",
+        "merchandise": {
+          "Frozen Vegetables": 4,
+          "Toothbrush": 12,
+          "Lotion": 11,
+          "Chips": 11,
+          "Cereal": 13,
+          "Pens": 3,
+          "Soda": 7,
+          "Tissues": 11,
+          "Sugar": 2,
+          "Chicken": 13
+        }
+      },
+      {
+        "departure": "Taranto",
+        "destination": "Lucca",
+        "merchandise": {
+          "Frozen Vegetables": 11,
+          "Bread": 4,
+          "Beef": 4,
+          "Honey": 14,
+          "Spinach": 13,
+          "Eggs": 14,
+          "Apples": 14,
+          "Tissues": 12,
+          "Pickles": 6,
+          "Mustard": 9,
+          "Lotion": 3,
+          "Salt": 2
+        }
+      },
+      {
+        "departure": "Lucca",
+        "destination": "Reggio Emilia",
+        "merchandise": {
+          "Shampoo": 3,
+          "Beef": 15,
+          "Toothpaste": 9,
+          "Carrots": 12,
+          "Chocolate": 11,
+          "Sugar": 8,
+          "Garlic": 11,
+          "Spinach": 7,
+          "Mustard": 4,
+          "Strudel": 6,
+          "Detergent": 1,
+          "Toilet Paper": 6,
+          "Cereal": 14,
+          "Salt": 4,
+          "Bottled Water": 5,
+          "Rice": 3
+        }
+      },
+      {
+        "departure": "Reggio Emilia",
+        "destination": "Latina",
+        "merchandise": {
+          "Honey": 4,
+          "Ice Cream": 11,
+          "Cheese": 12,
+          "Lemons": 14,
+          "Toothbrush": 14,
+          "Mustard": 8,
+          "Frozen Chicken": 11,
+          "Toilet Paper": 15,
+          "Candles": 5,
+          "Olive Oil": 15,
+          "Salt": 7,
+          "Tomatoes": 3,
+          "Garlic": 8,
+          "Carrots": 2,
+          "Pepper": 9,
+          "Soap": 1,
+          "Spinach": 11,
+          "Rice": 14,
+          "Pens": 12,
+          "Potatoes": 8
+        }
+      },
+      {
+        "departure": "Latina",
+        "destination": "Bergamo",
+        "merchandise": {
+          "Frozen Fruits": 9,
+          "Olive Oil": 10,
+          "Strudel": 11,
+          "Carrots": 5,
+          "Tea": 12,
+          "Soda": 9,
+          "Cereal": 4,
+          "Paper Towels": 7,
+          "Spinach": 8,
+          "Tomatoes": 11,
+          "Avocado": 1,
+          "Napkins": 9,
+          "Cheese": 6,
+          "Lotion": 11,
+          "Onions": 4,
+          "Rice": 9,
+          "Toothpaste": 3,
+          "Frozen Vegetables": 1,
+          "Garlic": 6,
+          "Pepper": 1
+        }
+      },
+      {
+        "departure": "Bergamo",
+        "destination": "Piacenza",
+        "merchandise": {
+          "Tissues": 8,
+          "Chocolate": 13,
+          "Apples": 3,
+          "Pasta": 6,
+          "Pickles": 1,
+          "Soda": 12,
+          "Salt": 11,
+          "Candles": 11,
+          "Sugar": 7,
+          "Pepper": 9,
+          "Napkins": 3,
+          "Toothpaste": 7
+        }
+      },
+      {
+        "departure": "Piacenza",
+        "destination": "Torre del Greco",
+        "merchandise": {
+          "Lotion": 6,
+          "Spinach": 14,
+          "Toilet Paper": 6,
+          "Milk": 2,
+          "Ketchup": 5,
+          "Tomatoes": 7,
+          "Chicken": 12,
+          "Carrots": 2,
+          "Oranges": 10,
+          "Soap": 15
+        }
+      },
+      {
+        "departure": "Torre del Greco",
+        "destination": "Bolzano",
+        "merchandise": {
+          "Cereal": 5,
+          "Olive Oil": 1,
+          "Soap": 13,
+          "Toilet Paper": 7,
+          "Avocado": 15,
+          "Tomatoes": 13,
+          "Detergent": 12,
+          "Oranges": 2,
+          "Strudel": 7,
+          "Pasta": 13,
+          "Beer": 10,
+          "Honey": 7,
+          "Salt": 13,
+          "Cheese": 3,
+          "Frozen Fruits": 3,
+          "Frozen Pizza": 5,
+          "Tea": 10,
+          "Rice": 6
+        }
+      },
+      {
+        "departure": "Bolzano",
+        "destination": "Pisa",
+        "merchandise": {
+          "Apples": 14,
+          "Pasta": 14,
+          "Rice": 14,
+          "Soda": 9,
+          "Beef": 10,
+          "Chips": 6,
+          "Toilet Paper": 12,
+          "Olive Oil": 9,
+          "Garlic": 1,
+          "Milk": 13,
+          "Salt": 9,
+          "Cereal": 9,
+          "Shampoo": 13,
+          "Frozen Vegetables": 9,
+          "Napkins": 12,
+          "Bread": 1
+        }
+      },
+      {
+        "departure": "Pisa",
+        "destination": "Grosseto",
+        "merchandise": {
+          "Toilet Paper": 12,
+          "Potatoes": 2,
+          "Toothpaste": 10,
+          "Salt": 6,
+          "Onions": 5,
+          "Chips": 10,
+          "Chicken": 1,
+          "Sugar": 2,
+          "Pasta": 14,
+          "Tomatoes": 6
+        }
+      },
+      {
+        "departure": "Grosseto",
+        "destination": "Barletta",
+        "merchandise": {
+          "Milk": 11,
+          "Frozen Pizza": 10,
+          "Sugar": 6,
+          "Potatoes": 1,
+          "Paper Towels": 10,
+          "Detergent": 1,
+          "Soap": 13,
+          "Lemons": 8,
+          "Frozen Vegetables": 15,
+          "Pasta": 14,
+          "Chips": 6,
+          "Bread": 5,
+          "Pepper": 9,
+          "Eggs": 8,
+          "Beer": 2,
+          "Garlic": 1,
+          "Beef": 4,
+          "Avocado": 14,
+          "Mustard": 8
+        }
+      }
+    ]
+  },
+  {
+    "driver": "K",
+    "route": [
+      {
+        "departure": "Bologna",
+        "destination": "Pistoia",
+        "merchandise": {
+          "Strudel": 9,
+          "Chips": 10,
+          "Garlic": 4,
+          "Potatoes": 11,
+          "Paper Towels": 12,
+          "Lettuce": 9,
+          "Onions": 8,
+          "Apples": 12,
+          "Toilet Paper": 10,
+          "Olive Oil": 10,
+          "Toothbrush": 7,
+          "Soda": 3,
+          "Cheese": 10,
+          "Beef": 14,
+          "Soap": 6,
+          "Spinach": 8,
+          "Tomatoes": 3,
+          "Eggs": 10,
+          "Detergent": 9
+        }
+      },
+      {
+        "departure": "Pistoia",
+        "destination": "Pozzuoli",
+        "merchandise": {
+          "Onions": 13,
+          "Pens": 7,
+          "Frozen Chicken": 11,
+          "Spinach": 14,
+          "Chocolate": 11,
+          "Mustard": 7,
+          "Frozen Vegetables": 9,
+          "Garlic": 1,
+          "Pasta": 9,
+          "Sugar": 5,
+          "Tissues": 11,
+          "Cheese": 12,
+          "Bananas": 1,
+          "Strudel": 9,
+          "Toothpaste": 4,
+          "Pepper": 11,
+          "Soap": 8
+        }
+      },
+      {
+        "departure": "Pozzuoli",
+        "destination": "Catanzaro",
+        "merchandise": {
+          "Beef": 5,
+          "Frozen Vegetables": 5,
+          "Lemons": 11,
+          "Frozen Pizza": 5,
+          "Bottled Water": 7,
+          "Tissues": 9,
+          "Frozen Fruits": 1,
+          "Eggs": 13,
+          "Coffee": 14,
+          "Tomatoes": 5,
+          "Garlic": 10,
+          "Olive Oil": 10
+        }
+      },
+      {
+        "departure": "Catanzaro",
+        "destination": "Treviso",
+        "merchandise": {
+          "Napkins": 11,
+          "Onions": 15,
+          "Spinach": 6,
+          "Mustard": 15,
+          "Olive Oil": 13,
+          "Chicken": 9,
+          "Toothpaste": 3,
+          "Frozen Chicken": 5,
+          "Pens": 12,
+          "Apples": 1,
+          "Paper Towels": 9,
+          "Salt": 4,
+          "Frozen Fruits": 2,
+          "Toilet Paper": 6,
+          "Shampoo": 7,
+          "Ice Cream": 10,
+          "Pickles": 8,
+          "Strudel": 12
+        }
+      },
+      {
+        "departure": "Treviso",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Detergent": 15,
+          "Honey": 12,
+          "Frozen Vegetables": 9,
+          "Chips": 8,
+          "Paper Towels": 1,
+          "Lettuce": 7,
+          "Soda": 11,
+          "Tea": 7,
+          "Milk": 4,
+          "Beef": 14,
+          "Soap": 5,
+          "Napkins": 13,
+          "Frozen Chicken": 10,
+          "Strudel": 7,
+          "Tomatoes": 10,
+          "Cereal": 14,
+          "Frozen Pizza": 11,
+          "Spinach": 8,
+          "Shampoo": 6
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Udine",
+        "merchandise": {
+          "Paper Towels": 4,
+          "Spinach": 6,
+          "Chips": 13,
+          "Pickles": 2,
+          "Toothpaste": 10,
+          "Soda": 11,
+          "Lemons": 8,
+          "Pens": 12,
+          "Pasta": 10,
+          "Bottled Water": 9,
+          "Eggs": 15,
+          "Garlic": 10,
+          "Lotion": 7,
+          "Oranges": 6,
+          "Frozen Vegetables": 8,
+          "Detergent": 3
+        }
+      },
+      {
+        "departure": "Udine",
+        "destination": "Giugliano in Campania",
+        "merchandise": {
+          "Carrots": 5,
+          "Beer": 10,
+          "Frozen Vegetables": 6,
+          "Cheese": 15,
+          "Coffee": 15,
+          "Apples": 4,
+          "Lemons": 9,
+          "Bread": 8,
+          "Toothpaste": 15,
+          "Pasta": 2,
+          "Chocolate": 12,
+          "Pens": 6,
+          "Detergent": 9,
+          "Frozen Fruits": 10
+        }
+      },
+      {
+        "departure": "Giugliano in Campania",
+        "destination": "Brescia",
+        "merchandise": {
+          "Coffee": 6,
+          "Mustard": 7,
+          "Toothpaste": 7,
+          "Paper Towels": 15,
+          "Tomatoes": 15,
+          "Mayonnaise": 8,
+          "Lemons": 2,
+          "Olive Oil": 7,
+          "Oranges": 12,
+          "Lettuce": 7,
+          "Frozen Fruits": 14
+        }
+      },
+      {
+        "departure": "Brescia",
+        "destination": "Catania",
+        "merchandise": {
+          "Eggs": 3,
+          "Pickles": 3,
+          "Tomatoes": 9,
+          "Mayonnaise": 7,
+          "Soda": 13,
+          "Avocado": 15,
+          "Sugar": 14,
+          "Rice": 6,
+          "Frozen Fruits": 9,
+          "Lemons": 12,
+          "Bread": 13
+        }
+      },
+      {
+        "departure": "Catania",
+        "destination": "Naples",
+        "merchandise": {
+          "Pens": 11,
+          "Ice Cream": 3,
+          "Bottled Water": 7,
+          "Lemons": 10,
+          "Soda": 5,
+          "Cheese": 2,
+          "Mayonnaise": 9,
+          "Tea": 5,
+          "Oranges": 14,
+          "Eggs": 10,
+          "Beef": 2,
+          "Sugar": 4,
+          "Coffee": 7,
+          "Chips": 13,
+          "Bread": 14
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Ancona",
+        "merchandise": {
+          "Lettuce": 11,
+          "Lemons": 6,
+          "Beef": 9,
+          "Cheese": 7,
+          "Chicken": 5,
+          "Beer": 9,
+          "Paper Towels": 9,
+          "Tissues": 10,
+          "Toothbrush": 10,
+          "Spinach": 7,
+          "Tomatoes": 7,
+          "Honey": 11,
+          "Olive Oil": 12,
+          "Pens": 12,
+          "Avocado": 7,
+          "Coffee": 4,
+          "Pasta": 2,
+          "Frozen Vegetables": 13
+        }
+      }
+    ]
+  },
+  {
+    "driver": "L",
+    "route": [
+      {
+        "departure": "Brindisi",
+        "destination": "Arezzo",
+        "merchandise": {
+          "Beer": 2,
+          "Milk": 14,
+          "Frozen Fruits": 11,
+          "Ice Cream": 3,
+          "Strudel": 1,
+          "Carrots": 13,
+          "Avocado": 4,
+          "Detergent": 11,
+          "Toothbrush": 11,
+          "Tomatoes": 5,
+          "Olive Oil": 5,
+          "Cheese": 10,
+          "Honey": 10,
+          "Toothpaste": 3,
+          "Tissues": 8,
+          "Coffee": 9,
+          "Spinach": 4,
+          "Shampoo": 8,
+          "Napkins": 2
+        }
+      },
+      {
+        "departure": "Arezzo",
+        "destination": "Novara",
+        "merchandise": {
+          "Chips": 2,
+          "Shampoo": 4,
+          "Frozen Chicken": 13,
+          "Paper Towels": 4,
+          "Sugar": 10,
+          "Ketchup": 6,
+          "Napkins": 1,
+          "Pepper": 7,
+          "Detergent": 13,
+          "Honey": 8,
+          "Frozen Pizza": 15,
+          "Bread": 8,
+          "Chocolate": 4,
+          "Avocado": 3,
+          "Oranges": 2
+        }
+      },
+      {
+        "departure": "Novara",
+        "destination": "Latina",
+        "merchandise": {
+          "Sugar": 2,
+          "Milk": 4,
+          "Garlic": 11,
+          "Candles": 14,
+          "Napkins": 12,
+          "Lemons": 10,
+          "Ketchup": 3,
+          "Paper Towels": 15,
+          "Oranges": 14,
+          "Lettuce": 9,
+          "Toothbrush": 14,
+          "Beef": 14,
+          "Bread": 11,
+          "Salt": 2,
+          "Chicken": 2,
+          "Coffee": 10,
+          "Tea": 10
+        }
+      },
+      {
+        "departure": "Latina",
+        "destination": "Udine",
+        "merchandise": {
+          "Carrots": 2,
+          "Potatoes": 14,
+          "Spinach": 3,
+          "Frozen Vegetables": 4,
+          "Toothpaste": 13,
+          "Chicken": 2,
+          "Salt": 7,
+          "Oranges": 14,
+          "Coffee": 5,
+          "Rice": 13,
+          "Garlic": 11
+        }
+      },
+      {
+        "departure": "Udine",
+        "destination": "Venice",
+        "merchandise": {
+          "Toothbrush": 12,
+          "Tissues": 9,
+          "Beer": 3,
+          "Lettuce": 9,
+          "Onions": 5,
+          "Milk": 12,
+          "Soap": 3,
+          "Mayonnaise": 1,
+          "Lemons": 5,
+          "Strudel": 10,
+          "Eggs": 9,
+          "Olive Oil": 2
+        }
+      },
+      {
+        "departure": "Venice",
+        "destination": "Turin",
+        "merchandise": {
+          "Oranges": 10,
+          "Bananas": 9,
+          "Chicken": 9,
+          "Frozen Fruits": 1,
+          "Mustard": 6,
+          "Toothbrush": 13,
+          "Potatoes": 1,
+          "Mayonnaise": 12,
+          "Lettuce": 6,
+          "Frozen Chicken": 11,
+          "Tea": 5,
+          "Rice": 10
+        }
+      },
+      {
+        "departure": "Turin",
+        "destination": "Naples",
+        "merchandise": {
+          "Soda": 6,
+          "Strudel": 10,
+          "Olive Oil": 9,
+          "Frozen Fruits": 2,
+          "Salt": 11,
+          "Lemons": 5,
+          "Honey": 8,
+          "Paper Towels": 8,
+          "Coffee": 8,
+          "Pasta": 8,
+          "Tea": 6
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "La Spezia",
+        "merchandise": {
+          "Pickles": 14,
+          "Spinach": 2,
+          "Tomatoes": 8,
+          "Tea": 13,
+          "Ice Cream": 2,
+          "Onions": 1,
+          "Toothpaste": 3,
+          "Soda": 8,
+          "Garlic": 11,
+          "Olive Oil": 15,
+          "Frozen Vegetables": 8,
+          "Chicken": 15,
+          "Beef": 1,
+          "Frozen Fruits": 5
+        }
+      },
+      {
+        "departure": "La Spezia",
+        "destination": "Terni",
+        "merchandise": {
+          "Cereal": 6,
+          "Bananas": 6,
+          "Chicken": 6,
+          "Coffee": 4,
+          "Beef": 6,
+          "Frozen Fruits": 14,
+          "Pasta": 9,
+          "Mayonnaise": 10,
+          "Honey": 4,
+          "Rice": 12,
+          "Detergent": 1,
+          "Soda": 14,
+          "Shampoo": 13,
+          "Toothbrush": 9,
+          "Salt": 10,
+          "Apples": 12,
+          "Beer": 14,
+          "Potatoes": 12,
+          "Spinach": 7
+        }
+      },
+      {
+        "departure": "Terni",
+        "destination": "Modena",
+        "merchandise": {
+          "Carrots": 11,
+          "Candles": 4,
+          "Toothbrush": 13,
+          "Cereal": 4,
+          "Eggs": 3,
+          "Frozen Fruits": 8,
+          "Bread": 13,
+          "Lotion": 9,
+          "Beef": 9,
+          "Chocolate": 12,
+          "Frozen Pizza": 4,
+          "Milk": 15,
+          "Chips": 8,
+          "Coffee": 11,
+          "Onions": 9,
+          "Mustard": 9,
+          "Olive Oil": 8,
+          "Shampoo": 6,
+          "Bananas": 5
+        }
+      }
+    ]
+  },
+  {
+    "driver": "M",
+    "route": [
+      {
+        "departure": "Brescia",
+        "destination": "Como",
+        "merchandise": {
+          "Toilet Paper": 15,
+          "Frozen Chicken": 7,
+          "Chips": 6,
+          "Napkins": 3,
+          "Candles": 14,
+          "Avocado": 12,
+          "Salt": 7,
+          "Olive Oil": 10,
+          "Beer": 1,
+          "Sugar": 9,
+          "Frozen Pizza": 9,
+          "Apples": 14,
+          "Frozen Vegetables": 6,
+          "Potatoes": 12,
+          "Pasta": 2,
+          "Eggs": 10,
+          "Shampoo": 14,
+          "Frozen Fruits": 11,
+          "Tomatoes": 1,
+          "Honey": 12
+        }
+      },
+      {
+        "departure": "Como",
+        "destination": "Rome",
+        "merchandise": {
+          "Paper Towels": 1,
+          "Frozen Fruits": 12,
+          "Coffee": 9,
+          "Lotion": 10,
+          "Bottled Water": 6,
+          "Milk": 12,
+          "Frozen Vegetables": 12,
+          "Candles": 9,
+          "Pepper": 11,
+          "Toilet Paper": 1,
+          "Mayonnaise": 14,
+          "Bread": 14,
+          "Tea": 1,
+          "Beer": 13,
+          "Frozen Pizza": 8
+        }
+      },
+      {
+        "departure": "Rome",
+        "destination": "Torre del Greco",
+        "merchandise": {
+          "Oranges": 10,
+          "Mustard": 8,
+          "Tea": 12,
+          "Olive Oil": 6,
+          "Bananas": 6,
+          "Frozen Vegetables": 6,
+          "Milk": 15,
+          "Bread": 14,
+          "Pepper": 3,
+          "Beef": 13,
+          "Onions": 10,
+          "Salt": 1,
+          "Frozen Chicken": 11,
+          "Mayonnaise": 1
+        }
+      },
+      {
+        "departure": "Torre del Greco",
+        "destination": "Terni",
+        "merchandise": {
+          "Salt": 1,
+          "Beer": 12,
+          "Onions": 13,
+          "Candles": 13,
+          "Bananas": 4,
+          "Olive Oil": 6,
+          "Strudel": 11,
+          "Eggs": 4,
+          "Toothbrush": 10,
+          "Tissues": 6,
+          "Carrots": 8,
+          "Bread": 2
+        }
+      },
+      {
+        "departure": "Terni",
+        "destination": "Verona",
+        "merchandise": {
+          "Salt": 12,
+          "Mayonnaise": 11,
+          "Bottled Water": 6,
+          "Detergent": 7,
+          "Shampoo": 4,
+          "Sugar": 14,
+          "Tissues": 6,
+          "Pickles": 15,
+          "Frozen Chicken": 4,
+          "Lotion": 3,
+          "Apples": 3,
+          "Pasta": 11,
+          "Honey": 11
+        }
+      },
+      {
+        "departure": "Verona",
+        "destination": "Casoria",
+        "merchandise": {
+          "Apples": 7,
+          "Spinach": 7,
+          "Carrots": 10,
+          "Olive Oil": 14,
+          "Onions": 15,
+          "Bananas": 13,
+          "Beef": 11,
+          "Eggs": 15,
+          "Pickles": 9,
+          "Coffee": 8,
+          "Toilet Paper": 11,
+          "Sugar": 11,
+          "Toothpaste": 1,
+          "Candles": 15,
+          "Tomatoes": 4,
+          "Salt": 2,
+          "Oranges": 8,
+          "Cereal": 4,
+          "Soda": 8
+        }
+      },
+      {
+        "departure": "Casoria",
+        "destination": "Novara",
+        "merchandise": {
+          "Bananas": 7,
+          "Toothbrush": 5,
+          "Soap": 12,
+          "Tissues": 3,
+          "Paper Towels": 5,
+          "Rice": 11,
+          "Garlic": 7,
+          "Onions": 14,
+          "Candles": 8,
+          "Napkins": 4
+        }
+      },
+      {
+        "departure": "Novara",
+        "destination": "Forli",
+        "merchandise": {
+          "Milk": 4,
+          "Rice": 6,
+          "Honey": 7,
+          "Cheese": 13,
+          "Frozen Pizza": 12,
+          "Soap": 1,
+          "Candles": 2,
+          "Ice Cream": 5,
+          "Oranges": 5,
+          "Pasta": 2,
+          "Coffee": 7,
+          "Paper Towels": 9,
+          "Napkins": 12,
+          "Eggs": 14,
+          "Chocolate": 15,
+          "Tea": 9,
+          "Frozen Chicken": 8
+        }
+      },
+      {
+        "departure": "Forli",
+        "destination": "Lecce",
+        "merchandise": {
+          "Cheese": 8,
+          "Bananas": 14,
+          "Tomatoes": 13,
+          "Chips": 9,
+          "Lettuce": 1,
+          "Spinach": 12,
+          "Frozen Chicken": 8,
+          "Pens": 9,
+          "Bottled Water": 12,
+          "Soda": 15,
+          "Honey": 4,
+          "Detergent": 3,
+          "Candles": 3,
+          "Pasta": 2,
+          "Avocado": 13,
+          "Beer": 6,
+          "Pepper": 10,
+          "Milk": 13
+        }
+      },
+      {
+        "departure": "Lecce",
+        "destination": "Catania",
+        "merchandise": {
+          "Milk": 15,
+          "Lettuce": 2,
+          "Ketchup": 2,
+          "Olive Oil": 1,
+          "Soda": 6,
+          "Tea": 11,
+          "Mustard": 2,
+          "Chocolate": 4,
+          "Pepper": 11,
+          "Carrots": 8,
+          "Potatoes": 7,
+          "Bread": 6
+        }
+      }
+    ]
+  },
+  {
+    "driver": "N",
+    "route": [
+      {
+        "departure": "Alessandria",
+        "destination": "Asti",
+        "merchandise": {
+          "Frozen Fruits": 10,
+          "Toothbrush": 13,
+          "Soap": 10,
+          "Avocado": 8,
+          "Pepper": 10,
+          "Lettuce": 12,
+          "Detergent": 9,
+          "Pens": 10,
+          "Mayonnaise": 6,
+          "Bottled Water": 9,
+          "Strudel": 14,
+          "Garlic": 4,
+          "Chips": 14,
+          "Napkins": 15
+        }
+      },
+      {
+        "departure": "Asti",
+        "destination": "Lecce",
+        "merchandise": {
+          "Lettuce": 11,
+          "Bread": 1,
+          "Coffee": 12,
+          "Beef": 13,
+          "Eggs": 6,
+          "Mustard": 10,
+          "Soda": 15,
+          "Frozen Pizza": 13,
+          "Potatoes": 8,
+          "Cheese": 6,
+          "Pepper": 13,
+          "Detergent": 5,
+          "Rice": 9
+        }
+      },
+      {
+        "departure": "Lecce",
+        "destination": "Como",
+        "merchandise": {
+          "Cereal": 1,
+          "Strudel": 5,
+          "Potatoes": 5,
+          "Frozen Fruits": 13,
+          "Oranges": 8,
+          "Garlic": 11,
+          "Mayonnaise": 4,
+          "Pepper": 11,
+          "Spinach": 3,
+          "Pickles": 9,
+          "Tissues": 2,
+          "Olive Oil": 13
+        }
+      },
+      {
+        "departure": "Como",
+        "destination": "Treviso",
+        "merchandise": {
+          "Beer": 11,
+          "Pickles": 11,
+          "Tissues": 6,
+          "Ice Cream": 8,
+          "Lemons": 13,
+          "Carrots": 1,
+          "Lotion": 1,
+          "Ketchup": 1,
+          "Olive Oil": 8,
+          "Salt": 15
+        }
+      },
+      {
+        "departure": "Treviso",
+        "destination": "Pisa",
+        "merchandise": {
+          "Chicken": 3,
+          "Toilet Paper": 5,
+          "Rice": 5,
+          "Lettuce": 7,
+          "Frozen Fruits": 2,
+          "Olive Oil": 10,
+          "Coffee": 7,
+          "Milk": 3,
+          "Pickles": 7,
+          "Garlic": 6,
+          "Eggs": 10,
+          "Frozen Chicken": 10,
+          "Toothpaste": 11
+        }
+      },
+      {
+        "departure": "Pisa",
+        "destination": "Sassari",
+        "merchandise": {
+          "Toilet Paper": 13,
+          "Milk": 2,
+          "Frozen Fruits": 7,
+          "Beef": 14,
+          "Detergent": 6,
+          "Cheese": 4,
+          "Oranges": 15,
+          "Mayonnaise": 14,
+          "Candles": 12,
+          "Frozen Pizza": 15
+        }
+      },
+      {
+        "departure": "Sassari",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Lettuce": 3,
+          "Pasta": 8,
+          "Ketchup": 1,
+          "Tomatoes": 10,
+          "Onions": 14,
+          "Chicken": 14,
+          "Potatoes": 14,
+          "Cereal": 14,
+          "Mayonnaise": 3,
+          "Bottled Water": 12
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Casoria",
+        "merchandise": {
+          "Oranges": 5,
+          "Salt": 15,
+          "Ketchup": 9,
+          "Bread": 9,
+          "Toilet Paper": 2,
+          "Bottled Water": 14,
+          "Shampoo": 11,
+          "Beer": 6,
+          "Toothbrush": 2,
+          "Lemons": 15,
+          "Napkins": 4,
+          "Apples": 3,
+          "Frozen Vegetables": 1,
+          "Spinach": 15,
+          "Potatoes": 15,
+          "Soap": 6
+        }
+      },
+      {
+        "departure": "Casoria",
+        "destination": "Guidonia Montecelio",
+        "merchandise": {
+          "Beef": 13,
+          "Lettuce": 14,
+          "Mayonnaise": 4,
+          "Bread": 15,
+          "Strudel": 11,
+          "Garlic": 11,
+          "Mustard": 13,
+          "Ice Cream": 6,
+          "Onions": 8,
+          "Tomatoes": 9,
+          "Cereal": 11,
+          "Tissues": 15,
+          "Cheese": 9,
+          "Chips": 10
+        }
+      },
+      {
+        "departure": "Guidonia Montecelio",
+        "destination": "Monza",
+        "merchandise": {
+          "Salt": 10,
+          "Cheese": 6,
+          "Rice": 15,
+          "Bread": 10,
+          "Pasta": 13,
+          "Lettuce": 3,
+          "Oranges": 7,
+          "Shampoo": 7,
+          "Frozen Pizza": 13,
+          "Tea": 1,
+          "Chocolate": 4,
+          "Candles": 8,
+          "Carrots": 13,
+          "Mustard": 5,
+          "Pepper": 14,
+          "Beer": 13
+        }
+      }
+    ]
+  },
+  {
+    "driver": "O",
+    "route": [
+      {
+        "departure": "Milan",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Rice": 3,
+          "Beef": 9,
+          "Chicken": 3,
+          "Apples": 3,
+          "Salt": 12,
+          "Spinach": 11,
+          "Beer": 11,
+          "Bread": 12,
+          "Toothbrush": 14,
+          "Soda": 15,
+          "Onions": 8,
+          "Lettuce": 5,
+          "Avocado": 14,
+          "Carrots": 3,
+          "Toothpaste": 15
+        }
+      },
+      {
+        "departure": "Vicenza",
+        "destination": "Brescia",
+        "merchandise": {
+          "Bananas": 1,
+          "Olive Oil": 5,
+          "Candles": 6,
+          "Spinach": 15,
+          "Pickles": 15,
+          "Tissues": 12,
+          "Soap": 10,
+          "Frozen Vegetables": 10,
+          "Lettuce": 5,
+          "Toothpaste": 15,
+          "Chicken": 7
+        }
+      },
+      {
+        "departure": "Brescia",
+        "destination": "Salerno",
+        "merchandise": {
+          "Frozen Pizza": 15,
+          "Soda": 3,
+          "Honey": 2,
+          "Oranges": 4,
+          "Olive Oil": 9,
+          "Carrots": 7,
+          "Candles": 6,
+          "Soap": 7,
+          "Paper Towels": 2,
+          "Tissues": 14,
+          "Pens": 11,
+          "Cereal": 7,
+          "Bottled Water": 4,
+          "Frozen Chicken": 15,
+          "Lettuce": 7,
+          "Beef": 1,
+          "Toothpaste": 3,
+          "Coffee": 2
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Palermo",
+        "merchandise": {
+          "Carrots": 12,
+          "Salt": 11,
+          "Spinach": 14,
+          "Beer": 14,
+          "Napkins": 11,
+          "Soda": 9,
+          "Rice": 10,
+          "Lemons": 2,
+          "Frozen Pizza": 13,
+          "Potatoes": 4,
+          "Frozen Chicken": 4,
+          "Pens": 9,
+          "Toilet Paper": 11,
+          "Lotion": 2,
+          "Frozen Vegetables": 3,
+          "Candles": 15,
+          "Bottled Water": 7,
+          "Olive Oil": 6,
+          "Bananas": 15,
+          "Garlic": 2
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Foggia",
+        "merchandise": {
+          "Eggs": 10,
+          "Frozen Fruits": 9,
+          "Beer": 9,
+          "Lotion": 15,
+          "Tomatoes": 14,
+          "Candles": 9,
+          "Rice": 3,
+          "Strudel": 14,
+          "Chips": 4,
+          "Onions": 12
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Udine",
+        "merchandise": {
+          "Salt": 6,
+          "Lotion": 4,
+          "Tomatoes": 11,
+          "Cheese": 5,
+          "Apples": 1,
+          "Chicken": 8,
+          "Ketchup": 7,
+          "Oranges": 6,
+          "Coffee": 5,
+          "Honey": 5
+        }
+      },
+      {
+        "departure": "Udine",
+        "destination": "Parma",
+        "merchandise": {
+          "Potatoes": 7,
+          "Chocolate": 1,
+          "Salt": 10,
+          "Pasta": 14,
+          "Olive Oil": 8,
+          "Frozen Pizza": 1,
+          "Avocado": 9,
+          "Beer": 14,
+          "Mustard": 4,
+          "Apples": 11,
+          "Bread": 12,
+          "Strudel": 11,
+          "Oranges": 15,
+          "Tea": 5,
+          "Ketchup": 12,
+          "Toothbrush": 6,
+          "Frozen Chicken": 9,
+          "Frozen Fruits": 9,
+          "Cereal": 9
+        }
+      },
+      {
+        "departure": "Parma",
+        "destination": "Prato",
+        "merchandise": {
+          "Pasta": 4,
+          "Onions": 4,
+          "Spinach": 10,
+          "Mustard": 9,
+          "Lemons": 3,
+          "Frozen Pizza": 2,
+          "Pens": 1,
+          "Toothpaste": 14,
+          "Sugar": 6,
+          "Frozen Vegetables": 9,
+          "Apples": 3,
+          "Olive Oil": 9,
+          "Garlic": 5,
+          "Oranges": 13
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Sassari",
+        "merchandise": {
+          "Pickles": 14,
+          "Lettuce": 1,
+          "Onions": 2,
+          "Pepper": 10,
+          "Chicken": 3,
+          "Soda": 5,
+          "Honey": 9,
+          "Pasta": 7,
+          "Tissues": 5,
+          "Ice Cream": 13
+        }
+      }
+    ]
+  },
+  {
+    "driver": "P",
+    "route": [
+      {
+        "departure": "Udine",
+        "destination": "Forli",
+        "merchandise": {
+          "Soap": 4,
+          "Spinach": 2,
+          "Oranges": 14,
+          "Shampoo": 3,
+          "Pasta": 15,
+          "Chips": 8,
+          "Chicken": 13,
+          "Detergent": 9,
+          "Soda": 13,
+          "Coffee": 7,
+          "Toothpaste": 2,
+          "Rice": 2,
+          "Cereal": 6,
+          "Pens": 5,
+          "Carrots": 14,
+          "Garlic": 10,
+          "Ice Cream": 8,
+          "Lettuce": 8,
+          "Sugar": 5,
+          "Cheese": 8
+        }
+      },
+      {
+        "departure": "Forli",
+        "destination": "Vicenza",
+        "merchandise": {
+          "Tissues": 8,
+          "Mayonnaise": 4,
+          "Pepper": 15,
+          "Olive Oil": 11,
+          "Onions": 7,
+          "Soda": 11,
+          "Frozen Fruits": 2,
+          "Lotion": 9,
+          "Potatoes": 15,
+          "Pens": 15,
+          "Mustard": 15,
+          "Tomatoes": 5,
+          "Ketchup": 5,
+          "Chips": 7,
+          "Beef": 1,
+          "Coffee": 6,
+          "Bread": 8
+        }
+      },
+      {
+        "departure": "Vicenza",
+        "destination": "Piacenza",
+        "merchandise": {
+          "Beer": 8,
+          "Paper Towels": 10,
+          "Mustard": 1,
+          "Sugar": 7,
+          "Salt": 1,
+          "Pepper": 7,
+          "Pasta": 13,
+          "Tomatoes": 4,
+          "Pickles": 6,
+          "Frozen Chicken": 1,
+          "Olive Oil": 6,
+          "Strudel": 13,
+          "Lemons": 7,
+          "Chocolate": 10,
+          "Bananas": 9,
+          "Lotion": 9,
+          "Cereal": 9,
+          "Onions": 13,
+          "Mayonnaise": 8,
+          "Shampoo": 6
+        }
+      },
+      {
+        "departure": "Piacenza",
+        "destination": "Mestre",
+        "merchandise": {
+          "Salt": 12,
+          "Bananas": 6,
+          "Onions": 2,
+          "Frozen Chicken": 1,
+          "Candles": 14,
+          "Soap": 15,
+          "Rice": 6,
+          "Toothbrush": 1,
+          "Pickles": 6,
+          "Lotion": 9,
+          "Cheese": 11,
+          "Chocolate": 6,
+          "Honey": 10,
+          "Milk": 15,
+          "Tomatoes": 6,
+          "Shampoo": 6,
+          "Olive Oil": 1,
+          "Garlic": 8,
+          "Spinach": 9,
+          "Ketchup": 3
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Torre del Greco",
+        "merchandise": {
+          "Bread": 7,
+          "Carrots": 4,
+          "Beef": 5,
+          "Apples": 11,
+          "Lettuce": 3,
+          "Onions": 6,
+          "Soap": 1,
+          "Tomatoes": 3,
+          "Cereal": 3,
+          "Strudel": 8,
+          "Milk": 14,
+          "Garlic": 4,
+          "Cheese": 7,
+          "Toilet Paper": 4,
+          "Frozen Vegetables": 13,
+          "Pickles": 9,
+          "Soda": 14,
+          "Avocado": 11,
+          "Bottled Water": 15
+        }
+      },
+      {
+        "departure": "Torre del Greco",
+        "destination": "Siracusa",
+        "merchandise": {
+          "Frozen Fruits": 3,
+          "Garlic": 12,
+          "Shampoo": 6,
+          "Milk": 11,
+          "Toothpaste": 4,
+          "Ice Cream": 11,
+          "Bananas": 4,
+          "Tomatoes": 3,
+          "Strudel": 13,
+          "Coffee": 8,
+          "Mayonnaise": 13,
+          "Candles": 11,
+          "Rice": 5
+        }
+      }
+    ]
+  },
+  {
+    "driver": "Q",
+    "route": [
+      {
+        "departure": "Verona",
+        "destination": "Udine",
+        "merchandise": {
+          "Avocado": 10,
+          "Potatoes": 1,
+          "Tomatoes": 8,
+          "Frozen Chicken": 1,
+          "Cereal": 13,
+          "Lemons": 1,
+          "Frozen Fruits": 13,
+          "Detergent": 10,
+          "Lotion": 10,
+          "Rice": 11,
+          "Mayonnaise": 4,
+          "Chicken": 11,
+          "Ice Cream": 1,
+          "Milk": 10,
+          "Carrots": 11,
+          "Lettuce": 6,
+          "Coffee": 4,
+          "Salt": 1,
+          "Bananas": 6,
+          "Ketchup": 3
+        }
+      },
+      {
+        "departure": "Udine",
+        "destination": "Bari",
+        "merchandise": {
+          "Coffee": 1,
+          "Avocado": 1,
+          "Soda": 4,
+          "Bread": 6,
+          "Frozen Fruits": 5,
+          "Salt": 14,
+          "Pepper": 8,
+          "Potatoes": 1,
+          "Napkins": 11,
+          "Soap": 3,
+          "Tomatoes": 5,
+          "Candles": 2,
+          "Ketchup": 13,
+          "Rice": 7,
+          "Paper Towels": 7,
+          "Cheese": 9,
+          "Lettuce": 6
+        }
+      },
+      {
+        "departure": "Bari",
+        "destination": "Brescia",
+        "merchandise": {
+          "Frozen Pizza": 10,
+          "Garlic": 10,
+          "Olive Oil": 5,
+          "Carrots": 9,
+          "Beef": 13,
+          "Coffee": 1,
+          "Frozen Chicken": 5,
+          "Lemons": 1,
+          "Honey": 15,
+          "Soda": 11,
+          "Mustard": 3,
+          "Cheese": 10,
+          "Ice Cream": 8,
+          "Soap": 14,
+          "Tea": 1,
+          "Toothbrush": 9,
+          "Oranges": 10,
+          "Shampoo": 12,
+          "Detergent": 5
+        }
+      },
+      {
+        "departure": "Brescia",
+        "destination": "Salerno",
+        "merchandise": {
+          "Oranges": 13,
+          "Spinach": 3,
+          "Honey": 14,
+          "Shampoo": 3,
+          "Bottled Water": 10,
+          "Tea": 13,
+          "Apples": 8,
+          "Frozen Vegetables": 3,
+          "Mustard": 3,
+          "Potatoes": 3
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Livorno",
+        "merchandise": {
+          "Pepper": 2,
+          "Bottled Water": 1,
+          "Beer": 11,
+          "Mustard": 5,
+          "Potatoes": 13,
+          "Lemons": 14,
+          "Bananas": 3,
+          "Carrots": 11,
+          "Toothbrush": 8,
+          "Lotion": 5,
+          "Olive Oil": 11,
+          "Onions": 6,
+          "Tissues": 10
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Mestre",
+        "merchandise": {
+          "Tomatoes": 4,
+          "Bread": 15,
+          "Garlic": 8,
+          "Frozen Pizza": 7,
+          "Honey": 15,
+          "Tissues": 6,
+          "Chocolate": 13,
+          "Pens": 15,
+          "Olive Oil": 12,
+          "Toilet Paper": 7,
+          "Toothbrush": 4,
+          "Frozen Vegetables": 15,
+          "Apples": 13,
+          "Strudel": 4,
+          "Carrots": 4,
+          "Onions": 9,
+          "Cheese": 14,
+          "Rice": 12,
+          "Sugar": 14
+        }
+      },
+      {
+        "departure": "Mestre",
+        "destination": "Bologna",
+        "merchandise": {
+          "Mustard": 10,
+          "Onions": 15,
+          "Lotion": 1,
+          "Bananas": 7,
+          "Paper Towels": 7,
+          "Strudel": 10,
+          "Tea": 9,
+          "Carrots": 9,
+          "Soda": 1,
+          "Lemons": 12,
+          "Toilet Paper": 3,
+          "Eggs": 12
+        }
+      },
+      {
+        "departure": "Bologna",
+        "destination": "Andria",
+        "merchandise": {
+          "Mayonnaise": 12,
+          "Pepper": 1,
+          "Apples": 6,
+          "Oranges": 9,
+          "Toilet Paper": 1,
+          "Shampoo": 14,
+          "Beef": 13,
+          "Coffee": 4,
+          "Frozen Chicken": 4,
+          "Frozen Vegetables": 7,
+          "Milk": 2,
+          "Detergent": 7,
+          "Sugar": 5,
+          "Chips": 3,
+          "Chicken": 6,
+          "Cheese": 10,
+          "Beer": 12,
+          "Tissues": 11,
+          "Tea": 9
+        }
+      },
+      {
+        "departure": "Andria",
+        "destination": "Reggio Calabria",
+        "merchandise": {
+          "Frozen Vegetables": 13,
+          "Napkins": 5,
+          "Mustard": 10,
+          "Tea": 4,
+          "Onions": 7,
+          "Olive Oil": 12,
+          "Lotion": 1,
+          "Cheese": 2,
+          "Shampoo": 4,
+          "Tomatoes": 11,
+          "Candles": 7,
+          "Carrots": 8,
+          "Pickles": 1,
+          "Avocado": 8
+        }
+      },
+      {
+        "departure": "Reggio Calabria",
+        "destination": "Brindisi",
+        "merchandise": {
+          "Beef": 7,
+          "Mayonnaise": 6,
+          "Ketchup": 9,
+          "Rice": 5,
+          "Pens": 2,
+          "Olive Oil": 5,
+          "Pasta": 3,
+          "Chicken": 7,
+          "Cheese": 1,
+          "Tea": 3,
+          "Pepper": 6,
+          "Honey": 9,
+          "Lemons": 5,
+          "Frozen Vegetables": 2,
+          "Soda": 6,
+          "Salt": 7,
+          "Ice Cream": 8,
+          "Soap": 1,
+          "Chips": 4,
+          "Frozen Fruits": 1
+        }
+      },
+      {
+        "departure": "Brindisi",
+        "destination": "Piacenza",
+        "merchandise": {
+          "Frozen Fruits": 3,
+          "Shampoo": 5,
+          "Potatoes": 9,
+          "Soda": 2,
+          "Bananas": 1,
+          "Carrots": 8,
+          "Beef": 6,
+          "Detergent": 7,
+          "Bread": 3,
+          "Cereal": 4,
+          "Bottled Water": 1,
+          "Pepper": 15,
+          "Cheese": 8,
+          "Lotion": 3,
+          "Chocolate": 11
+        }
+      },
+      {
+        "departure": "Piacenza",
+        "destination": "Bergamo",
+        "merchandise": {
+          "Sugar": 3,
+          "Toilet Paper": 13,
+          "Rice": 14,
+          "Pens": 6,
+          "Bottled Water": 7,
+          "Pasta": 11,
+          "Honey": 4,
+          "Tissues": 8,
+          "Soap": 15,
+          "Toothbrush": 3,
+          "Detergent": 4
+        }
+      }
+    ]
+  },
+  {
+    "driver": "R",
+    "route": [
+      {
+        "departure": "Taranto",
+        "destination": "Livorno",
+        "merchandise": {
+          "Tea": 7,
+          "Pepper": 1,
+          "Soda": 14,
+          "Potatoes": 15,
+          "Paper Towels": 11,
+          "Bread": 6,
+          "Olive Oil": 15,
+          "Tissues": 14,
+          "Toothbrush": 9,
+          "Toothpaste": 14,
+          "Beef": 3,
+          "Pasta": 6,
+          "Ketchup": 7,
+          "Chocolate": 7,
+          "Onions": 11
+        }
+      },
+      {
+        "departure": "Livorno",
+        "destination": "Naples",
+        "merchandise": {
+          "Tomatoes": 13,
+          "Chips": 10,
+          "Napkins": 9,
+          "Cereal": 14,
+          "Frozen Vegetables": 11,
+          "Milk": 12,
+          "Avocado": 11,
+          "Bananas": 14,
+          "Mayonnaise": 15,
+          "Frozen Fruits": 7,
+          "Salt": 5,
+          "Toothpaste": 11
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Giugliano in Campania",
+        "merchandise": {
+          "Napkins": 1,
+          "Onions": 7,
+          "Paper Towels": 14,
+          "Honey": 9,
+          "Mayonnaise": 3,
+          "Bread": 15,
+          "Bananas": 2,
+          "Frozen Pizza": 12,
+          "Frozen Chicken": 3,
+          "Tea": 2
+        }
+      },
+      {
+        "departure": "Giugliano in Campania",
+        "destination": "Lucca",
+        "merchandise": {
+          "Strudel": 1,
+          "Pepper": 15,
+          "Cereal": 2,
+          "Bread": 14,
+          "Toothpaste": 14,
+          "Shampoo": 8,
+          "Olive Oil": 10,
+          "Napkins": 4,
+          "Tissues": 7,
+          "Chicken": 2,
+          "Ketchup": 4,
+          "Garlic": 3,
+          "Chocolate": 14,
+          "Pens": 8,
+          "Potatoes": 2,
+          "Mayonnaise": 7,
+          "Coffee": 6
+        }
+      },
+      {
+        "departure": "Lucca",
+        "destination": "Salerno",
+        "merchandise": {
+          "Frozen Fruits": 9,
+          "Tissues": 5,
+          "Toothpaste": 6,
+          "Beer": 5,
+          "Spinach": 13,
+          "Honey": 11,
+          "Carrots": 2,
+          "Frozen Chicken": 14,
+          "Detergent": 15,
+          "Frozen Vegetables": 2,
+          "Pickles": 1,
+          "Bread": 10,
+          "Onions": 6,
+          "Shampoo": 3,
+          "Cereal": 10,
+          "Lemons": 2,
+          "Chocolate": 9,
+          "Coffee": 4
+        }
+      },
+      {
+        "departure": "Salerno",
+        "destination": "Treviso",
+        "merchandise": {
+          "Tissues": 1,
+          "Tomatoes": 13,
+          "Spinach": 5,
+          "Detergent": 15,
+          "Cereal": 11,
+          "Lemons": 5,
+          "Toothbrush": 5,
+          "Frozen Chicken": 2,
+          "Frozen Pizza": 4,
+          "Strudel": 13,
+          "Beer": 12,
+          "Mayonnaise": 4,
+          "Chicken": 8,
+          "Candles": 3,
+          "Onions": 8,
+          "Avocado": 7,
+          "Beef": 3,
+          "Lettuce": 7,
+          "Bread": 5,
+          "Oranges": 7
+        }
+      },
+      {
+        "departure": "Treviso",
+        "destination": "Busto Arsizio",
+        "merchandise": {
+          "Oranges": 15,
+          "Rice": 3,
+          "Chicken": 2,
+          "Soap": 6,
+          "Eggs": 2,
+          "Candles": 8,
+          "Coffee": 10,
+          "Toilet Paper": 11,
+          "Strudel": 13,
+          "Beer": 8,
+          "Pickles": 2,
+          "Chocolate": 14,
+          "Garlic": 7,
+          "Spinach": 14,
+          "Tissues": 3,
+          "Apples": 11,
+          "Shampoo": 4,
+          "Napkins": 11,
+          "Lotion": 9
+        }
+      },
+      {
+        "departure": "Busto Arsizio",
+        "destination": "Trieste",
+        "merchandise": {
+          "Pasta": 12,
+          "Olive Oil": 5,
+          "Potatoes": 9,
+          "Lettuce": 14,
+          "Chips": 14,
+          "Salt": 12,
+          "Soap": 1,
+          "Toilet Paper": 10,
+          "Cheese": 11,
+          "Apples": 13,
+          "Detergent": 4
+        }
+      },
+      {
+        "departure": "Trieste",
+        "destination": "Cesena",
+        "merchandise": {
+          "Bananas": 12,
+          "Chicken": 9,
+          "Pens": 9,
+          "Napkins": 13,
+          "Onions": 2,
+          "Detergent": 1,
+          "Tomatoes": 6,
+          "Olive Oil": 8,
+          "Toothbrush": 13,
+          "Ketchup": 11,
+          "Lotion": 11,
+          "Milk": 6,
+          "Mayonnaise": 12,
+          "Coffee": 11,
+          "Cereal": 5,
+          "Paper Towels": 8,
+          "Garlic": 4
+        }
+      },
+      {
+        "departure": "Cesena",
+        "destination": "Varese",
+        "merchandise": {
+          "Frozen Fruits": 12,
+          "Toilet Paper": 9,
+          "Cheese": 7,
+          "Toothbrush": 5,
+          "Soap": 4,
+          "Potatoes": 6,
+          "Chips": 13,
+          "Pasta": 6,
+          "Garlic": 8,
+          "Pens": 1,
+          "Eggs": 9,
+          "Toothpaste": 13,
+          "Chocolate": 1,
+          "Sugar": 14,
+          "Frozen Chicken": 4,
+          "Candles": 3
+        }
+      },
+      {
+        "departure": "Varese",
+        "destination": "Foggia",
+        "merchandise": {
+          "Toilet Paper": 2,
+          "Paper Towels": 9,
+          "Cheese": 3,
+          "Ice Cream": 12,
+          "Beer": 10,
+          "Sugar": 12,
+          "Frozen Vegetables": 6,
+          "Milk": 15,
+          "Salt": 3,
+          "Tomatoes": 15
+        }
+      },
+      {
+        "departure": "Foggia",
+        "destination": "Como",
+        "merchandise": {
+          "Salt": 1,
+          "Strudel": 15,
+          "Toothbrush": 10,
+          "Chocolate": 13,
+          "Mustard": 15,
+          "Bread": 1,
+          "Cheese": 1,
+          "Lemons": 14,
+          "Candles": 6,
+          "Frozen Pizza": 6,
+          "Napkins": 5,
+          "Paper Towels": 5,
+          "Potatoes": 5,
+          "Chips": 11,
+          "Olive Oil": 8,
+          "Carrots": 3
+        }
+      },
+      {
+        "departure": "Como",
+        "destination": "Pescara",
+        "merchandise": {
+          "Cereal": 15,
+          "Chicken": 9,
+          "Ice Cream": 1,
+          "Tomatoes": 3,
+          "Cheese": 9,
+          "Potatoes": 1,
+          "Beef": 12,
+          "Honey": 15,
+          "Frozen Fruits": 4,
+          "Tissues": 3,
+          "Frozen Vegetables": 3,
+          "Soap": 3,
+          "Coffee": 15,
+          "Garlic": 3,
+          "Milk": 10,
+          "Napkins": 9
+        }
+      }
+    ]
+  },
+  {
+    "driver": "S",
+    "route": [
+      {
+        "departure": "Padua",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Mustard": 12,
+          "Napkins": 7,
+          "Ketchup": 13,
+          "Candles": 9,
+          "Bread": 4,
+          "Carrots": 13,
+          "Ice Cream": 1,
+          "Tea": 4,
+          "Chocolate": 12,
+          "Detergent": 10,
+          "Bananas": 11,
+          "Toilet Paper": 7,
+          "Frozen Fruits": 3,
+          "Chips": 15,
+          "Strudel": 4,
+          "Frozen Pizza": 10,
+          "Milk": 11,
+          "Frozen Chicken": 14,
+          "Toothpaste": 14
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Piacenza",
+        "merchandise": {
+          "Detergent": 7,
+          "Apples": 8,
+          "Strudel": 12,
+          "Beer": 10,
+          "Coffee": 3,
+          "Ice Cream": 4,
+          "Olive Oil": 10,
+          "Lettuce": 6,
+          "Spinach": 10,
+          "Shampoo": 9,
+          "Frozen Chicken": 11,
+          "Chocolate": 11,
+          "Honey": 2,
+          "Onions": 5
+        }
+      },
+      {
+        "departure": "Piacenza",
+        "destination": "Giugliano in Campania",
+        "merchandise": {
+          "Toothbrush": 7,
+          "Onions": 2,
+          "Toilet Paper": 5,
+          "Avocado": 7,
+          "Pasta": 11,
+          "Chocolate": 7,
+          "Bananas": 3,
+          "Candles": 5,
+          "Beer": 9,
+          "Lemons": 6,
+          "Oranges": 15,
+          "Shampoo": 7,
+          "Soda": 13,
+          "Soap": 11,
+          "Chicken": 9,
+          "Apples": 3,
+          "Cereal": 7,
+          "Paper Towels": 13,
+          "Detergent": 9
+        }
+      },
+      {
+        "departure": "Giugliano in Campania",
+        "destination": "Arezzo",
+        "merchandise": {
+          "Ice Cream": 6,
+          "Honey": 1,
+          "Milk": 8,
+          "Potatoes": 11,
+          "Bananas": 4,
+          "Sugar": 13,
+          "Onions": 12,
+          "Beer": 9,
+          "Detergent": 8,
+          "Tissues": 6,
+          "Frozen Fruits": 7,
+          "Tomatoes": 15,
+          "Pepper": 2,
+          "Mayonnaise": 14,
+          "Paper Towels": 2
+        }
+      },
+      {
+        "departure": "Arezzo",
+        "destination": "Lucca",
+        "merchandise": {
+          "Olive Oil": 13,
+          "Napkins": 14,
+          "Mayonnaise": 10,
+          "Garlic": 5,
+          "Chicken": 1,
+          "Avocado": 13,
+          "Toilet Paper": 9,
+          "Lemons": 2,
+          "Salt": 4,
+          "Spinach": 12,
+          "Ketchup": 4,
+          "Bananas": 4,
+          "Onions": 14,
+          "Pickles": 2,
+          "Rice": 4,
+          "Pepper": 14
+        }
+      },
+      {
+        "departure": "Lucca",
+        "destination": "Cesena",
+        "merchandise": {
+          "Pens": 8,
+          "Eggs": 12,
+          "Rice": 6,
+          "Shampoo": 7,
+          "Sugar": 2,
+          "Mustard": 9,
+          "Detergent": 12,
+          "Apples": 10,
+          "Beer": 15,
+          "Strudel": 9,
+          "Tomatoes": 14,
+          "Pasta": 7,
+          "Bread": 6,
+          "Coffee": 11
+        }
+      },
+      {
+        "departure": "Cesena",
+        "destination": "Barletta",
+        "merchandise": {
+          "Tissues": 10,
+          "Soap": 15,
+          "Salt": 10,
+          "Potatoes": 10,
+          "Toothpaste": 9,
+          "Cereal": 13,
+          "Carrots": 8,
+          "Sugar": 7,
+          "Pasta": 10,
+          "Beef": 15,
+          "Toilet Paper": 11,
+          "Spinach": 4,
+          "Candles": 7
+        }
+      }
+    ]
+  },
+  {
+    "driver": "T",
+    "route": [
+      {
+        "departure": "Treviso",
+        "destination": "Perugia",
+        "merchandise": {
+          "Chips": 7,
+          "Frozen Vegetables": 5,
+          "Toilet Paper": 12,
+          "Apples": 6,
+          "Lettuce": 8,
+          "Pens": 12,
+          "Candles": 7,
+          "Napkins": 2,
+          "Mustard": 10,
+          "Tissues": 8
+        }
+      },
+      {
+        "departure": "Perugia",
+        "destination": "Palermo",
+        "merchandise": {
+          "Spinach": 9,
+          "Napkins": 5,
+          "Paper Towels": 12,
+          "Eggs": 4,
+          "Ketchup": 10,
+          "Cheese": 5,
+          "Carrots": 5,
+          "Soda": 8,
+          "Apples": 5,
+          "Avocado": 4,
+          "Mustard": 10,
+          "Strudel": 14,
+          "Soap": 10,
+          "Frozen Pizza": 9,
+          "Toothbrush": 1,
+          "Beef": 15,
+          "Ice Cream": 1
+        }
+      },
+      {
+        "departure": "Palermo",
+        "destination": "Sesto San Giovanni",
+        "merchandise": {
+          "Napkins": 12,
+          "Spinach": 5,
+          "Cheese": 15,
+          "Detergent": 9,
+          "Lemons": 10,
+          "Pens": 5,
+          "Soap": 12,
+          "Toilet Paper": 6,
+          "Bananas": 9,
+          "Lotion": 7,
+          "Frozen Chicken": 15,
+          "Coffee": 6,
+          "Olive Oil": 12,
+          "Carrots": 9,
+          "Apples": 14,
+          "Lettuce": 7,
+          "Rice": 9,
+          "Garlic": 4,
+          "Sugar": 15
+        }
+      },
+      {
+        "departure": "Sesto San Giovanni",
+        "destination": "Pesaro",
+        "merchandise": {
+          "Pens": 3,
+          "Frozen Vegetables": 7,
+          "Mayonnaise": 9,
+          "Eggs": 4,
+          "Oranges": 15,
+          "Coffee": 1,
+          "Cheese": 14,
+          "Lettuce": 3,
+          "Beer": 15,
+          "Napkins": 9,
+          "Frozen Fruits": 7,
+          "Honey": 2,
+          "Soap": 5
+        }
+      },
+      {
+        "departure": "Pesaro",
+        "destination": "Florence",
+        "merchandise": {
+          "Chocolate": 15,
+          "Tissues": 1,
+          "Frozen Vegetables": 10,
+          "Potatoes": 14,
+          "Frozen Fruits": 2,
+          "Avocado": 2,
+          "Paper Towels": 4,
+          "Tomatoes": 4,
+          "Bananas": 8,
+          "Bread": 1,
+          "Soda": 8,
+          "Olive Oil": 4,
+          "Chips": 12,
+          "Detergent": 8,
+          "Honey": 8,
+          "Beef": 6
+        }
+      },
+      {
+        "departure": "Florence",
+        "destination": "Naples",
+        "merchandise": {
+          "Pens": 2,
+          "Beer": 7,
+          "Paper Towels": 8,
+          "Mayonnaise": 12,
+          "Mustard": 4,
+          "Ice Cream": 9,
+          "Soap": 3,
+          "Tissues": 4,
+          "Tomatoes": 1,
+          "Cheese": 14,
+          "Bananas": 11,
+          "Bottled Water": 14,
+          "Honey": 14,
+          "Tea": 9,
+          "Detergent": 14,
+          "Oranges": 1,
+          "Olive Oil": 12,
+          "Frozen Vegetables": 15,
+          "Chicken": 13
+        }
+      },
+      {
+        "departure": "Naples",
+        "destination": "Prato",
+        "merchandise": {
+          "Frozen Chicken": 9,
+          "Napkins": 12,
+          "Pepper": 4,
+          "Toilet Paper": 15,
+          "Pickles": 7,
+          "Frozen Vegetables": 12,
+          "Pens": 7,
+          "Mayonnaise": 4,
+          "Tissues": 14,
+          "Eggs": 2,
+          "Apples": 15,
+          "Shampoo": 15
+        }
+      },
+      {
+        "departure": "Prato",
+        "destination": "Brindisi",
+        "merchandise": {
+          "Toothbrush": 8,
+          "Pickles": 10,
+          "Sugar": 4,
+          "Napkins": 15,
+          "Ketchup": 14,
+          "Mustard": 13,
+          "Pepper": 10,
+          "Carrots": 12,
+          "Candles": 8,
+          "Onions": 9,
+          "Shampoo": 2,
+          "Beef": 13,
+          "Ice Cream": 5,
+          "Bottled Water": 12,
+          "Tomatoes": 12,
+          "Cereal": 13,
+          "Frozen Fruits": 15,
+          "Frozen Chicken": 3,
+          "Frozen Vegetables": 6,
+          "Oranges": 5
+        }
+      }
+    ]
+  }
+]

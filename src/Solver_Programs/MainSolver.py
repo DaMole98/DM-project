@@ -76,7 +76,11 @@ def perfectRoutesFinder():
     # enumerate the actual_routes
     for i in range(len(actual_routes)):
         # check the ID of the route
+        if DEBUG:
+            flag_time = time.time()
         if actual_routes[i]["driver"] not in ID_visited:
+            if DEBUG:
+                print(f"checking route {i} out of {len(actual_routes)}")
             route = actual_routes[i]
             ID_visited.append(route["driver"])
             driver = route["driver"]
@@ -91,10 +95,13 @@ def perfectRoutesFinder():
                         driver_std_routes.append(route_s)
 
             # find the hidden route for the driver
-            hidden_route = hidden_route_finder(driver_std_routes, driver_actual_routes, driver)
+            hidden_route = hidden_route_finder(driver_std_routes, driver_actual_routes, driver, DEBUG)
 
             if hidden_route is not None:
                 hidden_routes.append(hidden_route)
+
+            if DEBUG:
+                print(f"Time taken to find the hidden route: {time.time() - flag_time}")
 
     # create a JSON file for the hidden routes called ProbableHiddenRoutes.json
     try:
@@ -166,13 +173,22 @@ if __name__ == "__main__":
     if DEBUG:
         print(f"Using {size_dataset} dataset")
 
-    if DEBUG:
-        print("Finding the Perfect Routes")
 
     # start timer
     import time
     start = time.time()
     time_flag = start
+
+    if DEBUG:
+        print("Finding the best five routes for each driver")
+    find_best(1, data_path, DEBUG)
+    if DEBUG:
+        print(f"Time taken to find the best five routes: {time.time() - time_flag}")
+        exit(2)
+
+
+    if DEBUG:
+        print("Finding the Perfect Routes")
     perfectRoutesFinder()
     if DEBUG:
         print(f"Time taken to find the perfect routes: {time.time() - time_flag}")
@@ -198,12 +214,6 @@ if __name__ == "__main__":
     if DEBUG:
         print(f"Time taken to generate new standard routes: {time.time() - time_flag}")
     time_flag = time.time()
-
-    if DEBUG:
-        print("Finding the best five routes for each driver")
-    find_best(0)
-    if DEBUG:
-        print(f"Time taken to find the best five routes: {time.time() - time_flag}")
 
     if DEBUG:
         print(f"Total time taken: {time.time() - start}")
