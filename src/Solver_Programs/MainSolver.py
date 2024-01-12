@@ -179,9 +179,11 @@ if __name__ == "__main__":
     start = time.time()
     time_flag = start
 
+    # find the best five routes for each driver
     if DEBUG:
         print("Finding the best five routes for each driver")
-    find_best(1, data_path, DEBUG)
+    original_flag = int(input("Do you want to use the original standard routes? (1 for yes, 0 for no): "))
+    find_best(original_flag, data_path, DEBUG)
     if DEBUG:
         print(f"Time taken to find the best five routes: {time.time() - time_flag}")
         exit(2)

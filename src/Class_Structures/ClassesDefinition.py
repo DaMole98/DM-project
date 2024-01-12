@@ -76,8 +76,7 @@ class HiddenRoute:
     route : list[Trip]
         the list of trips that compose the route
     """
-    dr_id: str
-    length: int
+    driver: str
     route: list[Trip]
 
 @dataclass
