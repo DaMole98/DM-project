@@ -16,6 +16,19 @@ MAX_ITEM_QUANTITY = 100
 
 
 def fitnessFunction(route, RouteSample):
+    """
+    **Description**:
+    This function calculates the fitness of a route in terms of average distance from all other route in the sample.
+    :param route: route is a list of trips
+    :param RouteSample: routeSample is a list of routes
+    :return: fitness_score
+
+    **Algorithm**:\n
+    1. For each route in the sample:\n
+         - Calculate the distance between the route and the current route.\n
+            - Add the distance to the total distance.\n
+    2. Calculate the fitness score as the inverse of the average distance. (The lower the distance, the higher the fitness score.)
+    """
     # this function calculates the fitness of a route in terms of average distance from all other route in the sample
     # route is a list of trips
     # RouteSample is a list of routes
@@ -27,6 +40,22 @@ def fitnessFunction(route, RouteSample):
     fitness_score = 1/(1+(tot_dist/len(RouteSample)))
 
     return fitness_score
+
+
+def adjust_route(mutated_route):
+    """
+    This function adjusts the mutated route to ensure that the departure city of each trip is the same as the destination city of the previous trip.
+    :param mutated_route:   The mutated route.
+    :return:               The adjusted route.
+    """
+    adjust_route = []
+    for i in range(1, len(mutated_route)):
+        if mutated_route[i].departure != mutated_route[i-1].destination:
+            mutated_route[i].departure = mutated_route[i-1].destination
+        adjust_route.append(mutated_route[i])
+
+    return adjust_route
+
 
 def mutate(route, mutationRate, cities, items):
     """
@@ -54,7 +83,9 @@ def mutate(route, mutationRate, cities, items):
             - Change destination city with a certain probability.\n
             - Change quantities of items with a certain probability.\n
             - Add new items with random quantities if not present in the trip, with a certain probability.\n
-    4. Return the mutated route.
+            - Remove items with 0 quantity.\n
+    4. Adjust the route to ensure that the departure city of each trip is the same as the destination city of the previous trip.
+    5. Return the mutated route.
     """
     lamda_0 = 0.5  # Probability of changing cities
     lamda_1 = 0.5  # Probability of changing items
@@ -92,6 +123,8 @@ def mutate(route, mutationRate, cities, items):
                         del trip.merchandise[item]
 
         mutated_route.append(trip)
+
+    adjusted_route = adjust_route(mutated_route, cities)
 
     return mutated_route
 
@@ -175,7 +208,7 @@ def IsConverged(fitness_scores):
     3. Return the result.
 
     """
-    threshold = 0.999
+    threshold = 0.99
 
     # Check if the maximum fitness score surpasses the convergence threshold
     if max(fitness_scores) > threshold:
