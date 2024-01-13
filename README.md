@@ -38,14 +38,7 @@ The project structure is the following:
 | |-- inspectionProfiles
 | | |-- profiles_settings.xml
 | | |-- Project_Default.xml
-| |
-| ??? shelf
-| |-- Uncommitted_changes_before_Checkout_at_12_01_2024_00_04__Changes_.xml
-| |-- Uncommitted_changes_before_rebase__Changes_.xml
-| |-- Uncommitted_changes_before_rebase__Changes_1.xml
-| |-- Uncommitted_changes_before_rebase__Changes_2.xml
-| |-- ...
-|
+| 
 |-- build
 | |-- clang_tidy
 |
@@ -69,7 +62,7 @@ The project structure is the following:
 | | |-- standard.json
 | | |-- ...
 | |
-| ??? small_dataset
+| -- small_dataset
 | |-- actual.json
 | |-- HiddenRoutes.json
 | |-- parameters.json
