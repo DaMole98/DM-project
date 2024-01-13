@@ -100,7 +100,7 @@ The project structure is the following:
 
 ## How to run the code
 
-To run the code, you need to run the file `main.py` in the folder `src`. The code is written in Python 3.9. The required packages are listed in the file `requirements.txt`. To install them, you can run the following command:
+To run the code, you need to run the file `MainSolver.py` in the folder `src`. The code is written in Python 3.9. The required packages are listed in the file `requirements.txt`. To install them, you can run the following command:
 if you are using pip:
 ```
 pip install -r requirements.txt
