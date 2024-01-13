@@ -9,15 +9,16 @@ import time
 from dataclasses import dataclass
 from random import randint, sample, seed
 
-from src.Class_Structures.ClassesDefinition import StandardRoute, Trip, Driver
-from src.Data_Generator.Parameters.parameters import data_path
+from src.Class_Structures.ClassesDefinition import StandardRoute, Trip, Driver, ActualRoute
+from src.Data_Generator.Parameters.parameters import data_path, size_dataset
 from src.Data_Generator.input_dataset_generator import EnhancedJSONEncoder
 from src.Solver_Programs.DistanceMetrics import getRouteDistance
 from src.Solver_Programs.GAStdGen import geneticAlgorithm
+from src.Solver_Programs.recommenderClustering import cluster_routes
 
 output_path = "./Output/"
 
-
+'''
 # function that generates K new standards routes
 def clusterApproach(RouteSet, K, DEBUG):
     """
@@ -28,6 +29,13 @@ def clusterApproach(RouteSet, K, DEBUG):
     :param DEBUG:
     :return:
     """
+    def hashFunction(index, route):
+        """
+        This function generates a hash function that returns the distance between the route and a random route in actualRoutes
+        """
+
+        return getRouteDistance(route, sample_routes[index])
+
     # creation of M hashing function, each hash function will return the distance between the route and a random route in actualRoutes
     # sample M routes from ../../data/acutalRoutes.json
     # M = 10
@@ -48,12 +56,6 @@ def clusterApproach(RouteSet, K, DEBUG):
     # make sample_routes a list of list of Trip objects
     sample_routes = [[Trip(trip["from"], trip["to"], trip["merchandise"]) for trip in route["route"]] for route in sample_routes]
 
-    def hashFunction(index, route):
-        """
-        This function generates a hash function that returns the distance between the route and a random route in actualRoutes
-        """
-
-        return getRouteDistance(route, sample_routes[index])
 
     routes_hash = []
 
@@ -77,10 +79,10 @@ def clusterApproach(RouteSet, K, DEBUG):
 
 
     pass
+'''
 
 
 def generate_new_std(K, samplesChoice, DEBUG):
-
     if DEBUG:
         print("generate_new_std function called")
         print(f"K = {K}")
@@ -108,7 +110,7 @@ def generate_new_std(K, samplesChoice, DEBUG):
         perfRoutes.append(new_route)
 
     newStd = []
-    len_sample = len(hidden_routes)/K
+    len_sample = len(hidden_routes) / K
     if len_sample < 5:
         len_sample = 5
     if samplesChoice == 0:
@@ -120,13 +122,60 @@ def generate_new_std(K, samplesChoice, DEBUG):
             newStd.append(geneticAlgorithm(RouteSample, DEBUG))
 
     elif samplesChoice == 1:
-        clusters = clusterApproach(perfRoutes, K, DEBUG)
-        exit(1)
-        for i in range(K):
-            RouteSample = clusters[i]
-            # print(RouteSample)
-            print(f"round k:{i}")
-            newStd.append(geneticAlgorithm(RouteSample, DEBUG))
+        std_obj = []
+        act_obj = []
+        print(f"{data_path}{size_dataset}_dataset/actual.json")
+        try:
+            with open(f"{data_path}{size_dataset}_dataset/actual.json", 'r') as file:
+                actuals = json.load(file)
+                for act in actuals:
+                    act_obj.append(ActualRoute(id=act['id'], driver=act['driver'], sroute=act['sroute'],
+                                               route=[Trip(tr['from'], tr['to'], tr['merchandise']) for tr in
+                                                      act['route']]))
+        except FileNotFoundError:
+            print("actuals.json not found. Please run input_dataset_generator.py first")
+            sys.exit(1)
+
+        try:
+            with open(f"{data_path}{size_dataset}_dataset/standard.json", 'r') as file:
+                stds = json.load(file)
+                for std in stds:
+                    std_obj.append(StandardRoute(std['id'],
+                                                 [Trip(tr['from'], tr['to'], tr['merchandise']) for tr in
+                                                  std['route']]))
+        except FileNotFoundError:
+            print("standard.json not found. Please run input_dataset_generator.py first")
+            sys.exit(1)
+
+        clusters = cluster_routes(std_routes=std_obj, actual_routes=act_obj, clusters=K)
+        clusters.sort(key=lambda x: x[1])
+        #clusters = sorted(clusters, key=lambda x: x[1])
+        #print([cl[1] for cl in clusters])
+        # route_sample = []
+        i = 0
+        cnk = []
+        while i < len(clusters):
+            if len(cnk) == 0 or clusters[i][1] == clusters[i - 1][1]:
+                cnk.append(clusters[i][0])
+            else:
+                # run algorithm
+                adapted_routes = []
+                cnk = sample(cnk, 5)
+                for actual_obj in cnk:
+                    adapted_routes.append(actual_obj.route)
+
+                newStd.append(geneticAlgorithm(adapted_routes, DEBUG))
+                cnk.clear()
+            i += 1
+
+        ########
+        # for i in range(len(clusters)):
+    #
+    #    RouteSample = clusters[i]
+    #    # print(RouteSample)
+    #    print(f"round k:{i}")
+    #    newStd.append(geneticAlgorithm(RouteSample, DEBUG))
+    ########
     else:
         print("Error: samplesChoice must be 0 or 1")
         exit(1)

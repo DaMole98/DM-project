@@ -257,6 +257,7 @@ def geneticAlgorithm(RouteSample, DEBUG, generations=5, popSize=10, mutationRate
 
         # Calculate the fitness of each route in the population
         fitness_scores = [fitnessFunction(route, RouteSample) for route in population]
+        print("fitness score computed")
 
 
         # Check for convergence

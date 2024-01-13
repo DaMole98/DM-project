@@ -181,10 +181,10 @@ if __name__ == "__main__":
 
     if DEBUG:
         print("Finding the best five routes for each driver")
-    find_best(1, data_path, DEBUG)
+    find_best(1, data_path, DEBUG = False)
     if DEBUG:
         print(f"Time taken to find the best five routes: {time.time() - time_flag}")
-        exit(2)
+        #exit(2)
 
 
     if DEBUG:
@@ -193,7 +193,6 @@ if __name__ == "__main__":
     if DEBUG:
         print(f"Time taken to find the perfect routes: {time.time() - time_flag}")
     time_flag = time.time()
-
     if DEBUG:
         print("Generating new standard routes")
     # take in input the number of new standard routes to be generated
@@ -210,7 +209,8 @@ if __name__ == "__main__":
         print("Invalid number of routes")
         sys.exit()
 
-    generate_new_std(K, 0, 0)
+    generate_new_std(K, 0
+                     , True)
     if DEBUG:
         print(f"Time taken to generate new standard routes: {time.time() - time_flag}")
     time_flag = time.time()
