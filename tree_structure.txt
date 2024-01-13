@@ -1,0 +1,166 @@
+Elenco del percorso delle cartelle per il volume Windows
+Numero di serie del volume: BCF2-9EBA
+C:.
+³   .gitattributes
+³   .gitignore
+³   checks.json
+³   DM_Project_23-24.pdf
+³   README.md
+³   tree_structure.txt
+³   
+ÃÄÄÄ.idea
+³   ³   .gitignore
+³   ³   DM-project.iml
+³   ³   misc.xml
+³   ³   modules.xml
+³   ³   vcs.xml
+³   ³   workspace.xml
+³   ³   
+³   ÃÄÄÄinspectionProfiles
+³   ³       profiles_settings.xml
+³   ³       Project_Default.xml
+³   ³       
+³   ÀÄÄÄshelf
+³       ³   Uncommitted_changes_before_Checkout_at_12_01_2024_00_04__Changes_.xml
+³       ³   Uncommitted_changes_before_rebase__Changes_.xml
+³       ³   Uncommitted_changes_before_rebase__Changes_1.xml
+³       ³   Uncommitted_changes_before_rebase__Changes_2.xml
+³       ³   
+³       ÃÄÄÄUncommitted_changes_before_Checkout_at_12_01_2024_00_04_[Changes]
+³       ³       shelved.patch
+³       ³       
+³       ÃÄÄÄUncommitted_changes_before_Checkout_at_12_01_2024_00_04_[Changes]1
+³       ³       shelved.patch
+³       ³       
+³       ÃÄÄÄUncommitted_changes_before_rebase_[Changes]
+³       ³       shelved.patch
+³       ³       
+³       ÃÄÄÄUncommitted_changes_before_rebase_[Changes]1
+³       ³       shelved.patch
+³       ³       
+³       ÃÄÄÄUncommitted_changes_before_rebase_[Changes]2
+³       ³       shelved.patch
+³       ³       
+³       ÀÄÄÄUncommitted_changes_before_rebase_[Changes]3
+ÃÄÄÄbuild
+³   ÀÄÄÄclang_tidy
+ÃÄÄÄdata
+³   ³   ActualRoutes.json
+³   ³   HiddenRoutes.json
+³   ³   standard.json
+³   ³   StandardRoute.json
+³   ³   
+³   ÃÄÄÄdev_data
+³   ³       cities.json
+³   ³       drivers.json
+³   ³       drivers_prefs.json
+³   ³       items.json
+³   ³       
+³   ÃÄÄÄmedium1_dataset
+³   ³       actual.json
+³   ³       HiddenRoutes.json
+³   ³       parameters.json
+³   ³       standard.json
+³   ³       
+³   ÃÄÄÄmedium_dataset
+³   ³       actual.json
+³   ³       HiddenRoutes.json
+³   ³       parameters.json
+³   ³       standard.json
+³   ³       
+³   ÃÄÄÄsmall1_dataset
+³   ³       actual.json
+³   ³       HiddenRoutes.json
+³   ³       parameters.json
+³   ³       standard.json
+³   ³       
+³   ÃÄÄÄsmall2_dataset
+³   ³       actual.json
+³   ³       HiddenRoutes.json
+³   ³       parameters.json
+³   ³       standard.json
+³   ³       
+³   ÀÄÄÄsmall_dataset
+³           actual.json
+³           HiddenRoutes.json
+³           parameters.json
+³           standard.json
+³           
+ÀÄÄÄsrc
+    ÃÄÄÄClass_Structures
+    ³   ³   ClassesDefinition.py
+    ³   ³   
+    ³   ÀÄÄÄ__pycache__
+    ³           ClassesDefinition.cpython-310.pyc
+    ³           ClassesDefinition.cpython-39.pyc
+    ³           
+    ÃÄÄÄData_Generator
+    ³   ³   actual_route_generator.py
+    ³   ³   hidden_route_generator.py
+    ³   ³   input_dataset_generator.py
+    ³   ³   
+    ³   ÃÄÄÄParameters
+    ³   ³   ³   parameters.py
+    ³   ³   ³   
+    ³   ³   ÀÄÄÄ__pycache__
+    ³   ³           parameters.cpython-310.pyc
+    ³   ³           parameters.cpython-39.pyc
+    ³   ³           
+    ³   ÀÄÄÄ__pycache__
+    ³           actual_route_generator.cpython-310.pyc
+    ³           actual_route_generator.cpython-39.pyc
+    ³           hidden_route_generator.cpython-310.pyc
+    ³           hidden_route_generator.cpython-39.pyc
+    ³           input_dataset_generator.cpython-310.pyc
+    ³           input_dataset_generator.cpython-39.pyc
+    ³           
+    ÃÄÄÄEvaluator
+    ÃÄÄÄSolver_Programs
+    ³   ³   dist-with-marius2-dist.png
+    ³   ³   dist.png
+    ³   ³   DistanceMetrics.py
+    ³   ³   GAStdGen.py
+    ³   ³   HiddenRouteFinder.py
+    ³   ³   MainSolver.py
+    ³   ³   NewStdsGen.py
+    ³   ³   performance_tester.py
+    ³   ³   plotVisualizer.py
+    ³   ³   recomendationUnit.py
+    ³   ³   recommenderClustering.py
+    ³   ³   similarityMeasure.py
+    ³   ³   
+    ³   ÃÄÄÄOutput
+    ³   ³       drivers.json
+    ³   ³       perfectRoute.json
+    ³   ³       ProbableHiddenRoutes.json
+    ³   ³       recStandard.json
+    ³   ³       utility_matrix_small1_dataset.png
+    ³   ³       utility_matrix_small2_dataset.png
+    ³   ³       utility_matrix_small_dataset.png
+    ³   ³       utility_matrix_small_dataset_1.png
+    ³   ³       utility_matrix_small_dataset_2.png
+    ³   ³       
+    ³   ÀÄÄÄ__pycache__
+    ³           DistanceMetrics.cpython-310.pyc
+    ³           DistanceMetrics.cpython-39.pyc
+    ³           GAStdGen.cpython-310.pyc
+    ³           GAStdGen.cpython-39.pyc
+    ³           HiddenRouteFinder.cpython-310.pyc
+    ³           HiddenRouteFinder.cpython-39.pyc
+    ³           MainSolver.cpython-310.pyc
+    ³           NewStdsGen.cpython-310.pyc
+    ³           NewStdsGen.cpython-39.pyc
+    ³           plotVisualizer.cpython-310.pyc
+    ³           plotVisualizer.cpython-39.pyc
+    ³           recomendationUnit.cpython-310.pyc
+    ³           recomendationUnit.cpython-39.pyc
+    ³           recommenderClustering.cpython-39.pyc
+    ³           similarityMeasure.cpython-39.pyc
+    ³           
+    ÃÄÄÄTesters
+    ³   ³   DistanceTester.py
+    ³   ³   
+    ³   ÀÄÄÄ__pycache__
+    ³           DistanceTester.cpython-310.pyc
+    ³           
+    ÀÄÄÄ__pycache__
