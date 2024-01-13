@@ -14,28 +14,19 @@ def cluster_routes(std_routes, actual_routes, clusters):
     :return: list of tuples that contains the ActualRoute object and the relative cluster label
     """
 
-
-
-    dimensions = 10 # dimension of the space in which we cluster data
-    #sample template routes
+    dimensions = 10  # dimension of the space in which we cluster data
+    # sample template routes
     template_routes = sample(std_routes, dimensions)
 
-    #actual_ids = []
+    # actual_ids = []
     # compute the hash vector of the routes
     route_hashes = []
     for route in actual_routes:
-        #actual_ids.append(route.id)
+        # actual_ids.append(route.id)
         route_hashes.append([route_similarity(route, template_routes[i]) for i in range(dimensions)])
-    #print(route_hashes)
+    # print(route_hashes)
 
-    kmeans = KMeans(n_clusters = clusters)
+    kmeans = KMeans(n_clusters=clusters)
     kmeans.fit(route_hashes)
     route_labels = list(zip(actual_routes, kmeans.labels_))
     return route_labels
-
-
-
-
-    
-
-

@@ -19,7 +19,6 @@ from src.Solver_Programs.MainSolver import EnhancedJSONEncoder
 
 def hidden_route_performance(real_hidden_routes, inferred_hidden_routes, flag = 0):
     """
-
     :param real_hidden_routes: list of HiddenRoute objects representing the real hidden routes of the drivers
     :param inferred_hidden_routes: list of HiddenRoute objects representing the inferred hidden routes by the algorithm
     :param flag: boolean flag. If 0: use the function route_similarity() to compute distance. if 1: use the route_distance() function to compute the distance
