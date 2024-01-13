@@ -79,7 +79,7 @@ def generate_actual_route(hidden_route, std_route, list_of_cities, list_of_items
         **Algorithm Overview:**
 
     1. **Initialization:**
-        - Initialize the lengths of the hidden and standard routes.\n
+        - Set in two variables the lengths of the hidden and standard routes.\n
 
     2. **ActualRoute Creation:**
         - Create an `ActualRoute` object with the given ID and related IDs.\n

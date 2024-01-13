@@ -15,6 +15,11 @@ def get_parameters():
     :param max_card: maximum cardinality of an item in a trip
     :param data_path: path to the data folder
     :param dev_data_path: path to the dev_data folder
+    :param num_drivers: number of drivers to be generated
+    :param MAX_STD_ROUTE_PER_DRIVER: maximum number of standard routes implemented by a driver
+    :param MAX_IMPLEMENTATIONS_PER_DRIVER: maximum number of implementations per driver
+    :param size_dataset: size of the dataset to be generated. It can be "small", "medium" or "large"
+    :param std_routes_num: number of standard routes to be generated
     '''
     return {
         "min_trips": min_trips,
@@ -29,6 +34,7 @@ def get_parameters():
         "MAX_STD_ROUTE_PER_DRIVER": MAX_STD_ROUTE_PER_DRIVER,
         "MAX_IMPLEMENTATIONS_PER_DRIVER": MAX_IMPLEMENTATIONS_PER_DRIVER,
         "size_dataset": size_dataset,
+        "std_routes_num": std_routes_num
     }
 
 

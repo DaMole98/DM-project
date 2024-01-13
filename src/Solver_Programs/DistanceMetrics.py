@@ -134,9 +134,10 @@ def trip_distance(trip1, trip2):
     if LINEAR_COMBINATION:
         # Linear combination of Jaccard similarity and cosine distance
         distance = 0.5 * jaccard_distance + 0.5 * cosine_distance
-    else:
-        # Exponential combination of Jaccard similarity and cosine distance
-        distance = ( exp(jaccard_distance) + exp(cosine_distance) - 2) / (2*exp(1) - 2 )
+    # else:
+    #     # # Exponential combination of Jaccard similarity and cosine distance
+    #     # distance = ( exp(jaccard_distance) + exp(cosine_distance) - 2) / (2*exp(1) - 2 )
+    #     pass
 
     # round distance to the 4 decimal digits
     distance = round(distance, 4)

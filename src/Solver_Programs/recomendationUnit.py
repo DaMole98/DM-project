@@ -13,7 +13,7 @@ from src.Solver_Programs.plotVisualizer import plotUtilityMatrix
 
 def find_best_five_routes(hd_route, list_of_routes):
     """
-    this function finds the best five routes from the list of routes using content based recommendation
+    this function finds the best five routes from the list of routes using content based recommendation, using content based recommendation approach
     :param hd_route: the hidden route
     :param list_of_routes: the list of routes
 
@@ -159,7 +159,7 @@ def find_best(original_flag, data_path, DEBUG, output_path="./Output/"):
 
 def new_recfunc(std_routes, actual_routes, new_std_routes, DEBUG, flag_original, size):
     """
-    this function is the new recommendation function
+    this function is the new recommendation function using collaborative filtering approach
     :param std_routes: the standard routes
     :param actual_routes: the actual routes
     :param new_std_routes: the new standard routes (we are not using them)
@@ -220,9 +220,9 @@ def new_recfunc(std_routes, actual_routes, new_std_routes, DEBUG, flag_original,
                 utility_matrix[list_of_drivers.index(driver)][std_routes.index(route)] /= count_local
 
 
-    # if DEBUG:
-    #     plotUtilityMatrix(utility_matrix, list_of_drivers, f"utility_matrix_{size}")
-    #     exit(1)
+    if DEBUG:
+        plotUtilityMatrix(utility_matrix, list_of_drivers, f"utility_matrix_{size}_1")
+        # exit(1)
 
     # now find n similar drivers for each driver in terms of the utility matrix
     n = int(round(len(list_of_drivers)/(math.log2(len(list_of_drivers)+1)), 0))
@@ -260,9 +260,15 @@ def new_recfunc(std_routes, actual_routes, new_std_routes, DEBUG, flag_original,
                 utility_matrix[i][j] = 0
                 count = 0
                 for driver in similar_drivers[i]:
-                    count += 1
+                    if utility_matrix[driver[0]][j] is not None:
+                        count += 1
+                        utility_matrix[i][j] += utility_matrix[driver[0]][j]
                 if count != 0:
                     utility_matrix[i][j] /= count
+
+    if DEBUG:
+        plotUtilityMatrix(utility_matrix, list_of_drivers, f"utility_matrix_{size}_2")
+        # exit(1)
 
     # for each driver, find the best five routes in terms of the utility matrix
     best_five_routes = []
