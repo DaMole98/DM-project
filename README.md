@@ -117,3 +117,10 @@ conda install --file requirements.txt
 
 The code has been developed and tested on pyCharm Community Edition 2020.3.2. it is recommended to use the same IDE to run the code. Running the code in other IDEs or in the terminal may cause some errors, in particular in the visualization part and importing the modules.
 The interpreter used is Python 3.9.1. To change the interpreter, go to `File -> Settings -> Project: DM-project -> Python Interpreter` and select the interpreter you want to use.
+
+## Output of the code
+
+The output of the code is saved in the folder `src/Solver_Programs/Output`. The output files are the following:
+- `perfectRoute.json`: the perfect route found by the algorithm
+- `drivers.json`: the drivers with the assigned routes
+- `recStandard.json`: the recommended standards for each driver
