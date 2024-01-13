@@ -25,6 +25,7 @@ The project structure is the following:
 |-- DM_Project_23-24.pdf
 |-- README.md
 |-- tree_structure.txt
+|-- requirements.txt
 |
 |-- .idea
 | |-- .gitignore
