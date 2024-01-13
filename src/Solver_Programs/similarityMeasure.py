@@ -1,5 +1,15 @@
 from math import sqrt
 def route_similarity(route1, route2):
+    """
+    This function computes the similarity between two routes as a "weighted jaccard
+    similarity": the jaccard similarity is computed over the set of cities visited,
+    and for each city in the intersection set a weight is assigned as the cosine similarity (standardized in [0,1])
+    between the set of items carried in the same city in the two different routes
+
+    :param route1: StandardRoute (or ActualRoute) object
+    :param route2: StandardRoute (or ActualRoute) object
+    :return: the similarity between the two routes (float)
+    """
 
     city1 = set()
     city2 = set()

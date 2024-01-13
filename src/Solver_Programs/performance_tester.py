@@ -1,3 +1,8 @@
+"""
+This scripts plots the performance of the hidden route finder algorithm.
+The plots represent the distance between the real hidden routes and the inferred ones
+as the number of actual routes implementations for each driver increases
+"""
 import json
 from random import sample
 import matplotlib.pyplot as plt
@@ -12,8 +17,14 @@ from src.Solver_Programs.HiddenRouteFinder import hidden_route_finder
 from src.Solver_Programs.MainSolver import EnhancedJSONEncoder
 
 
-# compute the average distance between the inferred route and the real hidden, averaged on all drivers
 def hidden_route_performance(real_hidden_routes, inferred_hidden_routes, flag = 0):
+    """
+
+    :param real_hidden_routes: list of HiddenRoute objects representing the real hidden routes of the drivers
+    :param inferred_hidden_routes: list of HiddenRoute objects representing the inferred hidden routes by the algorithm
+    :param flag: boolean flag. If 0: use the function route_similarity() to compute distance. if 1: use the route_distance() function to compute the distance
+    :return: the average distance between real hidden routes and the inferred routes
+    """
     rt_tuples = []
     for real_rt in real_hidden_routes:  # pairing inferred and real for each driver
         for inf_rt in inferred_hidden_routes:
@@ -35,7 +46,6 @@ def hidden_route_performance(real_hidden_routes, inferred_hidden_routes, flag = 
 
 
 if __name__ == '__main__':
-
     with open(f"{dev_data_path}cities.json", 'r') as file:
         cities = json.load(file)
 

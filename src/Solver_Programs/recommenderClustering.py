@@ -3,7 +3,16 @@ from similarityMeasure import route_similarity
 from random import sample
 from sklearn.cluster import KMeans
 
+
 def cluster_routes(std_routes, actual_routes, clusters):
+    """
+    This function fits the actual routes set into clusters and returns the labels
+
+    :param std_routes: list of StandardRoute object
+    :param actual_routes:  list of ActualRoutes object
+    :param clusters: number of clusters to generate
+    :return: list of tuples that contains the ActualRoute object and the relative cluster label
+    """
 
 
 
