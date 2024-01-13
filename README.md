@@ -19,81 +19,83 @@ The project structure is the following:
 
 ```
 .
-??? .gitattributes
-??? .gitignore
-??? checks.json
-??? DM_Project_23-24.pdf
-??? README.md
-??? tree_structure.txt
-?
-??? .idea
-? ??? .gitignore
-? ??? DM-project.iml
-? ??? misc.xml
-? ??? modules.xml
-? ??? vcs.xml
-? ??? workspace.xml
-? ??? inspectionProfiles
-? ? ??? profiles_settings.xml
-? ? ??? Project_Default.xml
-? ??? shelf
-? ??? Uncommitted_changes_before_Checkout_at_12_01_2024_00_04__Changes_.xml
-? ??? Uncommitted_changes_before_rebase__Changes_.xml
-? ??? Uncommitted_changes_before_rebase__Changes_1.xml
-? ??? Uncommitted_changes_before_rebase__Changes_2.xml
-? ??? ...
-?
-??? build
-? ??? clang_tidy
-?
-??? data
-? ??? dev_data
-? ? ??? cities.json
-? ? ??? drivers.json
-? ? ??? drivers_prefs.json
-? ? ??? items.json
-?
-? ??? medium1_dataset
-? ? ??? actual.json
-? ? ??? HiddenRoutes.json
-? ? ??? parameters.json
-? ? ??? standard.json
-?
-? ??? medium_dataset
-? ? ??? actual.json
-? ? ??? HiddenRoutes.json
-? ? ??? parameters.json
-? ? ??? standard.json
-? ??? ...
-?
-? ??? small_dataset
-? ??? actual.json
-? ??? HiddenRoutes.json
-? ??? parameters.json
-? ??? standard.json
-?
-??? src
-??? Class_Structures
-? ??? ClassesDefinition.py
-?
-??? Data_Generator
-? ??? actual_route_generator.py
-? ??? hidden_route_generator.py
-? ??? input_dataset_generator.py
-? ??? ...
-?
-??? Solver_Programs
-? ??? dist-with-marius2-dist.png
-? ??? dist.png
-? ??? DistanceMetrics.py
-? ??? GAStdGen.py
-? ??? HiddenRouteFinder.py
-? ??? MainSolver.py
-? ??? ...
-?
-??? Testers
-??? DistanceTester.py
-??? ...
+|-- .gitattributes
+|-- .gitignore
+|-- checks.json
+|-- DM_Project_23-24.pdf
+|-- README.md
+|-- tree_structure.txt
+|
+|-- .idea
+| |-- .gitignore
+| |-- DM-project.iml
+| |-- misc.xml
+| |-- modules.xml
+| |-- vcs.xml
+| |-- workspace.xml
+| |
+| |-- inspectionProfiles
+| | |-- profiles_settings.xml
+| | |-- Project_Default.xml
+| |
+| ??? shelf
+| |-- Uncommitted_changes_before_Checkout_at_12_01_2024_00_04__Changes_.xml
+| |-- Uncommitted_changes_before_rebase__Changes_.xml
+| |-- Uncommitted_changes_before_rebase__Changes_1.xml
+| |-- Uncommitted_changes_before_rebase__Changes_2.xml
+| |-- ...
+|
+|-- build
+| |-- clang_tidy
+|
+|-- data
+| |-- dev_data
+| | |-- cities.json
+| | |-- drivers.json
+| | |-- drivers_prefs.json
+| | |-- items.json
+| |
+| |-- medium1_dataset
+| | |-- actual.json
+| | |-- HiddenRoutes.json
+| | |-- parameters.json
+| | |-- standard.json
+| |
+| |-- medium_dataset
+| | |-- actual.json
+| | |-- HiddenRoutes.json
+| | |-- parameters.json
+| | |-- standard.json
+| | |-- ...
+| |
+| ??? small_dataset
+| |-- actual.json
+| |-- HiddenRoutes.json
+| |-- parameters.json
+| |-- standard.json
+|
+|-- src
+| |-- Class_Structures
+| | |-- ClassesDefinition.py
+| | |
+| |-- Data_Generator
+| | |-- actual_route_generator.py
+| | |-- hidden_route_generator.py
+| | |-- input_dataset_generator.py
+| | |-- ...
+| |
+| |-- Solver_Programs
+| | |-- dist-with-marius2-dist.png
+| | |-- dist.png
+| | |-- DistanceMetrics.py
+| | |-- GAStdGen.py
+| | |-- HiddenRouteFinder.py
+| | |-- MainSolver.py
+| | |-- ...
+| |
+| |-- Testers
+| |-- DistanceTester.py
+| |-- ...
 ``` 
 
 ## How to run the code
