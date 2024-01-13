@@ -73,18 +73,29 @@ The project structure is the following:
 | | |-- ClassesDefinition.py
 | | |
 | |-- Data_Generator
+| | |-- parameters
+| | | |-- parameters.json
 | | |-- actual_route_generator.py
 | | |-- hidden_route_generator.py
 | | |-- input_dataset_generator.py
 | | |-- ...
 | |
 | |-- Solver_Programs
+| | |-- Output
+| | | |-- perfectRoute.json
+| | | |-- drivers.json
+| | | |-- recStandard.json
 | | |-- dist-with-marius2-dist.png
 | | |-- dist.png
 | | |-- DistanceMetrics.py
 | | |-- GAStdGen.py
 | | |-- HiddenRouteFinder.py
 | | |-- MainSolver.py
+| | |-- recommendedUnit.py
+| | |-- NewStdsGen.py
+| | |-- plotVisualizer.py
+| | |-- similarityMeasure.py
+| | |-- recommenderClustering.py
 | | |-- ...
 | |
 | |-- Testers
