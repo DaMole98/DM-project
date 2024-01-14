@@ -1,17 +1,17 @@
 [
 
-{"function": "generate_new_std_1", "dataset": "small_dataset", "time": 1.1349265575408936},
-{"function": "perfectRoutesFinder", "dataset": "small_dataset", "time": 0.08300185203552246},
-{"function": "find_best_1", "dataset": "small_dataset", "time": 0.7874472141265869},
-{"function": "generate_new_std_1", "dataset": "medium_dataset", "time": 289.8960335254669},
-{"function": "perfectRoutesFinder", "dataset": "medium_dataset", "time": 12.054907083511353},
-{"function": "find_best_1", "dataset": "medium_dataset", "time": 606.4833948612213},
-{"function": "generate_new_std_1", "dataset": "small1_dataset", "time": 5.308988809585571},
-{"function": "perfectRoutesFinder", "dataset": "small1_dataset", "time": 0.19619345664978027},
-{"function": "find_best_1", "dataset": "small1_dataset", "time": 3.387505292892456},
-{"function": "generate_new_std_1", "dataset": "small2_dataset", "time": 15.80943489074707},
-{"function": "perfectRoutesFinder", "dataset": "small2_dataset", "time": 0.3545041084289551},
-{"function": "find_best_1", "dataset": "small2_dataset", "time": 10.162407398223877},
-{"function": "generate_new_std_1", "dataset": "medium1_dataset", "time": 40.358203411102295}
-{"function": "perfectRoutesFinder", "dataset": "medium1_dataset", "time": 5.239046812057495}
-{"function": "find_best_1", "dataset": "medium1_dataset", "time": 72.85780739784241}
+{"function": "generate_new_std_1", "dataset": "small", "time": 1.1349265575408936},
+{"function": "perfectRoutesFinder", "dataset": "small", "time": 0.08300185203552246},
+{"function": "find_best_1", "dataset": "small", "time": 0.7874472141265869},
+{"function": "generate_new_std_1", "dataset": "medium", "time": 289.8960335254669},
+{"function": "perfectRoutesFinder", "dataset": "medium", "time": 12.054907083511353},
+{"function": "find_best_1", "dataset": "medium", "time": 606.4833948612213},
+{"function": "generate_new_std_1", "dataset": "small1", "time": 5.308988809585571},
+{"function": "perfectRoutesFinder", "dataset": "small1", "time": 0.19619345664978027},
+{"function": "find_best_1", "dataset": "small1", "time": 3.387505292892456},
+{"function": "generate_new_std_1", "dataset": "small2", "time": 15.80943489074707},
+{"function": "perfectRoutesFinder", "dataset": "small2", "time": 0.3545041084289551},
+{"function": "find_best_1", "dataset": "small2", "time": 10.162407398223877},
+{"function": "generate_new_std_1", "dataset": "medium1", "time": 40.358203411102295},
+{"function": "perfectRoutesFinder", "dataset": "medium1", "time": 5.239046812057495},
+{"function": "find_best_1", "dataset": "medium1", "time": 72.85780739784241}]
