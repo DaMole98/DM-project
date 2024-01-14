@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from random import randint, sample, seed
 
 from src.Class_Structures.ClassesDefinition import StandardRoute, Trip, Driver, ActualRoute
-from src.Data_Generator.Parameters.parameters import data_path, size_dataset
+from src.Data_Generator.Parameters.parameters import data_path
 from src.Data_Generator.input_dataset_generator import EnhancedJSONEncoder
 from src.Solver_Programs.DistanceMetrics import getRouteDistance
 from src.Solver_Programs.GAStdGen import geneticAlgorithm
@@ -82,18 +82,19 @@ def clusterApproach(RouteSet, K, DEBUG):
 '''
 
 
-def generate_new_std(K, samplesChoice, DEBUG):
+def generate_new_std(K, samplesChoice, DEBUG, size_dataset):
     if DEBUG:
         print("generate_new_std function called")
         print(f"K = {K}")
         print(f"samplesChoice = {samplesChoice}")
+        print(size_dataset)
 
     # load probable hidden routes
     try:
-        with open(f"{output_path}ProbableHiddenRoutes.json", 'r') as file:
+        with open(f"{output_path}perfectRoute.json", 'r') as file:
             hidden_routes = json.load(file)
     except FileNotFoundError:
-        print("ProbableHiddenRoutes.json not found. Please run input_dataset_generator.py first")
+        print("perfectRoute.json not found. Please run input_dataset_generator.py first")
         sys.exit()
 
     perfRoutes = []
@@ -109,6 +110,27 @@ def generate_new_std(K, samplesChoice, DEBUG):
                 exit(1)
         perfRoutes.append(new_route)
 
+    # load actual routes
+    try:
+        with open(f"{data_path}{size_dataset}/actual.json", 'r') as file:
+            actual_routes = json.load(file)
+    except FileNotFoundError:
+        print("actuals.json not found 1. Please run input_dataset_generator.py first")
+        sys.exit()
+
+    # make actual_routes a list of trip objects
+    act_rout= []
+
+    for route in actual_routes:
+        new_route = []
+        for trip in route["route"]:
+            try:
+                new_route.append(Trip(trip["from"], trip["to"], trip["merchandise"]))
+            except KeyError:
+                print("Error: missing key in trip")
+                exit(1)
+        act_rout.append(new_route)
+
     newStd = []
     len_sample = len(hidden_routes) / K
     if len_sample < 5:
@@ -116,17 +138,17 @@ def generate_new_std(K, samplesChoice, DEBUG):
     if samplesChoice == 0:
         # random sampling of K sets of routes
         for i in range(K):
-            RouteSample = sample(perfRoutes, int(len_sample))
+            RouteSample = sample(act_rout, int(len_sample))
             # print(RouteSample)
             print(f"round k:{i}")
-            newStd.append(geneticAlgorithm(RouteSample, DEBUG))
+            newStd.append(geneticAlgorithm(RouteSample, DEBUG, size_dataset))
 
     elif samplesChoice == 1:
         std_obj = []
         act_obj = []
-        print(f"{data_path}{size_dataset}_dataset/actual.json")
+        # print(f"{data_path}{size_dataset}/actual.json")
         try:
-            with open(f"{data_path}{size_dataset}_dataset/actual.json", 'r') as file:
+            with open(f"{data_path}{size_dataset}/actual.json", 'r') as file:
                 actuals = json.load(file)
                 for act in actuals:
                     act_obj.append(ActualRoute(id=act['id'], driver=act['driver'], sroute=act['sroute'],
@@ -137,7 +159,7 @@ def generate_new_std(K, samplesChoice, DEBUG):
             sys.exit(1)
 
         try:
-            with open(f"{data_path}{size_dataset}_dataset/standard.json", 'r') as file:
+            with open(f"{data_path}{size_dataset}/standard.json", 'r') as file:
                 stds = json.load(file)
                 for std in stds:
                     std_obj.append(StandardRoute(std['id'],
@@ -147,7 +169,10 @@ def generate_new_std(K, samplesChoice, DEBUG):
             print("standard.json not found. Please run input_dataset_generator.py first")
             sys.exit(1)
 
+        # print("clustering...")
+
         clusters = cluster_routes(std_routes=std_obj, actual_routes=act_obj, clusters=K)
+        # print(clusters)
         clusters.sort(key=lambda x: x[1])
         #clusters = sorted(clusters, key=lambda x: x[1])
         #print([cl[1] for cl in clusters])
@@ -164,7 +189,7 @@ def generate_new_std(K, samplesChoice, DEBUG):
                 for actual_obj in cnk:
                     adapted_routes.append(actual_obj.route)
 
-                newStd.append(geneticAlgorithm(adapted_routes, DEBUG))
+                newStd.append(geneticAlgorithm(adapted_routes, DEBUG, size_dataset))
                 cnk.clear()
             i += 1
 

@@ -14,6 +14,8 @@ from src.Solver_Programs.DistanceMetrics import getRouteDistance
 
 MAX_ITEM_QUANTITY = 100
 
+DEBUG_local = 0
+
 
 def fitnessFunction(route, RouteSample):
     """
@@ -124,9 +126,9 @@ def mutate(route, mutationRate, cities, items):
 
         mutated_route.append(trip)
 
-    adjusted_route = adjust_route(mutated_route, cities)
+    adjusted_route = adjust_route(mutated_route)
 
-    return mutated_route
+    return adjusted_route
 
 def crossover(route1, route2):
     """
@@ -148,7 +150,14 @@ def crossover(route1, route2):
 
     """
     # Randomly select a crossover point
-    crossover_point = randint(0, min(len(route1), len(route2)) - 1)
+    max_index = min(len(route1), len(route2)) - 1
+    if max_index == 0:
+        return None, None
+    try:
+        crossover_point = randint(0, max_index)
+    except ValueError:
+        return None, None
+    # crossover_point = randint(0, min(len(route1), len(route2)) - 1)
 
     # Create children by combining trips from parents
     child1 = route1[:crossover_point] + route2[crossover_point:]
@@ -217,7 +226,7 @@ def IsConverged(fitness_scores):
         return False
 
 
-def geneticAlgorithm(RouteSample, DEBUG, generations=5, popSize=10, mutationRate=0.01, eliteSize=5):
+def geneticAlgorithm(RouteSample, DEBUG, size_dataset, generations=5, popSize=10, mutationRate=0.01, eliteSize=5):
     """
     **Description**:
     This function implements the Genetic Algorithm for Route Optimization.
@@ -256,7 +265,7 @@ def geneticAlgorithm(RouteSample, DEBUG, generations=5, popSize=10, mutationRate
 
     # Load standard routes, cities, and items from JSON files
     try:
-        with open(f"{data_path}StandardRoute.json", 'r') as file:
+        with open(f"{data_path}{size_dataset}/standard.json", 'r') as file:
             std_routes = json.load(file)
     except FileNotFoundError:
         print("StandardRoute.json not found. Please run input_dataset_generator.py first")
@@ -281,6 +290,13 @@ def geneticAlgorithm(RouteSample, DEBUG, generations=5, popSize=10, mutationRate
     # Initialize the population
     population = initPopulation(popSize, std_routes, cities, items)
 
+    if DEBUG_local:
+        print("population initialized")
+        print(f"population size: {len(population)}")
+        print(f"generations: {generations}")
+        print(f"mutationRate: {mutationRate}")
+        print(f"eliteSize: {eliteSize}")
+
     for generation in range(generations):
         if DEBUG:
             print(f"Generation {generation+1} of {generations}")
@@ -290,7 +306,9 @@ def geneticAlgorithm(RouteSample, DEBUG, generations=5, popSize=10, mutationRate
 
         # Calculate the fitness of each route in the population
         fitness_scores = [fitnessFunction(route, RouteSample) for route in population]
-        print("fitness score computed")
+        # print("fitness score computed")
+        if DEBUG_local:
+            print(f"fitness scores: {fitness_scores}")
 
 
         # Check for convergence
@@ -312,8 +330,9 @@ def geneticAlgorithm(RouteSample, DEBUG, generations=5, popSize=10, mutationRate
             # Crossover the two parents
             child1, child2 = crossover(parent1, parent2)
             # Add the two children to the population
-            population.append(child1)
-            population.append(child2)
+            if child1 is not None and child2 is not None:
+                population.append(child1)
+                population.append(child2)
 
         # Mutate the population
         for i in range(len(population)):

@@ -11,11 +11,12 @@ from src.Class_Structures.ClassesDefinition import *
 from src.Data_Generator.input_dataset_generator import EnhancedJSONEncoder
 from src.Solver_Programs.HiddenRouteFinder import hidden_route_finder
 from src.Solver_Programs.NewStdsGen import generate_new_std
+from src.Solver_Programs.performance_eval import write_performance
 from src.Solver_Programs.recomendationUnit import find_best
 
 output_path = "./Output/"
 
-DEBUG = True
+DEBUG = False
 
 # TODO: check the name and the format of all file before handing in the project
 class EnhancedJSONEncoder(json.JSONEncoder):
@@ -152,7 +153,8 @@ if __name__ == "__main__":
     elif dataset == 2:
         size_dataset = "medium"
     elif dataset == 3:
-        size_dataset = "large"
+        print("This dataset is not available yet")
+        sys.exit()
     elif dataset == 4:
         size_dataset = "small1"
     elif dataset == 5:
@@ -180,22 +182,6 @@ if __name__ == "__main__":
     time_flag = start
 
     if DEBUG:
-        print("Finding the Perfect Routes")
-    perfectRoutesFinder()
-    if DEBUG:
-        print(f"Time taken to find the perfect routes: {time.time() - time_flag}")
-    time_flag = time.time()
-
-    # find the best five routes for each driver
-    if DEBUG:
-        print("Finding the best five routes for each driver")
-    original_flag = int(input("Do you want to use the original standard routes? (1 for yes, 0 for no): "))
-    find_best(original_flag, data_path, DEBUG)
-    if DEBUG:
-        print(f"Time taken to find the best five routes: {time.time() - time_flag}")
-        exit(2)
-
-    if DEBUG:
         print("Generating new standard routes")
     # take in input the number of new standard routes to be generated
     K = int(input("Enter the number of new standard routes to be generated: "))
@@ -210,11 +196,37 @@ if __name__ == "__main__":
     if K < 0 or K > MAX_K:
         print("Invalid number of routes")
         sys.exit()
-
-    generate_new_std(K, 0, 0)
+    time_flag = time.time()
+    sample_C = 1
+    generate_new_std(K, sample_C, 0, size_dataset)
     if DEBUG:
         print(f"Time taken to generate new standard routes: {time.time() - time_flag}")
+    time_flag = time.time() - time_flag
+
+    # write_performance(str(f"generate_new_std_{sample_C}"), size_dataset, time_flag)
+
+
+    if DEBUG:
+        print("Finding the Perfect Routes")
     time_flag = time.time()
+    perfectRoutesFinder()
+    if DEBUG:
+        print(f"Time taken to find the perfect routes: {time.time() - time_flag}")
+    time_flag = time.time() - time_flag
+    # write_performance("perfectRoutesFinder", size_dataset, time_flag)
+
+    # find the best five routes for each driver
+    if DEBUG:
+        print("Finding the best five routes for each driver")
+    original_flag = int(input("Do you want to use the original standard routes? (1 for yes, 0 for no): "))
+    time_flag = time.time()
+    find_best(original_flag, data_path, DEBUG)
+    time_flag = time.time() - time_flag
+    # write_performance(str(f"find_best_{original_flag}"), size_dataset, time_flag)
+    if DEBUG:
+        print(f"Time taken to find the best five routes: {time.time() - time_flag}")
+        exit(2)
+
 
     if DEBUG:
         print(f"Total time taken: {time.time() - start}")
