@@ -35,8 +35,6 @@ def route_similarity(route1, route2):
                                                                                               # in (0,1) if the trips are similar (in the cosine sense in the space of items)
 
     for city in city_intersection: #calculate weight of the city in the intersection (numerator of jaccard similarity)
-        if city == 'Milan':
-            pass
         it1 = items1[city]
         it2 = items2[city]
         common_it = set(it1.keys()).intersection(set(it2.keys()))
