@@ -1,0 +1,8 @@
+file contains the necessary packages to run the code
+'''
+numpy
+pandas
+matplotlib
+random
+sklearn
+'''

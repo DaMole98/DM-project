@@ -179,6 +179,13 @@ if __name__ == "__main__":
     start = time.time()
     time_flag = start
 
+    if DEBUG:
+        print("Finding the Perfect Routes")
+    perfectRoutesFinder()
+    if DEBUG:
+        print(f"Time taken to find the perfect routes: {time.time() - time_flag}")
+    time_flag = time.time()
+
     # find the best five routes for each driver
     if DEBUG:
         print("Finding the best five routes for each driver")
@@ -187,14 +194,6 @@ if __name__ == "__main__":
     if DEBUG:
         print(f"Time taken to find the best five routes: {time.time() - time_flag}")
         exit(2)
-
-
-    if DEBUG:
-        print("Finding the Perfect Routes")
-    perfectRoutesFinder()
-    if DEBUG:
-        print(f"Time taken to find the perfect routes: {time.time() - time_flag}")
-    time_flag = time.time()
 
     if DEBUG:
         print("Generating new standard routes")
