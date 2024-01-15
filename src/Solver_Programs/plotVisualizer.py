@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import ListedColormap
 
-output_path = "./Output/"
+output_path = "results/"
 def plotUtilityMatrix(utility_matrix, drivers, title):
     cmap = ListedColormap(['lightblue', 'green'])
 

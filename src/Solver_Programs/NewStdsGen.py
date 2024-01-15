@@ -16,7 +16,7 @@ from src.Solver_Programs.DistanceMetrics import getRouteDistance
 from src.Solver_Programs.GAStdGen import geneticAlgorithm
 from src.Solver_Programs.recommenderClustering import cluster_routes
 
-output_path = "./Output/"
+output_path = "results/"
 
 '''
 # function that generates K new standards routes

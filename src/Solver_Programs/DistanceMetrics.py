@@ -8,7 +8,7 @@ import numpy as np
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-output_path = "./Output/"
+output_path = "results/"
 
 MAX_MINIMAL_DISTANCE = 1.
 FACTORIAL_NEIGHBORHOOD = 5

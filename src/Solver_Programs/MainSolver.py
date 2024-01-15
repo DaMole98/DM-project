@@ -14,7 +14,7 @@ from src.Solver_Programs.NewStdsGen import generate_new_std
 from src.Solver_Programs.performance_eval import write_performance
 from src.Solver_Programs.recomendationUnit import find_best
 
-output_path = "./Output/"
+output_path = "results/"
 
 DEBUG = False
 
@@ -129,7 +129,7 @@ def perfectRoutesFinder():
         with open(f"{output_path}perfectRoute.json", 'w') as file:
             json.dump(json_data, file, indent=2)
     except FileNotFoundError:
-        print("Output folder not found. Please create it first")
+        print("results folder not found. Please create it first")
         sys.exit()
 
 
@@ -218,7 +218,7 @@ if __name__ == "__main__":
     # find the best five routes for each driver
     if DEBUG:
         print("Finding the best five routes for each driver")
-    original_flag = int(input("Do you want to use the original standard routes? (1 for yes, 0 for no): "))
+    original_flag = int(input("Do you want to use the original standard routes in the recommendation process? (1 for yes, 0 for no): "))
     time_flag = time.time()
     find_best(original_flag, data_path, DEBUG)
     time_flag = time.time() - time_flag

@@ -41,7 +41,7 @@ def find_best_five_routes(hd_route, list_of_routes):
     return sorted_dict_of_routes_dist[:5]
 
 
-def find_best(original_flag, data_path, DEBUG, output_path="./Output/"):
+def find_best(original_flag, data_path, DEBUG, output_path="./results/"):
     list_of_routes = []
     s_routes = []
     a_routes = []
@@ -56,7 +56,7 @@ def find_best(original_flag, data_path, DEBUG, output_path="./Output/"):
             print("standard.json not found. Please run input_dataset_generator.py first")
             sys.exit()
     else:
-        # load the new std_routes from ./Output/recStandard.json
+        # load the new std_routes from ./results/recStandard.json
         if DEBUG:
             print("original flag is false, so we will find the best rist five routes from the new routes")
         try:
