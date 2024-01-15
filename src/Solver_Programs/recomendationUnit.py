@@ -4,11 +4,10 @@ this file contains the solution program for the second tasks in the project
 import json
 import math
 import sys
-from math import floor
 
 from src.Class_Structures.ClassesDefinition import Trip
 from src.Solver_Programs.DistanceMetrics import getRouteDistance
-from src.Solver_Programs.plotVisualizer import plotUtilityMatrix
+from src.Solver_Programs.ausiliary_programs.plotVisualizer import plotUtilityMatrix
 
 
 def find_best_five_routes(hd_route, list_of_routes):

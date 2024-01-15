@@ -10,7 +10,7 @@ def write_performance(name_function, dataset, time):
         print(f"dataset = {dataset}")
         print(f"time = {time}")
     # open a json file in append mode
-    with open(f"./performance.json", 'a') as file:
+    with open(f"performance.json", 'a') as file:
         # write the data
         json.dump({"function": name_function, "dataset": dataset, "time": time}, file)
         # write a new line
@@ -21,7 +21,7 @@ def plotter():
     This function plots the performance of the algorithms
     """
     # read the json file
-    with open(f"./performance.json", 'r') as file:
+    with open(f"performance.json", 'r') as file:
         data = json.load(file)
 
     # divide the data in 3 lists
