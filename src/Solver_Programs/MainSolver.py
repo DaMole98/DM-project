@@ -25,6 +25,20 @@ class EnhancedJSONEncoder(json.JSONEncoder):
 
 
 def perfectRoutesFinder():
+    """
+    This function finds the perfect routes for each driver
+    :param data_path: path to the data folder
+    :param output_path: path to the output folder
+    :param DEBUG: boolean flag. If True, print debug messages
+    :return: None
+
+    **Algorithm**
+    1. Load the standard routes from standard.json
+    2. Load the actual routes from actual.json
+    4. Create a list of HiddenRoute objects
+    5. For each driver, find the hidden route
+    6. Write the hidden routes to a json file called perfectRoute.json
+    """
     # set entropy to a number as desired to make the results reproducible
     entropy = os.urandom(128)
     seed(entropy)
